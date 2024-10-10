@@ -12,18 +12,19 @@
     </style> -->
 </head>
 <body>
-    <h1>Microcrypt</h1>
+    <h1>Microcrypt Zoo</h1>
+    <h2>A Graph Visualization of the Relationships between Quantum Cryptographic Primitives in MicroCrypt</h2>
+    The graph on this website describes known connections between quantum cryptographic primitives. 
+    The emphasis is on MicroCrypt: primitves that are based on assumptions which are potentially wearker than one-way functions.
+    Hovering with your mouse cursor over a connection will show a tooltip with reference to a work that investigates the relation between the two connected nodes.
+    Clicking on the connection will take you to a website with more details on the respective work.
+    Hovering over a node will show a tooltip with the name of the primitive and other.
+    Nodes which share a color are equivalent. 
+
+    Contributions are welcome! See <a href="https://github.com/sattath/microcrypt-zoo">https://github.com/sattath/microcrypt-zoo</a> for details.
     <IMG SRC="microcrypt.png" USEMAP="#microcrypt" />
     <div id="imageMapContainer"></div>
 
-    <script>
-    fetch('./microcrypt.map')
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById('imageMapContainer').innerHTML = data;
-        })
-    .catch(error => console.error('Error loading image map:', error));
-    </script>
         
 
 </body>
