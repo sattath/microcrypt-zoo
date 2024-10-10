@@ -6,17 +6,18 @@ View at [sattath.github.io/microcrypt-zoo/](https://sattath.github.io/microcrypt
 
 ## For contributrs
 
-The main source file is microcrypt.gv, which contains is a GraphViz (dot) file, describing all the known relations. To create the graph on your machine, you will need GraphViz installed, then:
+The main source file is microcrypt.gv, which contains is a GraphViz (dot) file, describing all the known relations. To create the graph on your machine, you will need GraphViz installed, then in your terminal:
+```bash
 dot -Tsvg microcrypt.gv > microcrypt.svg 
+```
 
 Adding an implication is done by adding to microcrypt.gv one line that contains the reference information, and then a line for the relation itself. For example:
-
 ```dot 
 edge [label="Kre21" tooltip="Kretschmer.\n Quantum Pseudorandomness and Classical Complexity.\n TQC21. " URL="https://drops.dagstuhl.de/opus/volltexte/2021/13997"]
 PRS->OWF ; 
 ```
 
-A separation is similar, follow the same template as in the source. If you prefer, you can also email me (my lasta name at bgu.ac.il).
+A separation is similar, follow the same template as in the source. If you prefer, you can also email me the result (my last name at bgu.ac.il).
 
 Note that the nodes which are in the same strongly connected component are colored the same. This is done using the script color_by_scc.sh (which calls color_by_scc.gvpr). 
 
