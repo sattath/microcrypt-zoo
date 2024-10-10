@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microcrypt</title>
+    <!-- <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Microcrypt</h1>
+    <IMG SRC="coloredmicrocrypt.png" USEMAP="#microcrypt" />
+    <div id="imageMapContainer"></div>
+
+    <script>
+    fetch('./microcrypt.map')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('imageMapContainer').innerHTML = data;
+        })
+    .catch(error => console.error('Error loading image map:', error));
+    </script>
+        
+
+</body>
+</html>

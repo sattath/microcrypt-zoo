@@ -1,0 +1,86 @@
+/******************************************************************
+ apply unique color to all nodes in a strongly-connected set
+
+- two files
+  - 1st - the output of sccmap
+  - 2nd - the original file
+
+********************************************************************/
+BEGIN{
+  graph_t Root;
+  int     sccmapFinished, DEL[],colorindex;
+  string  ColorsArray[];
+  string  Color[], currColor, help;
+
+  help="future";
+  colorindex=0;
+ColorsArray[0] = "lightgray";
+ColorsArray[1]= "lightgreen";
+ColorsArray[2]= "lightgrey";
+ColorsArray[3]= "lightpink";
+ColorsArray[4]= "lightblue";
+ColorsArray[5]= "lightcoral";
+ColorsArray[6]= "lightcyan";
+ColorsArray[7]= "lightgoldenrod";
+ColorsArray[8]= "lightgoldenrodyellow";
+ColorsArray[9]= "lightsalmon";
+  ////////////////////////////////////////////////////////////////////////////
+  string X2color(string KEY) {
+    string ret;
+    int    r1, r2, r3;
+    float  H, S, V, dH=1./19.;
+
+    if(Color[KEY]!="") {
+      ret=Color[KEY];
+      print("//  old color: ",ret);
+    } else {
+      
+      H+=rand()+dH;
+      if(H>1.)H-=1.;
+      S=.477+(rand()/2.);
+      V=1.-(rand()/2.5);
+      ret=sprintf("%.3f %.3f %.3f", H, S, V);
+      
+      
+      colorindex+=1;
+      ret=ColorsArray[colorindex];
+      //ret=ColorsArray[1];
+      print("// new color: ",ret);
+      Color[KEY]=ret;
+      
+
+    }
+    print("//  returning color: ", ret);
+    return(ret);
+  }
+  //////////////////////////////////////////////////////////////////////////
+  srand();  // used by edge colorizing rtn
+}
+///// end of BEGIN //////////////////////////////////////////////////////
+BEG_G{
+  print("////  start: ",$.name);
+  Root=$G;
+  if (sccmapFinished==0)
+    currColor=X2color($.name)
+  }
+N{
+  print("//  node ",$.name, " ", Root.name);
+  if (sccmapFinished==0) {
+    print("//   currcolor:  ", currColor);
+    Color[$.name]=currColor;
+  } else {
+    if(Color[$.name]!="") {
+      if (hasAttr($, "style") && $.style!="")
+        $.style=$.style + ", filled";
+      else
+        $.style="filled";
+      $.fillcolor=Color[$.name];
+    }
+  }
+}
+END_G{
+  if (sccmapFinished==1)
+    write($G);
+  if ($G.name=="scc_map")
+    sccmapFinished=1;
+}
