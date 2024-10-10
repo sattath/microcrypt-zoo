@@ -10,8 +10,10 @@ The main source file is microcrypt.gv, which contains is a GraphViz (dot) file, 
 dot -Tsvg microcrypt.gv > microcrypt.svg 
 
 Adding an implication is done by adding to microcrypt.gv one line that contains the reference information, and then a line for the relation itself. For example:
-    edge [label="Kre21" tooltip="Kretschmer.\n Quantum Pseudorandomness and Classical Complexity.\n TQC21. " URL="https://drops.dagstuhl.de/opus/volltexte/2021/13997"]
-    PRS->OWF ;
+
+```dot edge [label="Kre21" tooltip="Kretschmer.\n Quantum Pseudorandomness and Classical Complexity.\n TQC21. " URL="https://drops.dagstuhl.de/opus/volltexte/2021/13997"]
+    PRS->OWF ; 
+```
 
 A separation is similar, follow the same template as in the source. If you prefer, you can also email me (my lasta name at bgu.ac.il).
 
