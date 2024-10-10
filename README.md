@@ -4,6 +4,8 @@ An interactive visualization of known implications and separations between quant
 
 View at [sattath.github.io/microcrypt-zoo/](https://sattath.github.io/microcrypt-zoo/).
 
+![Microcrypt Zoo](microcrypt.png)
+
 ## For contributrs
 
 The main source file is microcrypt.gv, which contains is a GraphViz (dot) file, describing all the known relations. To create the graph on your machine, you will need GraphViz installed, then in your terminal:
