@@ -26,5 +26,13 @@
     <p>Contributions are welcome! See <a href="https://github.com/sattath/microcrypt-zoo">https://github.com/sattath/microcrypt-zoo</a> for details.</p>
     <IMG SRC="microcrypt.png" USEMAP="#microcrypt" />
     <div id="imageMapContainer"></div>
+    <script>
+        fetch('./microcrypt.map')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('imageMapContainer').innerHTML = data;
+            })
+        .catch(error => console.error('Error loading image map:', error));
+    </script>
 </body>
 </html>
