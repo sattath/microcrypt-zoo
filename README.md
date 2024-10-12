@@ -19,7 +19,7 @@ edge [label="Kre21" tooltip="Kretschmer.\n Quantum Pseudorandomness and Classica
 PRS->OWF ; 
 ```
 
-A separation is similar, follow the same template as in the source. If you prefer, you can also email me the result (my last name at bgu.ac.il).
+A separation is similar, follow the same template as in the source. If you prefer, you can also email me the result (my last name at bgu.ac.il). This repository is maintained by Or Sattath.
 
 Note that the nodes which are in the same strongly connected component are colored the same. This is done using the script color_by_scc.sh (which calls color_by_scc.gvpr). 
 
