@@ -97,7 +97,7 @@ strict digraph microcrypt {
     ###Non-Trivial implications###
 
 
-    edge [label="AGQY22" tooltip="\E Ananth,  Gulati, Qian and Yuen.\n Pseudorandom (Function-Like) Quantum State Generators: New Definitions and Applications.\n TCC'22. " URL="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9"]
+    edge [label="AGQY22" tooltip="Ananth,  Gulati, Qian and Yuen.\n Pseudorandom (Function-Like) Quantum State Generators: New Definitions and Applications.\n TCC'22. " URL="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9"]
     OWF -> "Short Output PRFS"; // AGQY22
     "Short Output PRFS" -> "Short Output PRS"; // AGQY22
     "Short Output PRS" -> "SB-COM"; // AGQY22
