@@ -1,5 +1,6 @@
-//To get the strongly connected components, use the following command in the terminal: sccmap microcrypt.dot         
-// The strongly connected components should be clustered based on the result.
+//To generate the image files, run the following command:
+// 
+
 
 strict digraph microcrypt {
     edge [penwidth=5]

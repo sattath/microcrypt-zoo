@@ -162,7 +162,7 @@
 <!-- OWF&#45;&gt;Short Output PRFS -->
 <g id="edge7" class="edge">
 <title>OWF&#45;&gt;Short Output PRFS</title>
-<g id="a_edge7"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="E Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
+<g id="a_edge7"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
 <path fill="none" stroke="black" stroke-width="5" d="M1321.42,-1208.85C1335.02,-1197.8 1354.31,-1182.12 1370.83,-1168.7"/>
 <polygon fill="black" stroke="black" stroke-width="5" points="1373.48,-1172.18 1378.48,-1162.48 1367.96,-1165.39 1373.48,-1172.18"/>
 </a>
@@ -419,7 +419,7 @@
 <!-- Long Input PRFS&#45;&gt;QSKE -->
 <g id="edge26" class="edge">
 <title>Long Input PRFS&#45;&gt;QSKE</title>
-<g id="a_edge26"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="E Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
+<g id="a_edge26"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
 <path fill="none" stroke="black" stroke-width="5" d="M1049.98,-772.8C1100.09,-765.13 1162.96,-754.32 1173,-747 1178.32,-743.12 1182.63,-737.75 1186.08,-732.04"/>
 <polygon fill="black" stroke="black" stroke-width="5" points="1189.83,-734.32 1190.23,-723.41 1181.95,-730.52 1189.83,-734.32"/>
 </a>
@@ -531,7 +531,7 @@
 <!-- Short Output PRS&#45;&gt;SB&#45;COM -->
 <g id="edge34" class="edge">
 <title>Short Output PRS&#45;&gt;SB&#45;COM</title>
-<g id="a_edge34"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="E Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
+<g id="a_edge34"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
 <path fill="none" stroke="black" stroke-width="5" d="M1743.85,-1020.04C1755.7,-1014.88 1766.8,-1007.45 1774,-996.75 1794.49,-966.29 1775.66,-924.6 1757.97,-896.84"/>
 <polygon fill="black" stroke="black" stroke-width="5" points="1761.79,-894.69 1752.55,-888.88 1754.56,-899.61 1761.79,-894.69"/>
 </a>
@@ -566,7 +566,7 @@
 <!-- Short Output PRFS&#45;&gt;Short Output PRS -->
 <g id="edge35" class="edge">
 <title>Short Output PRFS&#45;&gt;Short Output PRS</title>
-<g id="a_edge35"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="E Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
+<g id="a_edge35"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
 <path fill="none" stroke="black" stroke-width="5" d="M1429.92,-1123.18C1455.95,-1107.2 1497.66,-1083.35 1536.5,-1068.75 1560.02,-1059.91 1586.46,-1052.87 1610.59,-1047.5"/>
 <polygon fill="black" stroke="black" stroke-width="5" points="1611.49,-1051.78 1620.36,-1045.42 1609.67,-1043.22 1611.49,-1051.78"/>
 </a>
@@ -610,7 +610,7 @@
 <!-- Short Output PRFS&#45;&gt;Pseudo&#45;encryption -->
 <g id="edge37" class="edge">
 <title>Short Output PRFS&#45;&gt;Pseudo&#45;encryption</title>
-<g id="a_edge37"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="E Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
+<g id="a_edge37"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
 <path fill="none" stroke="black" stroke-width="5" d="M1373.91,-1123.74C1314.75,-1090.09 1192.94,-1008.72 1240,-931.5 1272.92,-877.48 1460.08,-855.02 1493,-801 1518.75,-758.75 1459.09,-731.65 1405.05,-716.42"/>
 <polygon fill="black" stroke="black" stroke-width="5" points="1406.48,-712.27 1395.69,-713.94 1404.24,-720.73 1406.48,-712.27"/>
 </a>
@@ -652,7 +652,7 @@
 <!-- Short Input PRFS&#45;&gt;SB&#45;QCOM -->
 <g id="edge22" class="edge">
 <title>Short Input PRFS&#45;&gt;SB&#45;QCOM</title>
-<g id="a_edge22"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="E Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
+<g id="a_edge22"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
 <path fill="none" stroke="black" stroke-width="5" d="M1640.59,-466.79C1665.6,-451.34 1700.98,-425.6 1721,-393.75 1742.51,-359.53 1740.64,-343.62 1734,-303.75 1733.88,-303.01 1733.74,-302.26 1733.59,-301.5"/>
 <polygon fill="black" stroke="black" stroke-width="5" points="1737.8,-300.32 1730.85,-291.9 1729.38,-302.72 1737.8,-300.32"/>
 </a>
@@ -674,7 +674,7 @@
 <!-- Short Input PRFS&#45;&gt;Quanum Pseudo&#45;encryption -->
 <g id="edge23" class="edge">
 <title>Short Input PRFS&#45;&gt;Quanum Pseudo&#45;encryption</title>
-<g id="a_edge23"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="E Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
+<g id="a_edge23"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
 <path fill="none" stroke="black" stroke-width="5" d="M1604.59,-465.64C1596.44,-449.01 1581.7,-424.45 1561,-411.75 1555.27,-408.23 1492.56,-398.71 1434.51,-390.48"/>
 <polygon fill="black" stroke="black" stroke-width="5" points="1435.39,-386.18 1424.88,-389.12 1434.17,-394.85 1435.39,-386.18"/>
 </a>
@@ -993,7 +993,7 @@
 <!-- Quanum Pseudo&#45;encryption&#45;&gt;Quantum Garbled Circuits -->
 <g id="edge82" class="edge">
 <title>Quanum Pseudo&#45;encryption&#45;&gt;Quantum Garbled Circuits</title>
-<g id="a_edge82"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="E Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
+<g id="a_edge82"><a xlink:href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" xlink:title="Ananth, &#160;Gulati, Qian and Yuen.&#10; Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.&#10; TCC&#39;22. ">
 <path fill="none" stroke="black" stroke-width="5" d="M1334,-357.72C1334,-342.82 1334,-320.73 1334,-302.3"/>
 <polygon fill="black" stroke="black" stroke-width="5" points="1338.38,-302.33 1334,-292.33 1329.63,-302.33 1338.38,-302.33"/>
 </a>
@@ -1107,8 +1107,8 @@
 <g id="node40" class="node">
 <title>⊥&#45;PRG</title>
 <g id="a_node40"><a xlink:title="⊥&#45;PRG (a quantum PRG with a recognizable abort)">
-<ellipse fill="none" stroke="black" cx="1483" cy="-866.25" rx="39.11" ry="18"/>
-<text text-anchor="middle" x="1483" y="-861.58" font-family="Times,serif" font-size="14.00">⊥&#45;PRG</text>
+<ellipse fill="none" stroke="black" cx="1483" cy="-866.25" rx="39.07" ry="18"/>
+<text text-anchor="middle" x="1483" y="-861.2" font-family="Times,serif" font-size="14.00">⊥&#45;PRG</text>
 </a>
 </g>
 </g>
@@ -1476,7 +1476,7 @@
 <title>⊥&#45;PRF</title>
 <g id="a_node43"><a xlink:title="⊥&#45;PRF (a quantum PRF with a recognizable abort)">
 <ellipse fill="none" stroke="black" cx="1616" cy="-783" rx="37.53" ry="18"/>
-<text text-anchor="middle" x="1616" y="-778.33" font-family="Times,serif" font-size="14.00">⊥&#45;PRF</text>
+<text text-anchor="middle" x="1616" y="-777.95" font-family="Times,serif" font-size="14.00">⊥&#45;PRF</text>
 </a>
 </g>
 </g>

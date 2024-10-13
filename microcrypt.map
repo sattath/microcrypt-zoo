@@ -31,7 +31,7 @@
  CRYPTO&#39;20. " alt="" coords="1783,37,1884,67,1943,88,2001,113,2060,145,2118,180,2212,245,2209,251,2114,185,2057,151,1999,119,1941,94,1882,73,1782,43"/>
 <area shape="rect" id="edge6-label" href="https://doi.org/10.1007/978-3-030-56880-1_15" title="BS20b" alt="" coords="2086,133,2123,148"/>
 <area shape="poly" id="node8" title="Short Output Pseduorandom Function&#45;Like States. The output state needs to have Theta(log(n)) qubits." alt="" coords="1988,140,1983,133,1967,126,1942,121,1912,118,1877,116,1843,118,1812,121,1788,126,1772,133,1767,140,1772,148,1788,154,1812,160,1843,163,1877,164,1912,163,1942,160,1967,154,1983,148"/>
-<area shape="poly" id="edge7" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="E Ananth, &#160;Gulati, Qian and Yuen.
+<area shape="poly" id="edge7" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
  TCC&#39;22. " alt="" coords="1769,47,1835,100,1831,106,1765,52"/>
 <area shape="rect" id="edge7-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1819,77,1873,92"/>
@@ -93,7 +93,7 @@
  IACR eprint, 2023. " alt="" coords="1256,639,1169,668,1101,698,1099,692,1166,662,1254,633"/>
 <area shape="rect" id="edge25-label" href="https://eprint.iacr.org/2023/877" title="BGH+23" alt="" coords="1168,665,1219,680"/>
 <area shape="poly" id="node21" title="Selective CPA Symmetric Encryption with Quantum Ciphers" alt="" coords="1649,728,1647,721,1640,714,1630,709,1617,706,1603,704,1588,706,1575,709,1565,714,1558,721,1556,728,1558,736,1565,742,1575,748,1588,751,1603,752,1617,751,1630,748,1640,742,1647,736"/>
-<area shape="poly" id="edge26" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="E Ananth, &#160;Gulati, Qian and Yuen.
+<area shape="poly" id="edge26" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
  TCC&#39;22. " alt="" coords="1406,628,1508,645,1548,654,1571,663,1589,683,1584,687,1567,668,1547,660,1507,652,1405,634"/>
 <area shape="rect" id="edge26-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1582,665,1636,680"/>
@@ -118,7 +118,7 @@
  Pseudorandomness with Proof of Destruction and Applications.
  IACR eprint, 2023. " alt="" coords="1057,526,1085,552,1104,575,1098,579,1080,557,1052,531"/>
 <area shape="rect" id="edge31-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="1095,554,1141,569"/>
-<area shape="poly" id="edge34" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="E Ananth, &#160;Gulati, Qian and Yuen.
+<area shape="poly" id="edge34" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
  TCC&#39;22. " alt="" coords="2332,298,2355,311,2373,330,2382,347,2385,365,2382,401,2369,436,2352,467,2346,464,2363,433,2376,400,2379,365,2375,349,2368,334,2351,317,2329,304"/>
 <area shape="rect" id="edge34-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="2383,388,2437,403"/>
@@ -127,7 +127,7 @@
  Pseudorandom Strings from Pseudorandom Quantum States.
  IACR eprint, 2023. " alt="" coords="2259,309,2259,349,2253,349,2253,309"/>
 <area shape="rect" id="edge33-label" href="https://eprint.iacr.org/2023/904" title="ALY23" alt="" coords="2256,332,2296,347"/>
-<area shape="poly" id="edge35" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="E Ananth, &#160;Gulati, Qian and Yuen.
+<area shape="poly" id="edge35" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
  TCC&#39;22. " alt="" coords="1914,161,1978,198,2055,233,2104,249,2154,261,2152,268,2102,255,2053,239,1975,204,1910,167"/>
 <area shape="rect" id="edge35-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="2054,205,2108,220"/>
@@ -137,19 +137,19 @@
  IACR eprint, 2023. " alt="" coords="1888,163,1912,238,1906,240,1881,165"/>
 <area shape="rect" id="edge36-label" href="https://eprint.iacr.org/2023/904" title="ALY23" alt="" coords="1907,205,1947,220"/>
 <area shape="poly" id="node28" title="Pseduo&#45;encryption with Classical Ciphers" alt="" coords="1887,728,1881,721,1866,714,1843,709,1813,706,1780,704,1747,706,1717,709,1694,714,1679,721,1673,728,1679,736,1694,742,1717,748,1747,751,1780,752,1813,751,1843,748,1866,742,1881,736"/>
-<area shape="poly" id="edge37" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="E Ananth, &#160;Gulati, Qian and Yuen.
+<area shape="poly" id="edge37" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
  TCC&#39;22. " alt="" coords="1839,166,1769,210,1732,239,1697,272,1670,307,1652,343,1648,362,1648,380,1653,399,1661,417,1686,442,1725,464,1829,503,1932,543,1973,565,1999,592,2007,613,2005,633,1996,650,1979,666,1934,691,1880,709,1878,703,1931,685,1975,661,1990,646,1999,631,2000,614,1993,595,1969,571,1930,549,1826,509,1722,470,1682,447,1656,421,1646,401,1642,381,1642,361,1646,341,1664,303,1692,267,1727,234,1765,205,1835,160"/>
 <area shape="rect" id="edge37-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1706,443,1760,458"/>
 <area shape="poly" id="edge58" title="Trivial." alt="" coords="1311,237,1314,338,1314,508,1318,572,1311,572,1307,508,1307,339,1305,237"/>
 <area shape="poly" id="edge21" title="Trivial." alt="" coords="2120,995,2101,970,2095,943,2096,917,2102,917,2102,943,2107,967,2126,991"/>
 <area shape="poly" id="node18" title="Computationally Hiding Statictically Binding Quantum Bit Commitments" alt="" coords="2373,1304,2369,1297,2359,1290,2343,1285,2323,1282,2301,1280,2279,1282,2259,1285,2244,1290,2234,1297,2230,1304,2234,1312,2244,1318,2259,1324,2279,1327,2301,1328,2323,1327,2343,1324,2359,1318,2369,1312"/>
-<area shape="poly" id="edge22" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="E Ananth, &#160;Gulati, Qian and Yuen.
+<area shape="poly" id="edge22" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
  TCC&#39;22. " alt="" coords="2195,1036,2251,1077,2279,1104,2303,1135,2319,1166,2326,1193,2326,1222,2321,1257,2320,1260,2314,1259,2314,1256,2319,1221,2319,1194,2313,1168,2297,1138,2274,1108,2247,1082,2191,1042"/>
 <area shape="rect" id="edge22-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="2321,1153,2375,1168"/>
 <area shape="poly" id="node19" title="Pseduo&#45;encryption With Quantum Ciphers" alt="" coords="1937,1160,1930,1153,1908,1146,1874,1141,1831,1138,1784,1136,1737,1138,1694,1141,1660,1146,1638,1153,1631,1160,1638,1168,1660,1174,1694,1180,1737,1183,1784,1184,1831,1183,1874,1180,1908,1174,1930,1168"/>
-<area shape="poly" id="edge23" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="E Ananth, &#160;Gulati, Qian and Yuen.
+<area shape="poly" id="edge23" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
  TCC&#39;22. " alt="" coords="2148,1042,2125,1080,2108,1099,2088,1115,2029,1127,1919,1144,1918,1137,2028,1121,2085,1109,2104,1095,2119,1076,2142,1039"/>
 <area shape="rect" id="edge23-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="2131,1081,2185,1096"/>
@@ -211,7 +211,7 @@
  IACR eprint, 2022. " alt="" coords="1894,1174,1944,1181,1991,1182,2053,1182,2112,1188,2136,1195,2153,1206,2160,1219,2160,1231,2154,1257,2157,1294,2156,1311,2147,1330,2110,1373,2066,1410,2017,1441,1966,1465,1865,1501,1781,1520,1779,1513,1863,1494,1963,1459,2014,1435,2062,1405,2105,1369,2141,1327,2149,1310,2150,1295,2147,1256,2153,1230,2154,1220,2148,1211,2133,1201,2111,1194,2053,1189,1991,1189,1944,1188,1893,1181"/>
 <area shape="rect" id="edge81-label" href="https://eprint.iacr.org/2022/1336" title="MY22b" alt="" coords="2123,1352,2166,1367"/>
 <area shape="poly" id="node48" title="Quantum Garbled Circuits for P/poly" alt="" coords="1930,1304,1923,1297,1902,1290,1870,1285,1829,1282,1784,1280,1739,1282,1698,1285,1666,1290,1645,1297,1638,1304,1645,1312,1666,1318,1698,1324,1739,1327,1784,1328,1829,1327,1870,1324,1902,1318,1923,1312"/>
-<area shape="poly" id="edge82" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="E Ananth, &#160;Gulati, Qian and Yuen.
+<area shape="poly" id="edge82" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
  TCC&#39;22. " alt="" coords="1787,1184,1787,1258,1781,1258,1781,1184"/>
 <area shape="rect" id="edge82-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1784,1225,1838,1240"/>
@@ -236,7 +236,7 @@
  Signatures From Pseudorandom States via ⊥&#45;PRFs.
  arXiv, 2024. " alt="" coords="2209,412,2185,426,2166,445,2162,462,2155,460,2160,442,2181,420,2206,406"/>
 <area shape="rect" id="edge51-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="2163,443,2213,458"/>
-<area shape="poly" id="node40" title="⊥&#45;PRG (a quantum PRG with a recognizable abort)" alt="" coords="2035,506,2032,499,2025,492,2013,487,1999,484,1983,482,1967,484,1952,487,1940,492,1933,499,1931,506,1933,514,1940,520,1952,526,1967,529,1983,530,1999,529,2013,526,2025,520,2032,514"/>
+<area shape="poly" id="node40" title="⊥&#45;PRG (a quantum PRG with a recognizable abort)" alt="" coords="2035,506,2032,499,2025,492,2013,487,1999,484,1983,482,1967,484,1952,487,1941,492,1933,499,1931,506,1933,514,1941,520,1952,526,1967,529,1983,530,1999,529,2013,526,2025,520,2032,514"/>
 <area shape="poly" id="edge52" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
  Signatures From Pseudorandom States via ⊥&#45;PRFs.
  arXiv, 2024. " alt="" coords="2214,415,2187,423,2146,427,2092,428,2040,433,2020,438,2006,446,1993,464,1987,460,2001,441,2017,432,2039,427,2092,422,2145,420,2186,416,2212,409"/>
