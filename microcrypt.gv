@@ -7,15 +7,15 @@ strict digraph microcrypt {
 
     ################## PRIMITIVES ##################
     OWF [tooltip="One-Way Function"];
-    PRS [tooltip="Pseduorandom States with superlogarithmic outputs size"];
+    PRS [tooltip="Pseudorandom States with superlogarithmic outputs size"];
     "1PRS" [tooltip="Single-copy PRS, with m>(1+epsilon)n, for some fixed epsilon, for key-length n and output size m."];
-    PRSPD [tooltip="Pseduorandom States with Proofs of Destruction"];
-    PRSNPD [tooltip="Pseduorandom States with Nice Proofs of Destruction"];
+    PRSPD [tooltip="Pseudorandom States with Proofs of Destruction"];
+    PRSNPD [tooltip="Pseudorandom States with Nice Proofs of Destruction"];
     "Short Input PRFS" [tooltip="Short Input Pseudorandom Function-like States with selective security. The input size needs to be Theta(log(n)) qubits."];
     "Long Input PRFS" [tooltip="Long Input Pseudorandom Function-like States. The input size needs to be omega(log(n)) qubits."];
     PRFSPD [tooltip="Long Input Pseudorandom Function-like States with Proofs of Destruction"];
-    "Short Output PRS" [tooltip="Short Output Pseduorandom States. The output state needs to have c*log(n)) qubits for some large enough c."];
-    "Short Output PRFS" [tooltip="Short Output Pseduorandom Function-Like States. The output state needs to have Theta(log(n)) qubits."];
+    "Short Output PRS" [tooltip="Short Output Pseudorandom States. The output state needs to have c*log(n) qubits for some large enough c."];
+    "Short Output PRFS" [tooltip="Short Output Pseudorandom Function-Like States. The output state needs to have Theta(log(n)) qubits."];
     OWSG [tooltip="(Mixed) One-way States Generator"];
     "IV-OWSG" [tooltip="(Mixed) Inefficiently Verifiable One-way States Generator"];
     "Pure OWSG" [tooltip="Pure One-way States Generator"];
@@ -26,35 +26,35 @@ strict digraph microcrypt {
     "PD-PRG" [tooltip="Pseudodeterministic Quantum Pseudorandom Generator"];
     "PD-PRF" [tooltip="Pseudodeterministic Quantum Pseudorandom Function"];
     "PD-OWF" [tooltip="Pseudodeterministic Quantum One-Way Function"];
-    "Non-adaptive PRU" [tooltip="Non-adaptive Long Input Pseduorandom Unitaries"];
+    "Non-adaptive PRU" [tooltip="Non-adaptive Long Input Pseudorandom Unitaries"];
     "⊥-PRG" [tooltip="⊥-PRG (a quantum PRG with a recognizable abort)"];
     "⊥-PRF" [tooltip="⊥-PRF (a quantum PRF with a recognizable abort)"];
     OWPuzzle [tooltip="(Inefficiently Verifiable) One-Way Puzzle"];
     "EV-OWPuzzle" [tooltip="Efficiently Verifiable One-Way Puzzle"];
-    "Private Quantunm Coins" [tooltip="Private Quantum Coins"];
-    "Private Quantunm Money" [tooltip="Private Quantum Money"];
+    "Private Quantum Coins" [tooltip="Private Quantum Coins"];
+    "Private Quantum Money" [tooltip="Private Quantum Money"];
 
-    "Almost Public Quantunm Coins" [tooltip="Almost Public Quantum Coins"];
+    "Almost Public Quantum Coins" [tooltip="Almost Public Quantum Coins"];
     "Classically Verifiable Private Quantum Coins" [tooltip="Classically Verifiable Private Quantum Coins"];
     "Tamper Proof QPKE" [tooltip="Tamper Proof CPA PKE with quantum public keys and classical ciphers"];
-    "CCA1-EO-qPKE" [tooltip="Reusable CCA1 Encryption Scheme with Quantum Pulbic-Keys and Classical Ciphers"];
-    "CCA1-qPKE with quantum ciphers" [tooltip="Non-reusable CCA1 Encryption Scheme with Quantum Pulbic-Keys and Quantum Ciphers"];
-    "SB-QCOM" [tooltip="Computationally Hiding Statictically Binding Quantum Bit Commitments"];
-    "NI-SB-QCOM" [tooltip="Non-Interactive Computationally Hiding Statictically Binding Quantum Bit Commitments"];
+    "CCA1-EO-qPKE" [tooltip="Reusable CCA1 Encryption Scheme with Quantum Public-Keys and Classical Ciphers"];
+    "CCA1-qPKE with quantum ciphers" [tooltip="Non-reusable CCA1 Encryption Scheme with Quantum Public-Keys and Quantum Ciphers"];
+    "SB-QCOM" [tooltip="Computationally Hiding Statistically Binding Quantum Bit Commitments"];
+    "NI-SB-QCOM" [tooltip="Non-Interactive Computationally Hiding Statistically Binding Quantum Bit Commitments"];
     "NI-SH-QCOM" [tooltip="Non-Interactive Statistically Hiding Computationally Binding Quantum Bit Commitments"];
     "OTS with Quantum Public Keys" [tooltip="One-time Signatures with Quantum Public Keys"];
     QMPC [tooltip="Quantum MPC for P/poly with Dishonest Majority"];
-    "Quanum Pseudo-encryption" [tooltip="Pseduo-encryption With Quantum Ciphers"];
-    "Pseudo-encryption" [tooltip="Pseduo-encryption with Classical Ciphers"];
+    "Quantum Pseudo-encryption" [tooltip="Pseudo-encryption With Quantum Ciphers"];
+    "Pseudo-encryption" [tooltip="Pseudo-encryption with Classical Ciphers"];
     QSKE [tooltip="Selective CPA Symmetric Encryption with Quantum Ciphers"];
     "Quantum Garbled Circuits" [tooltip="Quantum Garbled Circuits for P/poly"];
-    "MAC with Quantum Tags" [tooltip="Reusable (Non-CMA) Length Restriged MAC with Quantum Tags"];
+    "MAC with Quantum Tags" [tooltip="Reusable (Non-CMA) Length Restricted MAC with Quantum Tags"];
     "CCA2 Sym. Encryption w. Classical Ciphers" [tooltip="CCA2 Symmetric Encryption with Classical Ciphers"];
     MAC [tooltip="Length Restricted CMA MAC with Classical Tags"];
     "Imperfect MAC" [tooltip="Imperfect CMA MAC with Classical Tags"];
-    "SB-COM" [tooltip="Statictically Binding Computationally Hiding Bit Commitments with Classical Communication"];
+    "SB-COM" [tooltip="Statistically Binding Computationally Hiding Bit Commitments with Classical Communication"];
     "Garbled Circuits" [tooltip="Classical Garbled Circuits for P/poly"];
-    OTS [tooltip="One-time Signature with a Classical Pulbic-Key"];
+    OTS [tooltip="One-time Signature with a Classical Public-Key"];
     "NA-CPA Sym. Encryption w. Classical Ciphers" [tooltip="Non-adaptive CPA Symmetric Encryption with Classical Ciphers"];
     SIG [tooltip="Chosen Plaintext Attack Secure Digital Signature with imperfect completeness"];
 
@@ -77,7 +77,7 @@ strict digraph microcrypt {
     "SIG w. Quantum Public Keys" -> "OTS with Quantum Public Keys"; // TRV
 
     "PD-PRF" -> "PD-PRG"; // TRV
-    "Private Quantunm Coins" -> "Private Quantunm Money"; // TRV
+    "Private Quantum Coins" -> "Private Quantum Money"; // TRV
     SIG -> OTS; // TRV
 
 
@@ -85,10 +85,10 @@ strict digraph microcrypt {
     PRFSPD -> PRSPD; // TRV
     QEFID -> nuQEFID; // TRV
     QEFID -> EFI; // TRV
-    "Classically Verifiable Private Quantum Coins" -> "Private Quantunm Coins"; // TRV
+    "Classically Verifiable Private Quantum Coins" -> "Private Quantum Coins"; // TRV
     MAC -> "MAC with Quantum Tags"; // TRV
     MAC -> "Imperfect MAC"; // TRV
-    "Pseudo-encryption" -> "Quanum Pseudo-encryption"; // TRV
+    "Pseudo-encryption" -> "Quantum Pseudo-encryption"; // TRV
     "CCA2 Sym. Encryption w. Classical Ciphers" -> QSKE; // TRV
     "Garbled Circuits" -> "Quantum Garbled Circuits"; // TRV
     OTS -> "OTS with Quantum Public Keys"; // TRV
@@ -103,8 +103,8 @@ strict digraph microcrypt {
     "Short Output PRFS" -> "Short Output PRS"; // AGQY22
     "Short Output PRS" -> "SB-COM"; // AGQY22
     "Short Input PRFS" -> "SB-QCOM"; // AGQY22
-    "Short Input PRFS" -> "Quanum Pseudo-encryption"; // AGQY22
-    "Quanum Pseudo-encryption" -> "Quantum Garbled Circuits"; // AGQY22
+    "Short Input PRFS" -> "Quantum Pseudo-encryption"; // AGQY22
+    "Quantum Pseudo-encryption" -> "Quantum Garbled Circuits"; // AGQY22
     "Long Input PRFS" -> QSKE; // AGQY22
     "Short Output PRFS" -> "Pseudo-encryption"; // AGQY22
     
@@ -147,7 +147,7 @@ strict digraph microcrypt {
 
     
     edge [label="BS20" tooltip="Behera and Sattath.\n Almost Public Coins.\n QIP'21. " URL="https://arxiv.org/abs/2002.12438"]
-    "Private Quantunm Coins" -> "Almost Public Quantunm Coins"; // BS20
+    "Private Quantum Coins" -> "Almost Public Quantum Coins"; // BS20
 
     edge [label="BS20b" tooltip="Brakerski and Shmueli.\n Scalable Pseudorandom Quantum States.\n CRYPTO'20. " URL="https://doi.org/10.1007/978-3-030-56880-1_15"]
     OWF -> "Short Output PRS"; // BS20b
@@ -165,7 +165,7 @@ strict digraph microcrypt {
     
     edge [label="JLS18" tooltip="Ji, Liu and Song.\n Pseudorandom quantum states.\n CRYPTO18. " URL="https://link.springer.com/chapter/10.1007/978-3-319-96878-0_5"]
     OWF -> PRS; // JLS18
-    PRS -> "Private Quantunm Coins"; // JLS18
+    PRS -> "Private Quantum Coins"; // JLS18
 
     edge [label="KT23" tooltip="Khurana and Tomer.\n Commitments from Quantum One-Wayness.\n arXiv, 2024. " URL="https://arxiv.org/abs/2310.11526"]
     "Pure OWSG" -> OWPuzzle; // KT23
@@ -181,9 +181,9 @@ strict digraph microcrypt {
     "1PRS" -> "NI-SB-QCOM"; // MY22a
 
     edge [label="MY22b" tooltip="Morimae and Yamakawa.\n One-Wayness in Quantum Cryptography.\n IACR eprint, 2022. " URL="https://eprint.iacr.org/2022/1336"]
-    "Private Quantunm Coins" -> "Pure OWSG"; // MY22b
-    "Quanum Pseudo-encryption" -> OWSG; // MY22b
-    "Quanum Pseudo-encryption" -> EFI; // MY22b
+    "Private Quantum Coins" -> "Pure OWSG"; // MY22b
+    "Quantum Pseudo-encryption" -> OWSG; // MY22b
+    "Quantum Pseudo-encryption" -> EFI; // MY22b
     OWSG -> "OTS with Quantum Public Keys"; // MY22b
     "OTS with Quantum Public Keys" -> OWSG; // MY22b
 
@@ -192,8 +192,8 @@ strict digraph microcrypt {
 
     edge [label="CGG24" tooltip="Chung, Goldin and Gray.\n On Central Primitives for Quantum Cryptography with Classical Communication.\n CRYPTO'24." URL="https://doi.org/10.1007/978-3-031-68394-7_8"]
     "EV-OWPuzzle" -> "OWSG"; // CGG24
-    OWPuzzle->nuQEFID; // CGG24. Corollay 14
-    "PD-PRG" -> "EV-OWPuzzle"; // CGG24. Theroem 17
+    OWPuzzle->nuQEFID; // CGG24. Corollary 14
+    "PD-PRG" -> "EV-OWPuzzle"; // CGG24. Theorem 17
 
     edge [label="BJ24" tooltip="Batra and Jain.\n Commitments are equivalent to statistically-verifiable one-way state generators.\n arXiv, 2024. " URL="https://arxiv.org/abs/2404.03220"]    
     "IV-OWSG" -> EFI; // BJ24
@@ -230,7 +230,7 @@ strict digraph microcrypt {
 
     edge [label="BMM+24" tooltip="Behera,  Malavolta, Morimae, Mour and Yamakawa.\n A New World in the Depths of Microcrypt: Separating OWSGs and Quantum Money from QEFID.\n arXiv, 2024." URL="https://arxiv.org/abs/2410.03453"]
     QEFID->OWSG; // BMM+24 Thm 1.1
-    QEFID->"Private Quantunm Money"; // BMM+24 Thm 1.5
+    QEFID->"Private Quantum Money"; // BMM+24 Thm 1.5
 
     // To make sure that the nodes are from strongest to weakest, we add an inisible edge for each separation (if the other direction is not known)
     edge[style=invis constraint=true]
@@ -238,6 +238,6 @@ strict digraph microcrypt {
     SIG->PRS;
     "Short Output PRS" -> PRS;
     OWSG -> QEFID; // BMM+24 Thm 1.1
-    "Private Quantunm Money" -> QEFID; // BMM+24 Thm 1.5
+    "Private Quantum Money" -> QEFID; // BMM+24 Thm 1.5
    
 }
