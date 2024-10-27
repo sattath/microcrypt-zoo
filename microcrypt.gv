@@ -232,12 +232,25 @@ strict digraph microcrypt {
     QEFID->OWSG; // BMM+24 Thm 1.1
     QEFID->"Private Quantum Money"; // BMM+24 Thm 1.5
 
+    edge [label="BCN24" tooltip="Bostanci, Chen, and Nehoran.\n Oracle Separation Between Quantum Commitments and Quantum One-wayness.\n arXiv, 2024." URL="https://eprint.iacr.org/2024/1568"]
+    "1PRS"->OWSG; // BCN24
+    OWPuzzle->OWSG; // BCN24
+
     // To make sure that the nodes are from strongest to weakest, we add an inisible edge for each separation (if the other direction is not known)
     edge[style=invis constraint=true]
     //Not included because such an edge exists: OWF->PRS;
     SIG->PRS;
     "Short Output PRS" -> PRS;
     OWSG -> QEFID; // BMM+24 Thm 1.1
+    "OTS with Quantum Public Keys" -> QEFID; // BMM+24 Thm 1.1
     "Private Quantum Money" -> QEFID; // BMM+24 Thm 1.5
+    OWSG -> "1PRS"; // BCN24
+    "OTS with Quantum Public Keys" -> "1PRS"; // BCN24
+    OWSG -> OWPuzzle; // BCN24
+    "OTS with Quantum Public Keys" -> OWPuzzle; // BCN24
+    EFI -> "NI-SB-QCOM"; // To put them on the same level
+    "NI-SB-QCOM" -> EFI; // To put them on the same level
+    "SB-QCOM" -> "NI-SH-QCOM"; // To put them on the same level
+    "NI-SH-QCOM" -> "SB-QCOM"; // To put them on the same level
    
 }
