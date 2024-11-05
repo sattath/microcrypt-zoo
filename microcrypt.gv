@@ -1,5 +1,5 @@
-//To generate the image files, run the following command:
-// 
+//To generate the image files, run the following command (which, works on Mac, but hopefully in other systems):
+// ./color_by_scc.sh
 
 
 strict digraph microcrypt {
