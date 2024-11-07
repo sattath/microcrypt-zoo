@@ -19,8 +19,12 @@ edge [label="Kre21" tooltip="Kretschmer.\n Quantum Pseudorandomness and Classica
 PRS->OWF ; 
 ```
 
-A separation is similar, follow the same template as in the source. If you prefer, you can also email me the result (my last name at bgu.ac.il). This repository is maintained by Or Sattath.
+A separation is similar, follow the same template as in the source (separation are at the bottom). If you prefer, you can also email me the result (my last name at bgu.ac.il). This repository is maintained by Or Sattath.
 
 Note that the nodes which are in the same strongly connected component are colored the same. This is done using the script color_by_scc.sh (which calls color_by_scc.gvpr). 
 
-
+There might be a problem when opening the html file locally, and the links won't work. This is due to some javascript security measures regareding working with local files. This can be handled by following the instructions [here](https://stackoverflow.com/a/3177718) or [here](https://simplelocalize.io/blog/posts/what-is-cors/#3-disable-browser-cors-checks). 
+For chrome on MacOS:
+```bash
+open /Applications/Google\ Chrome.app --args --user-data-dir="/var/tmp/chrome-dev-disabled-security" --disable-web-security --disable-site-isolation-trials
+```

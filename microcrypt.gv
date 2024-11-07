@@ -2,7 +2,7 @@
 // ./color_by_scc.sh
 
 
-strict digraph microcrypt {
+digraph microcrypt {
     edge [penwidth=5]
 
     ################## PRIMITIVES ##################
@@ -208,49 +208,34 @@ strict digraph microcrypt {
    
   
     //################################################# Separations.######################################
-    // Separations MUST appear at the end. The script color_by_scc.sh removes all the separation, in order to compute the strongly connected components. If it won't be at the very end, the script won't work correctly.
+    // Separation of the form B cannot be constructed from A should be added as A->B, even though the edge goes from B to A! This is a hack, so that edges would always go from top to bottom, and the strongly connected components would be correctly computed. The edge is flipped using the dir="back" attribute. Note that the graph is defined using "digraph" and not "strict digraph" since there are multiple edges between the same nodes, in the same direction (even though one apperes to be flipped). For example, JLS proved that OWF->PRS. And note that Kre21 adds another edge OWF->PRS (even though dir=back). 
 
-    // Separation of the form B cannot be constructed from A (A is separated from B) should be added as A->B;
-   
-    edge [constraint=false style=dashed color="red"]
+    edge [style=dashed color="red" dir="back"]
+
     edge [label="Kre21" tooltip="Kretschmer.\n Quantum Pseudorandomness and Classical Complexity.\n TQC21. " URL="https://drops.dagstuhl.de/opus/volltexte/2021/13997"]
-    PRS->OWF ;
+    OWF->PRS;
+    
 
     edge [label="BM24" tooltip="Bouaziz-Ermann and Muguruza.\n Quantum Pseudorandomness Cannot Be Shrunk In a Black-Box Way.\n IACR eprint, 2024. " URL="https://eprint.iacr.org/2024/291"]
-    PRS->"Short Output PRS";
+     "Short Output PRS"->PRS;
 
     edge [label="CCS24" tooltip="Chen, Coladangelo and Sattath.\n The power of a single Haar random state: constructing and separating quantum pseudorandomness.\n arXiv, 2024. " URL="https://arxiv.org/abs/2404.03295"]
-    "1PRS"->PRS;
+    PRS -> "1PRS";
 
     edge [label="CM24" tooltip="Coladangelo and Mutreja.\n On black-box separations of quantum digital signatures from pseudorandom states.\n arXiv, 2024. " URL="https://arxiv.org/abs/2402.08194"]
-    PRS->SIG;
+    SIG->PRS;
 
     edge [label="CGG24" tooltip="Chung, Goldin and Gray.\n On Central Primitives for Quantum Cryptography with Classical Communication.\n CRYPTO'24." URL="https://doi.org/10.1007/978-3-031-68394-7_8"]
-    OWPuzzle->"EV-OWPuzzle"; // CGG24 Theorem 20
+    "EV-OWPuzzle"->OWPuzzle; // CGG24 Theorem 20
 
     edge [label="BMM+24" tooltip="Behera,  Malavolta, Morimae, Mour and Yamakawa.\n A New World in the Depths of Microcrypt: Separating OWSGs and Quantum Money from QEFID.\n arXiv, 2024." URL="https://arxiv.org/abs/2410.03453"]
-    QEFID->OWSG; // BMM+24 Thm 1.1
-    QEFID->"Private Quantum Money"; // BMM+24 Thm 1.5
+    OWSG->QEFID; // BMM+24 Thm 1.1
+    "Private Quantum Money"->QEFID; // BMM+24 Thm 1.5
 
     edge [label="BCN24" tooltip="Bostanci, Chen, and Nehoran.\n Oracle Separation Between Quantum Commitments and Quantum One-wayness.\n arXiv, 2024." URL="https://eprint.iacr.org/2024/1568"]
-    "1PRS"->OWSG; // BCN24
-    OWPuzzle->OWSG; // BCN24
+    OWSG->"1PRS"; // BCN24
+    OWSG->OWPuzzle; // BCN24
 
-    // To make sure that the nodes are from strongest to weakest, we add an inisible edge for each separation (if the other direction is not known)
-    edge[style=invis constraint=true]
-    //Not included because such an edge exists: OWF->PRS;
-    SIG->PRS;
-    "Short Output PRS" -> PRS;
-    OWSG -> QEFID; // BMM+24 Thm 1.1
-    "OTS with Quantum Public Keys" -> QEFID; // BMM+24 Thm 1.1
-    "Private Quantum Money" -> QEFID; // BMM+24 Thm 1.5
-    OWSG -> "1PRS"; // BCN24
-    "OTS with Quantum Public Keys" -> "1PRS"; // BCN24
-    OWSG -> OWPuzzle; // BCN24
-    "OTS with Quantum Public Keys" -> OWPuzzle; // BCN24
-    EFI -> "NI-SB-QCOM"; // To put them on the same level
-    "NI-SB-QCOM" -> EFI; // To put them on the same level
-    "SB-QCOM" -> "NI-SH-QCOM"; // To put them on the same level
-    "NI-SH-QCOM" -> "SB-QCOM"; // To put them on the same level
+    
    
 }
