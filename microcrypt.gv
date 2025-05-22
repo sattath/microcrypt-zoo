@@ -89,6 +89,7 @@ digraph microcrypt {
     MAC -> "MAC with Quantum Tags"; // TRV
     MAC -> "Imperfect MAC"; // TRV
     "CCA1-EO-qPKE" -> "Quantum Pseudo-encryption"; // TRV
+    "CCA1-qPKE with quantum ciphers" -> "Quantum Pseudo-encryption"; // TRV
     QSKE -> "Quantum Pseudo-encryption"; // TRV
     "Pseudo-encryption" -> "Quantum Pseudo-encryption"; // TRV
     "CCA2 Sym. Encryption w. Classical Ciphers" -> QSKE; // TRV
