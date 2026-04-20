@@ -23,6 +23,10 @@ A separation is similar, follow the same template as in the source (separation a
 
 Note that the nodes which are in the same strongly connected component are colored the same. This is done using the script color_by_scc.sh (which calls color_by_scc.gvpr). 
 
+## Other contributors
+- [Barak Nehoran](https://github.com/bnehoran)
+- [Samuel Bouaziz](https://github.com/samuelbouaziz)
+
 ## Issues
 There might be a problem when opening the html file locally, and the links will not work. This is due to some javascript security measures regarding working with local files. This can be handled by following the instructions [here](https://stackoverflow.com/a/3177718) or [here](https://simplelocalize.io/blog/posts/what-is-cors/#3-disable-browser-cors-checks). 
 For chrome on MacOS:
