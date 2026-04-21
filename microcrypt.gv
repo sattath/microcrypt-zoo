@@ -217,8 +217,8 @@ digraph microcrypt {
     EFI -> "IV-OWSG"; // BJ24
 
     edge [label="KT25" tooltip="Khurana, Tomer.\n Founding Quantum Cryptography on Quantum Advantage.\n STOC'25." URL="https://arxiv.org/pdf/2410.14792"]
-    OWSG->"State puzzles";
-    "State puzzles"->OWSG;
+    "State puzzles"->OWPuzzle;
+    OWPuzzle->"State puzzles";
 
 
     edge [label="MH25" tooltip="Ma and Huang.\n How To Construct Random Unitaries.\n STOC'25" URL="https://arxiv.org/abs/2410.10116"]
