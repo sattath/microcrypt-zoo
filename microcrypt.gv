@@ -163,7 +163,7 @@ digraph microcrypt {
     QMPC -> EFI; // BCQ23
     EFI -> QMPC; // BCQ23
 
-    edge [label="CCC+25" tooltip="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li \n A Meta-Complexity Characterization of Minimal Quantum Cryptography\n IACR eprint 2025 " URL="https://eprint.iacr.org/2025/642"]
+    edge [label="CCC+25" tooltip="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li \n A Meta-Complexity Characterization of Minimal Quantum Cryptography\n IACR eprint 2025 " URL="https://eccc.weizmann.ac.il/report/2025/221"]
     EFI -> nu1PRS; // CCC+25
     nu1PRS -> EFI; // CCC+25
 

@@ -1488,12 +1488,12 @@
 <!-- EFI&#45;&gt;nu1PRS -->
 <g id="edge47" class="edge">
 <title>EFI&#45;&gt;nu1PRS</title>
-<g id="a_edge47"><a xlink:href="https://eprint.iacr.org/2025/642" xlink:title="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li &#10; A Meta&#45;Complexity Characterization of Minimal Quantum Cryptography&#10; IACR eprint 2025 ">
+<g id="a_edge47"><a xlink:href="https://eccc.weizmann.ac.il/report/2025/221" xlink:title="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li &#10; A Meta&#45;Complexity Characterization of Minimal Quantum Cryptography&#10; IACR eprint 2025 ">
 <path fill="none" stroke="black" stroke-width="5" d="M887.43,-83.81C882.95,-74.24 877.16,-61.87 871.85,-50.5"/>
 <polygon fill="black" stroke="black" stroke-width="5" points="875.9,-48.83 867.7,-41.63 867.97,-52.54 875.9,-48.83"/>
 </a>
 </g>
-<g id="a_edge47&#45;label"><a xlink:href="https://eprint.iacr.org/2025/642" xlink:title="CCC+25">
+<g id="a_edge47&#45;label"><a xlink:href="https://eccc.weizmann.ac.il/report/2025/221" xlink:title="CCC+25">
 <text xml:space="preserve" text-anchor="middle" x="896.77" y="-55.75" font-family="Times,serif" font-size="10.00">CCC+25</text>
 </a>
 </g>
@@ -1545,12 +1545,12 @@
 <!-- nu1PRS&#45;&gt;EFI -->
 <g id="edge52" class="edge">
 <title>nu1PRS&#45;&gt;EFI</title>
-<g id="a_edge52"><a xlink:href="https://eprint.iacr.org/2025/642" xlink:title="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li &#10; A Meta&#45;Complexity Characterization of Minimal Quantum Cryptography&#10; IACR eprint 2025 ">
+<g id="a_edge52"><a xlink:href="https://eccc.weizmann.ac.il/report/2025/221" xlink:title="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li &#10; A Meta&#45;Complexity Characterization of Minimal Quantum Cryptography&#10; IACR eprint 2025 ">
 <path fill="none" stroke="black" stroke-width="5" d="M840.88,-34.64C833.49,-43.7 827.55,-55.27 833.37,-65.25 838.55,-74.16 846.95,-80.98 855.89,-86.13"/>
 <polygon fill="black" stroke="black" stroke-width="5" points="853.97,-90.06 864.88,-90.41 857.74,-82.16 853.97,-90.06"/>
 </a>
 </g>
-<g id="a_edge52&#45;label"><a xlink:href="https://eprint.iacr.org/2025/642" xlink:title="CCC+25">
+<g id="a_edge52&#45;label"><a xlink:href="https://eccc.weizmann.ac.il/report/2025/221" xlink:title="CCC+25">
 <text xml:space="preserve" text-anchor="middle" x="851.74" y="-55.75" font-family="Times,serif" font-size="10.00">CCC+25</text>
 </a>
 </g>

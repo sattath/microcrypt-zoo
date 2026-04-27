@@ -324,10 +324,10 @@
  arXiv, 2024. " alt="" coords="1170,1934,1126,1953,1082,1975,1043,2001,1041,1995,1078,1969,1123,1947,1163,1936"/>
 <area shape="rect" id="edge46-label" href="https://arxiv.org/abs/2404.03220" title="BJ24" alt="" coords="1080,1972,1108,1987"/>
 <area shape="poly" id="node37" title="Non&#45;Uniform single&#45;copy PRS, with m&gt;n, for key&#45;length n and output size m" alt="" coords="1203,2035,1200,2027,1193,2021,1180,2015,1165,2012,1148,2011,1131,2012,1116,2015,1104,2021,1096,2027,1093,2035,1096,2042,1104,2049,1116,2054,1131,2057,1148,2059,1165,2057,1180,2054,1193,2049,1200,2042"/>
-<area shape="poly" id="edge47" href="https://eprint.iacr.org/2025/642" title="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li 
+<area shape="poly" id="edge47" href="https://eccc.weizmann.ac.il/report/2025/221" title="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li 
  A Meta&#45;Complexity Characterization of Minimal Quantum Cryptography
  IACR eprint 2025 " alt="" coords="1191,1945,1170,1994,1166,1989,1186,1949"/>
-<area shape="rect" id="edge47-label" href="https://eprint.iacr.org/2025/642" title="CCC+25" alt="" coords="1177,1972,1226,1987"/>
+<area shape="rect" id="edge47-label" href="https://eccc.weizmann.ac.il/report/2025/221" title="CCC+25" alt="" coords="1177,1972,1226,1987"/>
 <area shape="poly" id="node38" title="Quantum MPC for P/poly with Dishonest Majority" alt="" coords="1365,2035,1362,2027,1355,2021,1344,2015,1330,2012,1315,2011,1299,2012,1285,2015,1274,2021,1267,2027,1265,2035,1267,2042,1274,2049,1285,2054,1299,2057,1315,2059,1330,2057,1344,2054,1355,2049,1362,2042"/>
 <area shape="poly" id="edge49" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="Brakerski, Canetti, and Qian.
  On the computational hardness needed for quantum cryptography.
@@ -338,10 +338,10 @@
  Commitments from Quantum One&#45;Wayness.
  STOC&#39;24. " alt="" coords="998,1356,939,1405,873,1458,851,1484,841,1496,824,1507,786,1520,752,1525,721,1524,691,1520,631,1514,599,1518,562,1531,529,1554,524,1549,559,1525,597,1512,631,1507,692,1513,722,1517,752,1518,785,1514,821,1501,836,1491,846,1480,868,1453,935,1399,993,1360"/>
 <area shape="rect" id="edge45-label" href="https://arxiv.org/abs/2310.11526" title="KT24" alt="" coords="871,1472,903,1487"/>
-<area shape="poly" id="edge52" href="https://eprint.iacr.org/2025/642" title="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li 
+<area shape="poly" id="edge52" href="https://eccc.weizmann.ac.il/report/2025/221" title="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li 
  A Meta&#45;Complexity Characterization of Minimal Quantum Cryptography
  IACR eprint 2025 " alt="" coords="1124,2011,1112,1994,1110,1982,1114,1970,1127,1953,1143,1945,1150,1943,1132,1958,1119,1973,1117,1982,1118,1991,1129,2014"/>
-<area shape="rect" id="edge52-label" href="https://eprint.iacr.org/2025/642" title="CCC+25" alt="" coords="1116,1972,1165,1987"/>
+<area shape="rect" id="edge52-label" href="https://eccc.weizmann.ac.il/report/2025/221" title="CCC+25" alt="" coords="1116,1972,1165,1987"/>
 <area shape="poly" id="edge94" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="Brakerski, Canetti, and Qian.
  On the computational hardness needed for quantum cryptography.
  ITCS&#39;23. " alt="" coords="1290,2012,1233,1961,1236,1955,1296,2014"/>
