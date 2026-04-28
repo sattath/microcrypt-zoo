@@ -22,6 +22,7 @@ digraph microcrypt {
     EFI [tooltip="Efficiently samplable, statistically Far but computationally Indistinguishable pairs of mixed quantum states"];
     QEFID [tooltip="Quantum Efficiently samplable, statistically Far but computationally Indistinguishable Distributions"];
     nuQEFID [tooltip="Non-Uniform Quantum Efficiently samplable, statistically Far but computationally Indistinguishable Distributions"];
+    nu1PRS [tooltip="Non-Uniform single-copy PRS, with m>n, for key-length n and output size m"];
 
     "1/poly-QPRG" [tooltip="Quantum Pseudorandom Generator with 1/poly error"];
     "negl-QPRG" [tooltip="Quantum Pseudorandom Generator with negligible error"];
@@ -161,6 +162,10 @@ digraph microcrypt {
     EFI -> "SB-QCOM"; // BCQ23
     QMPC -> EFI; // BCQ23
     EFI -> QMPC; // BCQ23
+
+    edge [label="CCC+25" tooltip="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li \n A Meta-Complexity Characterization of Minimal Quantum Cryptography\n IACR eprint 2025 " URL="https://eccc.weizmann.ac.il/report/2025/221"]
+    EFI -> nu1PRS; // CCC+25
+    nu1PRS -> EFI; // CCC+25
 
     
     edge [label="BS20" tooltip="Behera and Sattath.\n Almost Public Coins.\n QIP'21. " URL="https://arxiv.org/abs/2002.12438"]
