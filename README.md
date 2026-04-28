@@ -26,6 +26,7 @@ Note that the nodes which are in the same strongly connected component are color
 ## Other contributors
 - [Barak Nehoran](https://github.com/bnehoran)
 - [Samuel Bouaziz](https://github.com/samuelbouaziz)
+- [Matthew Gray](https://github.com/graytmatter)
 
 ## Issues
 There might be a problem when opening the html file locally, and the links will not work. This is due to some javascript security measures regarding working with local files. This can be handled by following the instructions [here](https://stackoverflow.com/a/3177718) or [here](https://simplelocalize.io/blog/posts/what-is-cors/#3-disable-browser-cors-checks). 
