@@ -50,6 +50,7 @@ digraph microcrypt {
     "NI-SB-QCOM" [tooltip="Non-Interactive Computationally Hiding Statistically Binding Quantum Bit Commitments"];
     "NI-SH-QCOM" [tooltip="Non-Interactive Statistically Hiding Computationally Binding Quantum Bit Commitments"];
     "OTS with Quantum Public Keys" [tooltip="One-time Signatures with Quantum Public Keys"];
+    "SIG w. Quantum Public Keys" [tooltip="Digital Signature with Quantum Public Keys"];
     QMPC [tooltip="Quantum MPC for P/poly with Dishonest Majority"];
     "Quantum Pseudo-encryption" [tooltip="Pseudo-encryption With Quantum Ciphers"];
     "Pseudo-encryption" [tooltip="Pseudo-encryption with Classical Ciphers"];
