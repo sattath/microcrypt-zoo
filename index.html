@@ -4,36 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microcrypt</title>
-    <!-- <style>
-        img {
-            width: 100%;
-            height: auto;
-        }
-    </style> -->
+    <link rel="icon" href="data:,">
+    <style>
+        img { max-width: 100%; height: auto; }
+        #hero { max-height: 50vh; width: auto; }
+        /* The graph fills the screen (minus the info bar) and is zoomed and panned inside its box */
+        #graph { position: relative; height: calc(100svh - 9em); border: 1px solid #999; overflow: hidden; touch-action: none; }
+        #graph svg { width: 100%; height: 100%; display: block; }
+        #zoom { position: absolute; top: 8px; right: 8px; display: flex; gap: 4px; }
+        #zoom button { font-size: 20px; width: 40px; height: 40px; }
+        #graph .hit { fill: none; stroke: transparent; stroke-width: 12px; }
+        #graph .node ellipse { pointer-events: all; }  /* make the inside of unfilled nodes clickable */
+        #graph .edge text { paint-order: stroke; stroke: white; stroke-width: 3px; }  /* keep labels readable over thick edges */
+        /* Edge lines keep the same width on screen at every zoom level */
+        #graph .edge path:not(.hit), #graph .edge polygon, #graph .node ellipse { vector-effect: non-scaling-stroke; stroke-width: 1.5px; }
+        #graph .node, #graph .edge { cursor: pointer; }
+        /* While something is selected, dim everything else */
+        #graph svg.dim .node, #graph svg.dim .edge { opacity: 0.15; }
+        #graph svg.dim .hl { opacity: 1; }
+        #graph .edge.hl path:not(.hit) { stroke-width: 4px; }
+        #graph .edge.hl polygon { stroke-width: 3px; }
+        #graph .node.hl ellipse { stroke-width: 3px; }
+        #info { background: #ffffe0; padding: 8px; height: 7em; overflow-y: auto; }
+    </style>
 </head>
 <body>
     <h1>Microcrypt Zoo</h1>
-    <img src="DALLE-microcrypt.webp" alt="DALLE Microcrypt">
+    <img id="hero" src="DALLE-microcrypt.webp" alt="DALLE Microcrypt">
 
     <h2>A Graph Visualization of the Relationships between Quantum Cryptographic Primitives in MicroCrypt</h2>
-    <p>The graph on this website describes known connections between quantum cryptographic primitives. 
-    We only show MicroCrypt: primitves that are based on assumptions which are potentially wearker than one-way functions.
-    Black edge between A and B means that there is a (not necessasrily black-box) construction of B from A. A red edge from B to A means that B is black-box separated from A. 
-    Hovering with your mouse cursor over an edge will show a tooltip with reference to a work that investigates the relation between the two connected nodes.
-    Clicking an edge will take you to a website with more details on the respective work.
-    Hovering over a node will show a tooltip with the name of the primitive and other details.
+    <p>The graph on this website describes known connections between quantum cryptographic primitives.
+    We only show MicroCrypt: primitives that are based on assumptions which are potentially weaker than one-way functions.
+    A black arrow from A to B means that there is a (not necessarily black-box) construction of B from A.
+    A red dashed arrow from B to A means that there is no black-box construction of A from B.
     Nodes which share a color are equivalent.</p>
+    <p>Hover over a node or an edge to preview it, and click (or tap) it to select it: it stays highlighted, and its details
+    and links to the papers appear in the bar below the graph. Clicking a selected edge again opens its paper.
+    Click an empty spot to clear the selection.
+    Scroll or drag to pan, pinch or Ctrl+scroll to zoom.</p>
 
     <p>The zookeeper is <a href="https://orsattath.wordpress.com/about/">Or Sattath</a>. Contributions are welcome! See <a href="https://github.com/sattath/microcrypt-zoo">https://github.com/sattath/microcrypt-zoo</a> for details.</p>
-    <IMG SRC="microcrypt.png" USEMAP="#microcrypt" />
-    <div id="imageMapContainer"></div>
+    <div id="graph"><img src="microcrypt.png" alt="Microcrypt Zoo graph"></div>
+    <script src="https://cdn.jsdelivr.net/npm/panzoom@9.4.3/dist/panzoom.min.js"></script>
+    <div id="info"></div>
     <script>
-        fetch('./microcrypt.map')
-            .then(response => response.text())
-            .then(data => {
-            document.getElementById('imageMapContainer').innerHTML = data;
-            })
-        .catch(error => console.error('Error loading image map:', error));
+        const XLINK = 'http://www.w3.org/1999/xlink';
+        const HINT = 'Hover over or tap a node or edge for details.';
+        const info = document.getElementById('info');
+        info.textContent = HINT;
+        let svg, selected = null;
+        const nodes = {};   // name -> {g, name, text}
+        const edges = [];   // {g, from, to, text, url}
+
+        // Hovering (mouse only, so taps don't preview) shows an item until the mouse leaves; clicking selects it
+        function onHover(g, item) {
+            g.addEventListener('pointerenter', ev => { if (ev.pointerType === 'mouse') show(item, true); });
+            g.addEventListener('pointerleave', ev => { if (ev.pointerType === 'mouse') show(selected); });
+        }
+        // A click that ends a drag (e.g. panning the graph) doesn't select
+        let downX = 0, downY = 0;
+        document.addEventListener('pointerdown', ev => { downX = ev.clientX; downY = ev.clientY; }, true);
+        const dragged = ev => Math.hypot(ev.clientX - downX, ev.clientY - downY) > 5;
+        function onClick(g, item) {
+            g.addEventListener('click', ev => {
+                ev.preventDefault();  // the first click only selects
+                ev.stopPropagation();
+                if (dragged(ev)) return;
+                if (item === selected && item.url) window.open(item.url, '_blank');  // clicking the selected edge opens its paper
+                selected = item;
+                show(item);
+            });
+        }
+
+        fetch('microcrypt.svg').then(r => {
+            if (!r.ok) throw new Error(`HTTP ${r.status}`);
+            return r.text();
+        }).then(text => {
+            const box = document.getElementById('graph');
+            const tmp = document.createElement('div');
+            tmp.innerHTML = text;
+            svg = tmp.querySelector('svg');
+            if (!svg) throw new Error('no <svg> in microcrypt.svg');
+            svg.removeAttribute('width');
+            svg.removeAttribute('height');
+            box.replaceChildren(svg);
+            initZoom(box);
+
+            svg.querySelectorAll('g.node').forEach(g => {
+                const a = g.querySelector('a');
+                const name = g.querySelector('title').textContent;
+                const n = nodes[name] = {g, name, text: a ? a.getAttributeNS(XLINK, 'title') : ''};
+                onHover(g, n);
+                onClick(g, n);
+            });
+            svg.querySelectorAll('g.edge').forEach(g => {
+                const a = g.querySelector('a');
+                const path = g.querySelector('path');
+                if (!path) return;  // invisible edge
+                const [from, to] = g.querySelector('title').textContent.split('->');
+                const e = {g, from, to, text: a ? a.getAttributeNS(XLINK, 'title') : '', url: a ? a.getAttributeNS(XLINK, 'href') : '',
+                           label: g.querySelector('text')?.textContent || ''};
+                // A separation "B->A" (drawn reversed) means that B cannot be built from A
+                e.rel = path.getAttribute('stroke') === 'red' ? `${to} ⇏ ${from} (no black-box construction)`
+                      : `${from} ${g.querySelectorAll('polygon').length === 2 ? '⇔' : '⇒'} ${to}`;
+                edges.push(e);
+                // A wide transparent copy of the path makes thin edges easy to hit
+                const hit = path.cloneNode();
+                hit.setAttribute('class', 'hit');
+                hit.removeAttribute('stroke');
+                hit.removeAttribute('stroke-dasharray');
+                path.after(hit);
+                onHover(g, e);
+                onClick(g, e);
+            });
+            // Native tooltips would duplicate the info bar
+            svg.querySelectorAll('title').forEach(t => t.remove());
+            svg.querySelectorAll('a').forEach(a => a.removeAttributeNS(XLINK, 'title'));
+            // Clicking anywhere else (except the info bar) clears the selection
+            document.addEventListener('click', ev => {
+                if (selected && !dragged(ev) && !info.contains(ev.target)) { selected = null; show(null); }
+            });
+        }).catch(err => console.error('Error loading microcrypt.svg:', err));
+
+        function highlight(item) {
+            svg.querySelectorAll('.hl').forEach(el => el.classList.remove('hl'));
+            svg.classList.toggle('dim', !!item);
+            if (!item) return;
+            const es = item.from ? [item] : edges.filter(e => e.from === item.name || e.to === item.name);
+            item.g.classList.add('hl');
+            es.forEach(e => [e.g, nodes[e.from].g, nodes[e.to].g].forEach(g => g.classList.add('hl')));
+        }
+
+        // Tooltip text is escaped; links written as [label](url) become real links
+        const esc = s => s.replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+        const flat = s => (s || '').replace(/\s*\n\s*/g, ' ').trim();
+        const rich = s => esc(flat(s))
+            .replace(/\[([^\]]+)\]\((https?:[^)\s]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+
+        function show(item, preview) {
+            highlight(item);
+            describe(item, preview);
+        }
+
+        function describe(item, preview) {
+            if (!item) { info.textContent = HINT; return; }
+            const more = preview ? ' <i>(Click to select.)</i>' : item.url ? ' <i>(Click the edge again or use the links to open the paper.)</i>' : '';
+            if (!item.from) { info.innerHTML = `${esc(item.name)}: ${rich(item.text)}${more}${relations(item.name)}`; return; }
+            info.innerHTML = `${esc(item.rel)}: ${rich(item.text) || 'Trivial.'} ` +
+                (item.url ? `<a href="${esc(item.url)}" target="_blank">Open paper</a>` : '') + more;
+        }
+
+        // One line per relation of a node, oldest result first (the year is the label's last two digits); trivial ones last
+        function relations(name) {
+            const year = e => +(/(\d\d)[a-z]?$/.exec(e.label)?.[1] ?? 99);
+            const es = edges.filter(e => e.from === name || e.to === name);
+            const cited = es.filter(e => e.label).sort((a, b) => year(a) - year(b) || a.label.localeCompare(b.label));
+            const trivial = es.filter(e => !e.label).map(e => esc(e.rel));
+            return cited.map(e => `<br>${esc(e.rel)} · ` + (e.url ? `<a href="${esc(e.url)}" target="_blank" title="${esc(flat(e.text))}">${esc(e.label)}</a>` : esc(e.label))).join('')
+                + (trivial.length ? `<br>Trivial: ${trivial.join(', ')}` : '');
+        }
+
+        // Pan and zoom inside the box. Graphviz sets a transform on its top <g>, so wrap it in a new <g> for panzoom.
+        function initZoom(box) {
+            const wrap = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+            const top = svg.querySelector('g');
+            top.before(wrap);
+            wrap.append(top);
+            const pz = panzoom(wrap, {
+                zoomDoubleClickSpeed: 1,                          // no double-tap zoom: a second tap opens the paper
+                onTouch: ev => ev.touches.length > 1 && ev.cancelable,          // block the browser only for pinches, so taps stay clicks
+                beforeWheel: () => true,                          // wheel is handled below
+            });
+            const fit = {...pz.getTransform()};   // the starting view shows the whole graph
+            pz.setMinZoom(fit.scale);
+            pz.setMaxZoom(fit.scale * 20);
+            // Keep the graph in view: it can't be dragged past the box edges, and a dimension smaller than the box stays centered
+            pz.on('transform', () => {
+                const b = box.getBoundingClientRect(), g = wrap.getBoundingClientRect();
+                const fix = (lo, size, boxLo, boxSize) => size <= boxSize ? boxLo + (boxSize - size) / 2 - lo
+                                                                         : Math.min(0, boxLo - lo) || Math.max(0, boxLo + boxSize - lo - size);
+                const dx = fix(g.left, g.width, b.left, b.width), dy = fix(g.top, g.height, b.top, b.height);
+                if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5) pz.moveBy(dx, dy);
+            });
+            // Like a map: scrolling (two-finger swipe) pans; pinch on a trackpad (reported as Ctrl+wheel) or Ctrl+scroll zooms
+            box.addEventListener('wheel', ev => {
+                ev.preventDefault();
+                const r = svg.getBoundingClientRect();
+                if (ev.ctrlKey || ev.metaKey) pz.zoomTo(ev.clientX - r.left, ev.clientY - r.top, Math.exp(-ev.deltaY / 100));
+                else pz.moveBy(-ev.deltaX, -ev.deltaY);
+            }, {passive: false});
+            box.addEventListener('gesturestart', ev => ev.preventDefault());  // Safari: don't zoom the page on pinch
+            const zoomBy = f => pz.smoothZoom(box.clientWidth / 2, box.clientHeight / 2, f);
+            const controls = document.createElement('div');
+            controls.id = 'zoom';
+            for (const [label, title, act] of [['+', 'Zoom in', () => zoomBy(1.5)], ['−', 'Zoom out', () => zoomBy(1 / 1.5)],
+                                               ['⤢', 'Fit', () => { pz.zoomAbs(0, 0, fit.scale); pz.moveTo(fit.x, fit.y); }]]) {
+                const b = document.createElement('button');
+                b.textContent = label; b.title = title;
+                b.addEventListener('click', ev => { ev.stopPropagation(); pz.pause(); pz.resume(); act(); });  // pause+resume stops any drag momentum
+                controls.append(b);
+            }
+            box.append(controls);
+        }
     </script>
 </body>
 </html>
