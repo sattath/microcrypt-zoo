@@ -3,7 +3,8 @@
 
 
 digraph microcrypt {
-    edge [penwidth=5]
+    graph [nodesep=0.4 ranksep=0.8]
+    edge [penwidth=2.5 arrowsize=0.8]
 
     ################## PRIMITIVES ##################
     QOWF [tooltip="Quantum Computable One-Way Function"];
@@ -22,7 +23,7 @@ digraph microcrypt {
     EFI [tooltip="Efficiently samplable, statistically Far but computationally Indistinguishable pairs of mixed quantum states"];
     QEFID [tooltip="Quantum Efficiently samplable, statistically Far but computationally Indistinguishable Distributions"];
     nuQEFID [tooltip="Non-Uniform Quantum Efficiently samplable, statistically Far but computationally Indistinguishable Distributions"];
-    nu1PRS [tooltip="Non-Uniform single-copy PRS, with m>n, for key-length n and output size m"];
+    "Expanding 1PRS" [tooltip="Single-copy PRS with m>n, for key-length n and output size m. The non-uniform version is also equivalent to EFI [CCC+25](https://arxiv.org/abs/2510.07859)."];
 
     "1/poly-QPRG" [tooltip="Quantum Pseudorandom Generator with 1/poly error"];
     "negl-QPRG" [tooltip="Quantum Pseudorandom Generator with negligible error"];
@@ -40,6 +41,7 @@ digraph microcrypt {
     "EV-OWPuzzle" [tooltip="Efficiently Verifiable One-Way Puzzle"];
     "Private Quantum Coins" [tooltip="Private Quantum Coins"];
     "Private Quantum Money" [tooltip="Private Quantum Money"];
+    "Quantum Lightning" [tooltip="Quantum Lightning"];
 
     "Almost Public Quantum Coins" [tooltip="Almost Public Quantum Coins"];
     "Classically Verifiable Private Quantum Coins" [tooltip="Classically Verifiable Private Quantum Coins"];
@@ -85,6 +87,7 @@ digraph microcrypt {
     "SIG w. Quantum Public Keys" -> "OTS with Quantum Public Keys"; // TRV
 
     "1/poly-QPRF" -> "1/poly-QPRG"; // TRV
+    "1PRS" -> "Expanding 1PRS"; // TRV
     "Private Quantum Coins" -> "Private Quantum Money"; // TRV
     SIG -> OTS; // TRV
 
@@ -164,9 +167,9 @@ digraph microcrypt {
     QMPC -> EFI; // BCQ23
     EFI -> QMPC; // BCQ23
 
-    edge [label="CCC+25" tooltip="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li \n A Meta-Complexity Characterization of Minimal Quantum Cryptography\n IACR eprint 2025 " URL="https://eccc.weizmann.ac.il/report/2025/221"]
-    EFI -> nu1PRS; // CCC+25
-    nu1PRS -> EFI; // CCC+25
+    edge [label="Bat26" tooltip="Batra.\n EFI ⇔ 1PRS.\n arXiv, 2026. Expanding 1PRS ⇒ EFI follows from [MY22a](https://link.springer.com/chapter/10.1007/978-3-031-15802-5_10) and [CCC+25](https://arxiv.org/abs/2510.07859). " URL="https://arxiv.org/abs/2610.18799"]
+    EFI -> "Expanding 1PRS"; // Bat26 Thm 1.1; removes the non-uniformity of CCC+25 (Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li, arXiv 2510.07859)
+    "Expanding 1PRS" -> EFI; // Bat26 Thm 1.1
 
     
     edge [label="BS20" tooltip="Behera and Sattath.\n Almost Public Coins.\n QIP'21. " URL="https://arxiv.org/abs/2002.12438"]
@@ -217,19 +220,25 @@ digraph microcrypt {
     "EV-OWPuzzle" -> "OWSG"; // CGG24
     OWPuzzle->nuQEFID; // CGG24. Corollary 14
     "1/poly-QPRG" -> "EV-OWPuzzle"; // CGG24. Theorem 17
+    nuQEFID -> OWPuzzle; // CGG24. Lemmas 9 and 10
+    OTS -> "EV-OWPuzzle"; // CGG24. Theorem 15
+    "EV-OWPuzzle" -> OTS; // CGG24. Theorem 15
 
     edge [label="BJ24" tooltip="Batra and Jain.\n Commitments are equivalent to statistically-verifiable one-way state generators.\n arXiv, 2024. " URL="https://arxiv.org/abs/2404.03220"]    
     "IV-OWSG" -> EFI; // BJ24
     EFI -> "IV-OWSG"; // BJ24
 
-    edge [label="KT25" tooltip="Khurana, Tomer.\n Founding Quantum Cryptography on Quantum Advantage.\n STOC'25." URL="https://arxiv.org/pdf/2410.14792"]
+    edge [label="KT25" tooltip="Khurana, Tomer.\n Founding Quantum Cryptography on Quantum Advantage.\n STOC'25." URL="https://arxiv.org/abs/2409.15248"]
     "State puzzles"->OWPuzzle;
     OWPuzzle->"State puzzles";
+    "Quantum Lightning" -> OWPuzzle; // KT25 Cor 1.1 (quantum money mini-schemes imply one-way puzzles)
 
 
     edge [label="MH25" tooltip="Ma and Huang.\n How To Construct Random Unitaries.\n STOC'25" URL="https://arxiv.org/abs/2410.10116"]
     "QOWF" -> "Strong PRU";
-    // Add edges based on IMPLIES commands
+    edge [label="GMMY24" tooltip="Goldin, Morimae, Mutreja and Yamakawa.\n CountCrypt: Quantum Cryptography between QCMA and PP.\n arXiv, 2024." URL="https://arxiv.org/abs/2410.14792"]
+    "SB-COM" -> OWPuzzle; // GMMY24 Thm 1.10 (QCCC commitments imply one-way puzzles)
+
     
      
     edge [label="" tooltip="" URL=""]
@@ -238,7 +247,10 @@ digraph microcrypt {
    
   
     //################################################# Separations.######################################
-    // Separation of the form B cannot be constructed from A should be added as A->B, even though the edge goes from B to A! This is a hack, so that edges would always go from top to bottom, and the strongly connected components would be correctly computed. The edge is flipped using the dir="back" attribute. Note that the graph is defined using "digraph" and not "strict digraph" since there are multiple edges between the same nodes, in the same direction (even though one apperes to be flipped). For example, JLS proved that OWF->PRS. And note that Kre21 adds another edge OWF->PRS (even though dir=back). 
+    // A separation "X cannot be black-box built from Y" is written X -> Y, and drawn with dir=back, so the arrow points from Y to X (the page shows "Y ⇏ X").
+    // This is a hack: written this way, edges go from top to bottom like the implications, and the strongly connected components are computed correctly.
+    // The graph is a "digraph" and not a "strict digraph" because there can be several edges between the same nodes in the same direction (even if one of them is drawn flipped).
+    // For example, JLS18 proved QOWF -> PRS (QOWF implies PRS), and Kre21 adds another edge QOWF -> PRS with dir=back (QOWF cannot be black-box built from PRS).
 
     edge [style=dashed color="red" dir="back"]
 
@@ -249,7 +261,7 @@ digraph microcrypt {
     edge [label="BM24" tooltip="Bouaziz-Ermann and Muguruza.\n Quantum Pseudorandomness Cannot Be Shrunk In a Black-Box Way.\n IACR eprint, 2024. " URL="https://eprint.iacr.org/2024/291"]
      "Short Output PRS"->PRS;
 
-    edge [label="CCS24" tooltip="Chen, Coladangelo and Sattath.\n The power of a single Haar random state: constructing and separating quantum pseudorandomness.\n arXiv, 2024. " URL="https://arxiv.org/abs/2404.03295"]
+    edge [label="CCS24" tooltip="Chen, Coladangelo and Sattath.\n The power of a single Haar random state: constructing and separating quantum pseudorandomness.\n arXiv, 2024. Isometry oracle; v4 downgrades the unitary claim to a parametrized unitary oracle. A unitary (Swap) oracle separation follows from [GZ25](https://arxiv.org/abs/2503.11634). " URL="https://arxiv.org/abs/2404.03295"]
     PRS -> "1PRS";
 
     edge [label="CM24" tooltip="Coladangelo and Mutreja.\n On black-box separations of quantum digital signatures from pseudorandom states.\n arXiv, 2024. " URL="https://arxiv.org/abs/2402.08194"]
@@ -262,12 +274,27 @@ digraph microcrypt {
     OWSG->QEFID; // BMM+24 Thm 1.1
     "Private Quantum Money"->QEFID; // BMM+24 Thm 1.5
 
-    edge [label="BCN24" tooltip="Bostanci, Chen, and Nehoran.\n Oracle Separation Between Quantum Commitments and Quantum One-wayness.\n arXiv, 2024." URL="https://eprint.iacr.org/2024/1568"]
+    edge [label="BCN24" tooltip="Bostanci, Chen, and Nehoran.\n Oracle Separation Between Quantum Commitments and Quantum One-wayness.\n arXiv, 2024. Common Haar random state model (the unitary oracle claim was retracted, see [GZ25](https://arxiv.org/abs/2503.11634))." URL="https://eprint.iacr.org/2024/1568"]
     OWSG->"1PRS"; // BCN24
     OWSG->OWPuzzle; // BCN24
 
-    edge [label="BHMV25" tooltip="Bouaziz--Ermann, Hhan, Muguruza and Vu.\n On Limits on the Provable Consequences of Quantum Pseudorandomness.\n IACR eprint, 2025" URL="https://eprint.iacr.org/2025/1863.pdf"]
+    edge [label="BHMV25" tooltip="Bouaziz--Ermann, Hhan, Muguruza and Vu.\n On Limits on the Provable Consequences of Quantum Pseudorandomness.\n arXiv, 2025" URL="https://arxiv.org/abs/2510.05393"]
     "negl-QPRG"->"Short Output PRS";
+    QOWF->SIG; // BHMV25 Cor 1.3
+
+    edge [label="CWX26" tooltip="Chen, Wang and Xie.\n The Breakdown of Classical Minicrypt Equivalences in the Quantum-Computation Classical-Communication Model.\n arXiv, 2026" URL="https://arxiv.org/abs/2609.33098"]
+    QOWF->"EV-OWPuzzle"; // CWX26 Thm 1.1
+    "SB-COM"->"EV-OWPuzzle"; // CWX26 Thm 1.2
+
+    edge [label="Hha26" tooltip="Hhan.\n Derivatives of Quantum Randomness: Separating Pseudorandom Unitaries from Pseudorandom (Function-like) States.\n arXiv, 2026" URL="https://arxiv.org/abs/2609.14626"]
+    "Non-adaptive PRU"->"Long Input PRFS"; // Hha26 Thm 1.1
+
+    edge [label="Bar25" tooltip="Barhoush.\n Separating Pseudorandom Generators from Logarithmic Pseudorandom States.\n arXiv, 2025" URL="https://arxiv.org/abs/2510.20131"]
+    "negl-QPRG"->PRS; // Bar25 Thm 1.1
+    "negl-QPRG"->"⊥-PRG"; // Bar25 Thm 1.2
+
+    edge [label="GMMY24" tooltip="Goldin, Morimae, Mutreja and Yamakawa.\n CountCrypt: Quantum Cryptography between QCMA and PP.\n arXiv, 2024. Quantum lightning exists relative to an oracle where BQP=QCMA, which breaks one-way functions." URL="https://arxiv.org/abs/2410.14792"]
+    QOWF->"Quantum Lightning"; // GMMY24 Thm 1.7/5.1 + Thm 8.1
 
     edge [label="KQT25" tooltip="Kretschmer, Qian and Tal.\n Quantum-Computable One-Way Functions without One-Way Functions.\n STOC'25" URL="https://arxiv.org/pdf/2411.02554"]
     "COWF"->"QTOWF";

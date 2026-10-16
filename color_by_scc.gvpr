@@ -14,16 +14,16 @@ BEGIN{
 
   help="future";
   colorindex=0;
-ColorsArray[0] = "lightgray";
+ColorsArray[0]= "white"; // unused: colorindex is incremented before use
 ColorsArray[1]= "lightgreen";
 ColorsArray[2]= "lightgrey";
 ColorsArray[3]= "lightpink";
 ColorsArray[4]= "lightblue";
-ColorsArray[5]= "lightcoral";
-ColorsArray[6]= "lightcyan";
-ColorsArray[7]= "lightgoldenrod";
-ColorsArray[8]= "lightgoldenrodyellow";
-ColorsArray[9]= "lightsalmon";
+ColorsArray[5]= "khaki";
+ColorsArray[6]= "plum";
+ColorsArray[7]= "lightcyan";
+ColorsArray[8]= "lightsalmon";
+ColorsArray[9]= "aquamarine";
   ////////////////////////////////////////////////////////////////////////////
   string X2color(string KEY) {
     string ret;
@@ -75,6 +75,20 @@ N{
       else
         $.style="filled";
       $.fillcolor=Color[$.name];
+    }
+  }
+}
+// Draw an equivalence A->B, B->A as one double-headed edge when both directions have the same reference,
+// or when the reverse direction is trivial (then the edge keeps the non-trivial reference).
+// Both edges stay in the graph (so the layout and SCCs are unchanged), the second one is just hidden.
+E[sccmapFinished==1 && $.dir!="back" && $.style!="invis"]{
+  edge_t r;
+  for (r = fstout($.head); r; r = nxtout(r)) {
+    if (r.head == $.tail && r.dir!="back" && (r.label==$.label || r.label=="")) {
+      $.dir="both";
+      r.style="invis";
+      r.label="";
+      break;
     }
   }
 }

@@ -1,405 +1,418 @@
 <map id="microcrypt" name="microcrypt">
-<area shape="poly" id="node1" title="Quantum Computable One&#45;Way Function" alt="" coords="1832,238,1829,230,1822,224,1810,218,1796,215,1780,214,1764,215,1750,218,1739,224,1731,230,1729,238,1731,245,1739,252,1750,257,1764,260,1780,262,1796,260,1810,257,1822,252,1829,245"/>
-<area shape="poly" id="node2" title="Pseudorandom States with superlogarithmic outputs size" alt="" coords="2038,1048,2036,1040,2031,1034,2023,1028,2013,1025,2001,1024,1990,1025,1980,1028,1972,1034,1967,1040,1965,1048,1967,1055,1972,1062,1980,1067,1990,1070,2001,1072,2013,1070,2023,1067,2031,1062,2036,1055"/>
+<area shape="poly" id="node1" title="Quantum Computable One&#45;Way Function" alt="" coords="913,296,910,289,903,282,892,277,877,274,861,272,846,274,831,277,820,282,813,289,810,296,813,304,820,310,831,316,846,319,861,320,877,319,892,316,903,310,910,304"/>
+<area shape="poly" id="node2" title="Pseudorandom States with superlogarithmic outputs size" alt="" coords="471,1454,469,1447,464,1440,456,1435,446,1431,435,1430,423,1431,413,1435,405,1440,400,1447,398,1454,400,1462,405,1468,413,1474,423,1477,435,1478,446,1477,456,1474,464,1468,469,1462"/>
 <area shape="poly" id="edge1" href="https://link.springer.com/chapter/10.1007/978-3-319-96878-0_5" title="Ji, Liu and Song.
  Pseudorandom quantum states.
- CRYPTO18. " alt="" coords="1829,242,1912,255,2002,276,2043,290,2076,306,2099,325,2107,347,2107,905,2102,938,2087,969,2066,995,2044,1018,2040,1013,2061,991,2081,965,2095,936,2101,905,2101,348,2093,329,2072,312,2040,296,2000,283,1910,262,1831,248"/>
-<area shape="rect" id="edge1-label" href="https://link.springer.com/chapter/10.1007/978-3-319-96878-0_5" title="JLS18" alt="" coords="2104,619,2138,634"/>
+ CRYPTO18. " alt="" coords="808,301,674,312,591,321,507,334,431,351,367,374,343,387,325,402,313,418,309,436,309,1050,306,1149,304,1228,308,1265,317,1303,333,1344,357,1390,374,1411,396,1429,391,1431,370,1415,352,1393,328,1346,312,1305,303,1266,299,1229,301,1149,304,1050,304,435,308,416,321,398,340,383,365,369,429,346,506,328,590,315,673,306,812,298"/>
+<area shape="rect" id="edge1-label" href="https://link.springer.com/chapter/10.1007/978-3-319-96878-0_5" title="JLS18" alt="" coords="307,862,341,878"/>
 <area shape="poly" id="edge2" href="https://drops.dagstuhl.de/opus/volltexte/2021/13997" title="Kretschmer.
  Quantum Pseudorandomness and Classical Complexity.
- TQC21. " alt="" coords="1852,241,1950,252,2054,272,2100,286,2138,302,2163,322,2170,334,2173,347,2173,905,2169,931,2158,954,2142,975,2122,992,2077,1020,2035,1039,2032,1033,2074,1015,2118,987,2137,970,2152,951,2162,929,2166,905,2166,348,2164,337,2158,327,2134,308,2098,292,2052,279,1949,259,1854,248"/>
-<area shape="rect" id="edge2-label" href="https://drops.dagstuhl.de/opus/volltexte/2021/13997" title="Kre21" alt="" coords="2169,619,2203,634"/>
-<area shape="poly" id="node3" title="Single&#45;copy PRS, with m&gt;(1+epsilon)n, for some fixed epsilon, for key&#45;length n and output size m." alt="" coords="2096,1591,2094,1583,2088,1577,2078,1571,2067,1568,2053,1567,2040,1568,2028,1571,2019,1577,2013,1583,2011,1591,2013,1598,2019,1605,2028,1610,2040,1613,2053,1615,2067,1613,2078,1610,2088,1605,2094,1598"/>
+ TQC21. " alt="" coords="792,300,637,307,544,315,450,327,365,345,295,368,268,383,248,398,235,416,231,436,231,698,229,796,227,894,229,958,229,1282,234,1313,248,1341,269,1365,294,1387,351,1420,405,1442,400,1444,349,1424,291,1391,265,1369,244,1344,229,1315,224,1282,224,958,222,894,223,796,225,698,225,435,230,414,244,395,265,378,293,363,363,340,449,322,543,310,637,302,796,296"/>
+<area shape="rect" id="edge2-label" href="https://drops.dagstuhl.de/opus/volltexte/2021/13997" title="Kre21" alt="" coords="225,862,259,878"/>
+<area shape="poly" id="node3" title="Single&#45;copy PRS, with m&gt;(1+epsilon)n, for some fixed epsilon, for key&#45;length n and output size m." alt="" coords="721,2115,719,2107,713,2100,704,2095,692,2092,679,2091,666,2092,654,2095,644,2100,638,2107,636,2115,638,2122,644,2129,654,2134,666,2137,679,2139,692,2137,704,2134,713,2129,719,2122"/>
 <area shape="poly" id="edge3" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_10" title="Morimae and Yamakawa.
  Quantum Commitments and Signatures Without One&#45;Way Function.
- CRYPTO&#39;22. " alt="" coords="1831,238,1943,245,2074,263,2134,276,2183,294,2217,317,2227,332,2230,347,2230,1481,2227,1501,2219,1519,2192,1547,2155,1567,2116,1580,2114,1574,2152,1561,2188,1542,2214,1515,2221,1499,2223,1481,2224,348,2221,334,2212,322,2180,300,2132,283,2073,269,1943,252,1833,244"/>
-<area shape="rect" id="edge3-label" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_10" title="MY22a" alt="" coords="2227,841,2269,856"/>
-<area shape="poly" id="node4" title="Pseudorandom States with Nice Proofs of Destruction" alt="" coords="801,571,798,563,789,557,776,551,759,548,740,547,721,548,704,551,691,557,682,563,679,571,682,578,691,585,704,590,721,593,740,595,759,593,776,590,789,585,798,578"/>
+ CRYPTO&#39;22. " alt="" coords="808,303,510,328,359,344,305,353,274,361,200,403,143,450,102,503,74,561,56,626,46,699,42,780,41,869,41,1975,46,1995,59,2013,80,2030,108,2044,182,2068,271,2085,367,2097,463,2105,623,2111,618,2114,463,2110,367,2102,270,2090,181,2073,106,2049,77,2034,55,2017,41,1998,36,1976,36,869,37,779,41,699,51,625,69,559,98,500,140,447,197,399,272,357,304,348,358,339,509,322,812,299"/>
+<area shape="rect" id="edge3-label" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_10" title="MY22a" alt="" coords="39,1203,81,1218"/>
+<area shape="poly" id="node4" title="Pseudorandom States with Nice Proofs of Destruction" alt="" coords="2389,1138,2386,1130,2377,1124,2364,1118,2347,1115,2328,1114,2309,1115,2292,1118,2279,1124,2270,1130,2267,1138,2270,1145,2279,1152,2292,1157,2309,1161,2328,1162,2347,1161,2364,1157,2377,1152,2386,1145"/>
 <area shape="poly" id="edge4" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
  Pseudorandomness with Proof of Destruction and Applications.
- IACR eprint, 2023. " alt="" coords="1726,241,1521,250,1382,259,1234,273,1089,292,957,320,899,336,849,355,807,376,777,399,757,427,745,459,740,493,739,526,733,524,733,493,739,458,751,423,772,394,804,370,846,349,897,330,955,313,1088,286,1234,266,1382,252,1521,243,1732,238"/>
-<area shape="rect" id="edge4-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="774,397,820,412"/>
-<area shape="poly" id="node5" title="Long Input Pseudorandom Function&#45;like States. The input size needs to be omega(log(n)) qubits." alt="" coords="1965,904,1960,896,1945,890,1923,884,1894,881,1863,880,1831,881,1803,884,1780,890,1766,896,1761,904,1766,911,1780,918,1803,923,1831,926,1863,928,1894,926,1923,923,1945,918,1960,911"/>
+ IACR eprint, 2023. " alt="" coords="912,295,1157,297,1496,305,1664,312,1813,323,1927,338,1966,346,1992,357,2034,392,2077,444,2120,509,2161,581,2233,728,2281,845,2302,913,2315,983,2328,1099,2323,1097,2310,984,2296,915,2276,847,2228,730,2156,584,2115,512,2073,448,2030,396,1989,361,1965,352,1926,343,1812,328,1664,318,1496,310,1157,302,915,300"/>
+<area shape="rect" id="edge4-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="2226,689,2272,704"/>
+<area shape="poly" id="node5" title="Long Input Pseudorandom Function&#45;like States. The input size needs to be omega(log(n)) qubits." alt="" coords="646,1281,641,1273,627,1267,604,1261,576,1258,544,1257,513,1258,484,1261,462,1267,447,1273,442,1281,447,1288,462,1295,484,1300,513,1304,544,1305,576,1304,604,1300,627,1295,641,1288"/>
 <area shape="poly" id="edge5" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8" title="Ananth, Qian and Yuen.
  Cryptography from Pseudorandom Quantum States.
- Crypto&#39;22. " alt="" coords="1781,259,1783,347,1783,794,1786,813,1794,831,1820,866,1813,865,1788,835,1780,815,1777,794,1777,347,1779,265"/>
-<area shape="rect" id="edge5-label" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8" title="AQY22" alt="" coords="1780,563,1824,578"/>
-<area shape="poly" id="node6" title="Long Input Pseudorandom Function&#45;like States with Proofs of Destruction" alt="" coords="594,793,591,785,582,779,569,773,553,770,535,769,517,770,500,773,487,779,479,785,476,793,479,800,487,807,500,812,517,815,535,817,553,815,569,812,582,807,591,800"/>
+ Crypto&#39;22. " alt="" coords="809,304,698,319,564,344,502,362,452,383,419,408,410,421,407,436,407,1139,414,1173,433,1203,459,1228,489,1250,484,1252,456,1232,429,1206,409,1175,401,1140,401,435,405,419,415,404,450,378,501,357,562,339,697,313,813,300"/>
+<area shape="rect" id="edge5-label" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8" title="AQY22" alt="" coords="404,776,448,791"/>
+<area shape="poly" id="node6" title="Long Input Pseudorandom Function&#45;like States with Proofs of Destruction" alt="" coords="1459,1138,1456,1130,1448,1124,1435,1118,1418,1115,1400,1114,1382,1115,1365,1118,1352,1124,1344,1130,1341,1138,1344,1145,1352,1152,1365,1157,1382,1161,1400,1162,1418,1161,1435,1157,1448,1152,1456,1145"/>
 <area shape="poly" id="edge6" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
  Pseudorandomness with Proof of Destruction and Applications.
- IACR eprint, 2023. " alt="" coords="1726,242,1515,253,1223,269,1079,280,953,294,857,310,824,318,803,328,749,371,702,423,662,480,628,541,600,601,578,657,549,749,542,747,572,655,594,598,622,538,657,477,697,419,745,366,800,322,822,312,855,303,952,287,1079,274,1223,262,1515,246,1732,239"/>
-<area shape="rect" id="edge6-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="641,508,687,523"/>
-<area shape="poly" id="node7" title="Short Output Pseudorandom States. The output state needs to have c*log(n) qubits for some large enough c." alt="" coords="1731,460,1726,452,1711,446,1688,440,1659,437,1627,436,1595,437,1566,440,1543,446,1528,452,1523,460,1528,467,1543,474,1566,479,1595,482,1627,484,1659,482,1688,479,1711,474,1726,467"/>
+ IACR eprint, 2023. " alt="" coords="912,297,1015,308,1076,320,1139,338,1200,364,1257,398,1304,443,1323,469,1339,498,1355,551,1368,621,1387,794,1398,968,1402,1099,1397,1097,1392,969,1382,794,1363,622,1350,552,1334,500,1318,472,1300,446,1253,403,1198,369,1137,343,1075,325,1014,313,914,301"/>
+<area shape="rect" id="edge6-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="1378,689,1424,704"/>
+<area shape="poly" id="node7" title="Short Output Pseudorandom States. The output state needs to have c*log(n) qubits for some large enough c." alt="" coords="1753,610,1748,603,1733,596,1710,591,1682,587,1649,586,1617,587,1588,591,1565,596,1551,603,1545,610,1551,617,1565,624,1588,629,1617,633,1649,634,1682,633,1710,629,1733,624,1748,617"/>
 <area shape="poly" id="edge7" href="https://doi.org/10.1007/978-3-030-56880-1_15" title="Brakerski and Shmueli.
  Scalable Pseudorandom Quantum States.
- CRYPTO&#39;20. " alt="" coords="1767,258,1657,421,1652,416,1763,263"/>
-<area shape="rect" id="edge7-label" href="https://doi.org/10.1007/978-3-030-56880-1_15" title="BS20b" alt="" coords="1719,341,1756,356"/>
-<area shape="poly" id="node8" title="Short Output Pseudorandom Function&#45;Like States. The output state needs to have Theta(log(n)) qubits." alt="" coords="1550,349,1544,341,1528,335,1504,329,1473,326,1439,325,1405,326,1374,329,1349,335,1333,341,1328,349,1333,356,1349,363,1374,368,1405,371,1439,373,1473,371,1504,368,1528,363,1544,356"/>
+ CRYPTO&#39;20. " alt="" coords="912,297,1025,303,1164,313,1297,331,1352,343,1392,357,1431,378,1467,403,1533,462,1588,521,1628,573,1622,573,1584,525,1530,465,1464,407,1428,382,1390,361,1350,348,1297,336,1164,319,1025,308,914,302"/>
+<area shape="rect" id="edge7-label" href="https://doi.org/10.1007/978-3-030-56880-1_15" title="BS20b" alt="" coords="1526,429,1563,444"/>
+<area shape="poly" id="node8" title="Short Output Pseudorandom Function&#45;Like States. The output state needs to have Theta(log(n)) qubits." alt="" coords="1239,437,1233,429,1218,423,1193,417,1162,414,1128,413,1094,414,1063,417,1038,423,1023,429,1017,437,1023,444,1038,451,1063,456,1094,459,1128,461,1162,459,1193,456,1218,451,1233,444"/>
 <area shape="poly" id="edge8" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
- TCC&#39;22. " alt="" coords="1727,245,1642,261,1592,273,1543,289,1489,316,1485,311,1541,283,1590,267,1640,255,1733,242"/>
-<area shape="rect" id="edge8-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1542,286,1596,301"/>
-<area shape="poly" id="node9" title="Non&#45;adaptive Long Input Pseudorandom Unitaries" alt="" coords="2066,571,2061,563,2045,557,2021,551,1991,548,1957,547,1924,548,1894,551,1870,557,1854,563,1849,571,1854,578,1870,585,1894,590,1924,593,1957,595,1991,593,2021,590,2045,585,2061,578"/>
+ TCC&#39;22. " alt="" coords="894,313,1075,406,1071,408,896,318"/>
+<area shape="rect" id="edge8-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1003,359,1057,374"/>
+<area shape="poly" id="node9" title="Non&#45;adaptive Long Input Pseudorandom Unitaries" alt="" coords="670,1049,665,1041,649,1034,625,1029,595,1026,561,1025,528,1026,497,1029,473,1034,458,1041,453,1049,458,1056,473,1063,497,1068,528,1071,561,1073,595,1071,625,1068,649,1063,665,1056"/>
 <area shape="poly" id="edge9" href="https://eprint.iacr.org/2024/302" title="Metger, Poremba, Sinha and Yuen.
  Pseudorandom unitaries with non&#45;adaptive security.
- IACR eprint, 2024. " alt="" coords="1829,242,1869,251,1911,266,1950,290,1982,323,1994,347,2001,374,2003,429,1994,482,1979,528,1973,525,1987,481,1997,429,1995,375,1988,350,1976,327,1946,295,1908,272,1867,257,1830,248"/>
-<area shape="rect" id="edge9-label" href="https://eprint.iacr.org/2024/302" title="MPSY24" alt="" coords="2001,397,2051,412"/>
-<area shape="poly" id="node10" title="Pseudorandom Unitaries with inverse access" alt="" coords="1967,349,1963,341,1953,335,1936,329,1915,326,1892,325,1869,326,1848,329,1832,335,1821,341,1818,349,1821,356,1832,363,1848,368,1869,371,1892,373,1915,371,1936,368,1953,363,1963,356"/>
+ IACR eprint, 2024. " alt="" coords="812,308,725,327,625,355,579,373,543,392,518,414,512,424,509,436,509,871,513,909,521,946,546,1010,540,1011,516,947,508,910,504,871,504,435,507,422,514,410,540,388,577,368,623,350,724,322,815,304"/>
+<area shape="rect" id="edge9-label" href="https://eprint.iacr.org/2024/302" title="MPSY24" alt="" coords="507,602,557,618"/>
+<area shape="poly" id="node10" title="Pseudorandom Unitaries with inverse access" alt="" coords="764,697,760,689,750,683,733,677,712,674,689,673,666,674,646,677,629,683,618,689,615,697,618,704,629,711,646,716,666,719,689,721,712,719,733,716,750,711,760,704"/>
 <area shape="poly" id="edge10" href="https://arxiv.org/abs/2410.10116" title="Ma and Huang.
  How To Construct Random Unitaries.
- STOC&#39;25" alt="" coords="1802,257,1858,311,1851,311,1802,263"/>
-<area shape="rect" id="edge10-label" href="https://arxiv.org/abs/2410.10116" title="MH25" alt="" coords="1843,286,1879,301"/>
-<area shape="poly" id="edge11" href="https://dl.acm.org/doi/10.1145/3564246.3585198" title="Gunn, Ju, Ma, Zhandry.
+ STOC&#39;25" alt="" coords="851,323,708,659,703,657,853,318"/>
+<area shape="rect" id="edge10-label" href="https://arxiv.org/abs/2410.10116" title="MH25" alt="" coords="810,429,846,444"/>
+<area shape="poly" id="node11" title="Efficiently Verifiable One&#45;Way Puzzle" alt="" coords="2746,1454,2741,1447,2729,1440,2709,1435,2685,1431,2657,1430,2630,1431,2606,1435,2586,1440,2573,1447,2569,1454,2573,1462,2586,1468,2606,1474,2630,1477,2657,1478,2685,1477,2709,1474,2729,1468,2741,1462"/>
+<area shape="poly" id="edge11" href="https://arxiv.org/abs/2609.33098" title="Chen, Wang and Xie.
+ The Breakdown of Classical Minicrypt Equivalences in the Quantum&#45;Computation Classical&#45;Communication Model.
+ arXiv, 2026" alt="" coords="927,296,1185,301,1529,312,1848,330,1964,342,2032,357,2078,383,2125,424,2173,478,2221,544,2270,618,2317,699,2409,873,2493,1049,2564,1212,2651,1430,2646,1429,2559,1214,2488,1051,2405,875,2313,701,2265,621,2217,547,2169,482,2121,428,2074,387,2030,361,1963,347,1848,336,1529,318,1185,307,930,301"/>
+<area shape="rect" id="edge11-label" href="https://arxiv.org/abs/2609.33098" title="CWX26" alt="" coords="2415,862,2461,878"/>
+<area shape="poly" id="node12" title="Quantum Lightning" alt="" coords="2516,523,2510,516,2494,509,2469,504,2438,501,2403,499,2368,501,2336,504,2311,509,2295,516,2290,523,2295,531,2311,537,2336,543,2368,546,2403,547,2438,546,2469,543,2494,537,2510,531"/>
+<area shape="poly" id="edge12" href="https://arxiv.org/abs/2410.14792" title="Goldin, Morimae, Mutreja and Yamakawa.
+ CountCrypt: Quantum Cryptography between QCMA and PP.
+ arXiv, 2024. Quantum lightning exists relative to an oracle where BQP=QCMA, which breaks one&#45;way functions." alt="" coords="928,297,1576,316,1925,333,2051,344,2126,356,2178,379,2245,418,2373,500,2367,500,2243,422,2176,384,2125,362,2051,349,1924,339,1576,321,930,301"/>
+<area shape="rect" id="edge12-label" href="https://arxiv.org/abs/2410.14792" title="GMMY24" alt="" coords="2158,359,2216,374"/>
+<area shape="poly" id="node13" title="Chosen Plaintext Attack Secure Digital Signature with imperfect completeness" alt="" coords="1993,1281,1992,1273,1987,1267,1979,1261,1969,1258,1957,1257,1946,1258,1936,1261,1928,1267,1923,1273,1921,1281,1923,1288,1928,1295,1936,1300,1946,1304,1957,1305,1969,1304,1979,1300,1987,1295,1992,1288"/>
+<area shape="poly" id="edge13" href="https://arxiv.org/abs/2510.05393" title="Bouaziz&#45;&#45;Ermann, Hhan, Muguruza and Vu.
+ On Limits on the Provable Consequences of Quantum Pseudorandomness.
+ arXiv, 2025" alt="" coords="927,297,1028,302,1154,312,1294,329,1433,356,1542,387,1631,421,1707,460,1774,505,1837,556,1902,614,2060,757,2132,811,2194,857,2217,883,2232,912,2236,946,2227,987,2213,1016,2198,1037,2154,1075,2132,1088,2112,1094,2094,1100,2074,1113,2039,1149,2010,1189,1970,1259,1965,1256,2005,1186,2035,1146,2070,1109,2092,1095,2111,1089,2130,1083,2151,1070,2195,1034,2209,1014,2222,985,2230,946,2227,913,2213,886,2191,861,2129,815,2057,761,1899,618,1834,560,1771,509,1704,465,1629,426,1540,392,1431,362,1293,335,1154,317,1027,307,930,302"/>
+<area shape="rect" id="edge13-label" href="https://arxiv.org/abs/2510.05393" title="BHMV25" alt="" coords="2122,776,2177,791"/>
+<area shape="poly" id="edge14" href="https://dl.acm.org/doi/10.1145/3564246.3585198" title="Gunn, Ju, Ma, Zhandry.
  Commitments to Quantum States.
- STOC&#39;23. " alt="" coords="2025,1063,2039,1078,2049,1094,2059,1133,2065,1185,2069,1311,2066,1442,2059,1547,2054,1543,2059,1441,2063,1311,2059,1185,2052,1134,2042,1097,2034,1082,2023,1070"/>
-<area shape="rect" id="edge11-label" href="https://dl.acm.org/doi/10.1145/3564246.3585198" title="GJMZ23" alt="" coords="2066,1328,2115,1343"/>
-<area shape="poly" id="edge12" href="https://arxiv.org/abs/2404.03295" title="Chen, Coladangelo and Sattath.
+ STOC&#39;23. " alt="" coords="462,1467,521,1503,586,1558,617,1591,641,1628,658,1669,664,1713,664,1975,667,2027,674,2076,669,2075,662,2028,659,1976,659,1713,653,1670,636,1631,612,1594,583,1561,518,1508,463,1473"/>
+<area shape="rect" id="edge14-label" href="https://dl.acm.org/doi/10.1145/3564246.3585198" title="GJMZ23" alt="" coords="661,1793,710,1808"/>
+<area shape="poly" id="edge15" href="https://arxiv.org/abs/2404.03295" title="Chen, Coladangelo and Sattath.
  The power of a single Haar random state: constructing and separating quantum pseudorandomness.
- arXiv, 2024. " alt="" coords="2052,1068,2087,1089,2120,1116,2144,1150,2152,1169,2154,1190,2154,1481,2147,1511,2130,1538,2108,1559,2085,1576,2082,1570,2104,1554,2125,1533,2141,1509,2148,1481,2147,1191,2145,1171,2138,1153,2115,1121,2083,1094,2051,1074"/>
-<area shape="rect" id="edge12-label" href="https://arxiv.org/abs/2404.03295" title="CCS24" alt="" coords="2151,1328,2190,1343"/>
-<area shape="poly" id="node11" title="Short Input Pseudorandom Function&#45;like States with selective security. The input size needs to be Theta(log(n)) qubits." alt="" coords="1924,1192,1919,1184,1904,1178,1882,1172,1853,1169,1821,1168,1790,1169,1761,1172,1738,1178,1724,1184,1719,1192,1724,1199,1738,1206,1761,1211,1790,1214,1821,1216,1853,1214,1882,1211,1904,1206,1919,1199"/>
-<area shape="poly" id="edge13" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8" title="Ananth, Qian and Yuen.
+ arXiv, 2024. Isometry oracle; v4 downgrades the unitary claim to a parametrized unitary oracle. A unitary (Swap) oracle separation follows from [GZ25](https://arxiv.org/abs/2503.11634). " alt="" coords="404,1488,385,1515,364,1549,348,1586,341,1626,341,1975,344,1986,350,1997,374,2018,411,2038,456,2055,554,2084,641,2105,636,2107,553,2089,454,2060,409,2043,371,2023,346,2000,339,1988,336,1976,336,1626,343,1585,359,1546,381,1512,406,1483"/>
+<area shape="rect" id="edge15-label" href="https://arxiv.org/abs/2404.03295" title="CCS24" alt="" coords="339,1793,378,1808"/>
+<area shape="poly" id="node14" title="Short Input Pseudorandom Function&#45;like States with selective security. The input size needs to be Theta(log(n)) qubits." alt="" coords="603,1628,598,1620,583,1613,560,1608,532,1605,500,1604,468,1605,440,1608,417,1613,402,1620,397,1628,402,1635,417,1642,440,1647,468,1650,500,1652,532,1650,560,1647,583,1642,598,1635"/>
+<area shape="poly" id="edge16" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8" title="Ananth, Qian and Yuen.
  Cryptography from Pseudorandom Quantum States.
- Crypto&#39;22. " alt="" coords="2002,1069,1996,1110,1987,1129,1975,1146,1954,1162,1930,1175,1927,1169,1950,1157,1970,1141,1981,1126,1989,1108,1998,1075"/>
-<area shape="rect" id="edge13-label" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8" title="AQY22" alt="" coords="1996,1112,2040,1127"/>
-<area shape="poly" id="node12" title="Private Quantum Coins" alt="" coords="1449,1192,1442,1184,1424,1178,1395,1172,1358,1169,1317,1168,1277,1169,1240,1172,1211,1178,1193,1184,1186,1192,1193,1199,1211,1206,1240,1211,1277,1214,1317,1216,1358,1214,1395,1211,1424,1206,1442,1199"/>
-<area shape="poly" id="edge14" href="https://link.springer.com/chapter/10.1007/978-3-319-96878-0_5" title="Ji, Liu and Song.
+ Crypto&#39;22. " alt="" coords="449,1489,488,1589,483,1589,449,1495"/>
+<area shape="rect" id="edge16-label" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8" title="AQY22" alt="" coords="475,1533,519,1548"/>
+<area shape="poly" id="node15" title="Private Quantum Coins" alt="" coords="1879,1628,1873,1620,1854,1613,1825,1608,1789,1605,1748,1604,1708,1605,1671,1608,1642,1613,1623,1620,1617,1628,1623,1635,1642,1642,1671,1647,1708,1650,1748,1652,1789,1650,1825,1647,1854,1642,1873,1635"/>
+<area shape="poly" id="edge17" href="https://link.springer.com/chapter/10.1007/978-3-319-96878-0_5" title="Ji, Liu and Song.
  Pseudorandom quantum states.
- CRYPTO18. " alt="" coords="1963,1055,1822,1075,1733,1080,1664,1079,1596,1082,1511,1099,1437,1127,1372,1160,1369,1154,1434,1120,1509,1092,1595,1075,1664,1072,1733,1073,1821,1068,1969,1053"/>
-<area shape="rect" id="edge14-label" href="https://link.springer.com/chapter/10.1007/978-3-319-96878-0_5" title="JLS18" alt="" coords="1510,1112,1544,1127"/>
-<area shape="poly" id="node13" title="Non&#45;Interactive Computationally Hiding Statistically Binding Quantum Bit Commitments" alt="" coords="1931,1702,1927,1694,1914,1688,1895,1682,1870,1679,1843,1678,1816,1679,1791,1682,1771,1688,1759,1694,1755,1702,1759,1709,1771,1716,1791,1721,1816,1724,1843,1726,1870,1724,1895,1721,1914,1716,1927,1709"/>
-<area shape="poly" id="edge15" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_10" title="Morimae and Yamakawa.
+ CRYPTO18. " alt="" coords="468,1460,574,1476,727,1487,846,1489,966,1494,1036,1501,1118,1514,1164,1525,1198,1538,1232,1550,1277,1562,1453,1593,1618,1614,1613,1616,1452,1598,1276,1567,1231,1555,1196,1543,1162,1530,1117,1519,1035,1506,965,1499,846,1494,726,1493,573,1481,471,1464"/>
+<area shape="rect" id="edge17-label" href="https://link.springer.com/chapter/10.1007/978-3-319-96878-0_5" title="JLS18" alt="" coords="1277,1533,1311,1548"/>
+<area shape="poly" id="node16" title="Single&#45;copy PRS with m&gt;n, for key&#45;length n and output size m. The non&#45;uniform version is also equivalent to EFI [CCC+25](https://arxiv.org/abs/2510.07859)." alt="" coords="1330,2395,1325,2388,1311,2381,1289,2376,1261,2372,1231,2371,1200,2372,1172,2376,1150,2381,1136,2388,1132,2395,1136,2403,1150,2409,1172,2415,1200,2418,1231,2419,1261,2418,1289,2415,1311,2409,1325,2403"/>
+<area shape="poly" id="edge18" title="Trivial." alt="" coords="716,2124,785,2145,861,2175,955,2221,1045,2272,1189,2363,1183,2364,1042,2277,952,2226,859,2180,783,2150,717,2129"/>
+<area shape="poly" id="node17" title="Non&#45;Interactive Computationally Hiding Statistically Binding Quantum Bit Commitments" alt="" coords="1096,2816,1092,2809,1079,2802,1060,2797,1035,2793,1008,2792,981,2793,956,2797,937,2802,924,2809,920,2816,924,2824,937,2830,956,2836,981,2839,1008,2840,1035,2839,1060,2836,1079,2830,1092,2824"/>
+<area shape="poly" id="edge19" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_10" title="Morimae and Yamakawa.
  Quantum Commitments and Signatures Without One&#45;Way Function.
- CRYPTO&#39;22. " alt="" coords="2026,1607,1903,1673,1901,1667,2020,1609"/>
-<area shape="rect" id="edge15-label" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_10" title="MY22a" alt="" coords="1961,1639,2003,1654"/>
-<area shape="poly" id="node14" title="Pseudorandom States with Proofs of Destruction" alt="" coords="272,904,270,896,262,890,251,884,236,881,220,880,204,881,190,884,178,890,171,896,168,904,171,911,178,918,190,923,204,926,220,928,236,926,251,923,262,918,270,911"/>
-<area shape="poly" id="edge19" title="Trivial." alt="" coords="737,592,724,653,696,726,676,765,652,801,622,833,587,859,559,869,524,875,438,878,351,878,285,883,281,883,277,878,284,876,351,871,438,872,523,868,558,863,584,853,618,828,646,797,670,761,690,724,718,651,735,598"/>
-<area shape="poly" id="node18" title="Statistically Binding Computationally Hiding Bit Commitments with Classical Communication" alt="" coords="1602,682,1599,674,1591,668,1577,662,1559,659,1540,658,1521,659,1504,662,1490,668,1481,674,1478,682,1481,689,1490,696,1504,701,1521,704,1540,706,1559,704,1577,701,1591,696,1599,689"/>
-<area shape="poly" id="edge20" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
+ CRYPTO&#39;22. " alt="" coords="687,2136,702,2190,709,2253,709,2677,714,2707,728,2733,748,2753,775,2770,805,2784,839,2794,909,2809,903,2809,837,2799,804,2789,772,2775,745,2758,723,2736,709,2709,704,2677,704,2254,697,2191,686,2141"/>
+<area shape="rect" id="edge19-label" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_10" title="MY22a" alt="" coords="707,2458,749,2473"/>
+<area shape="poly" id="node18" title="Pseudorandom States with Proofs of Destruction" alt="" coords="2268,1281,2266,1273,2258,1267,2247,1261,2232,1258,2216,1257,2200,1258,2185,1261,2174,1267,2167,1273,2164,1281,2167,1288,2174,1295,2185,1300,2200,1304,2216,1305,2232,1304,2247,1300,2258,1295,2266,1288"/>
+<area shape="poly" id="edge23" title="Trivial." alt="" coords="2312,1159,2245,1248,2241,1244,2309,1163"/>
+<area shape="poly" id="node21" title="Statistically Binding Computationally Hiding Bit Commitments with Classical Communication" alt="" coords="2510,1281,2507,1273,2498,1267,2485,1261,2467,1258,2448,1257,2429,1258,2411,1261,2398,1267,2389,1273,2386,1281,2389,1288,2398,1295,2411,1300,2429,1304,2448,1305,2467,1304,2485,1300,2498,1295,2507,1288"/>
+<area shape="poly" id="edge24" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
  Pseudorandomness with Proof of Destruction and Applications.
- IACR eprint, 2023. " alt="" coords="793,579,874,591,965,602,1055,615,1119,630,1462,670,1456,673,1118,637,1054,622,964,609,873,598,796,585"/>
-<area shape="rect" id="edge20-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="1118,619,1164,634"/>
-<area shape="poly" id="edge24" title="Trivial." alt="" coords="1912,922,1952,949,1972,975,1988,1005,1982,1003,1967,979,1947,954,1912,929"/>
-<area shape="poly" id="node21" title="Non&#45;reusable CCA1 Encryption Scheme with Quantum Public&#45;Keys and Quantum Ciphers" alt="" coords="1937,1120,1928,1112,1901,1106,1859,1100,1806,1097,1747,1096,1688,1097,1635,1100,1593,1106,1566,1112,1556,1120,1566,1127,1593,1134,1635,1139,1688,1142,1747,1144,1806,1142,1859,1139,1901,1134,1928,1127"/>
-<area shape="poly" id="edge25" href="https://eprint.iacr.org/2023/877" title="Barooti, Grilo, Huguenin&#45;Dumittan, Malavolta, Sattath, and Vu.
- Public&#45;Key Encryption with Quantum Keys.
- IACR eprint, 2023. " alt="" coords="1872,925,1882,958,1887,996,1884,1036,1878,1056,1868,1074,1854,1089,1850,1084,1863,1070,1872,1053,1877,1035,1880,996,1875,959,1869,931"/>
-<area shape="rect" id="edge25-label" href="https://eprint.iacr.org/2023/877" title="BGH+23" alt="" coords="1883,968,1934,983"/>
-<area shape="poly" id="node22" title="Selective CPA Symmetric Encryption with Quantum Ciphers" alt="" coords="1447,1048,1445,1040,1438,1034,1428,1028,1415,1025,1400,1024,1386,1025,1373,1028,1362,1034,1356,1040,1354,1048,1356,1055,1362,1062,1373,1067,1386,1070,1400,1072,1415,1070,1428,1067,1438,1062,1445,1055"/>
-<area shape="poly" id="edge26" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
- Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
- TCC&#39;22. " alt="" coords="1768,916,1684,932,1594,955,1517,986,1450,1021,1447,1015,1514,980,1592,948,1683,925,1774,913"/>
-<area shape="rect" id="edge26-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1593,968,1647,983"/>
-<area shape="poly" id="node23" title="Reusable (Non&#45;CMA) Length Restricted MAC with Quantum Tags" alt="" coords="1810,1048,1803,1040,1782,1034,1750,1028,1710,1025,1665,1024,1621,1025,1581,1028,1549,1034,1528,1040,1521,1048,1528,1055,1549,1062,1581,1067,1621,1070,1665,1072,1710,1070,1750,1067,1782,1062,1803,1055"/>
-<area shape="poly" id="edge27" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8" title="Ananth, Qian and Yuen.
- Cryptography from Pseudorandom Quantum States.
- Crypto&#39;22. " alt="" coords="1835,925,1716,1014,1712,1009,1829,929"/>
-<area shape="rect" id="edge27-label" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8" title="AQY22" alt="" coords="1793,968,1837,983"/>
-<area shape="poly" id="edge28" title="Trivial." alt="" coords="488,812,285,883,283,883,278,879,283,877,492,806"/>
-<area shape="poly" id="node24" title="Reusable CCA1 Encryption Scheme with Quantum Public&#45;Keys and Classical Ciphers" alt="" coords="215,976,210,968,196,962,174,956,146,953,115,952,84,953,56,956,34,962,20,968,15,976,20,983,34,990,56,995,84,998,115,1000,146,998,174,995,196,990,210,983"/>
+ IACR eprint, 2023. " alt="" coords="2339,1159,2355,1189,2375,1216,2409,1250,2403,1250,2371,1220,2351,1191,2338,1165"/>
+<area shape="rect" id="edge24-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="2373,1203,2419,1218"/>
+<area shape="poly" id="edge28" title="Trivial." alt="" coords="499,1305,478,1323,458,1345,444,1379,438,1415,433,1414,439,1378,454,1342,475,1319,502,1301"/>
+<area shape="poly" id="node24" title="Non&#45;reusable CCA1 Encryption Scheme with Quantum Public&#45;Keys and Quantum Ciphers" alt="" coords="1023,1541,1013,1533,986,1527,944,1521,891,1518,832,1517,773,1518,720,1521,678,1527,651,1533,641,1541,651,1548,678,1555,720,1560,773,1564,832,1565,891,1564,944,1560,986,1555,1013,1548"/>
 <area shape="poly" id="edge29" href="https://eprint.iacr.org/2023/877" title="Barooti, Grilo, Huguenin&#45;Dumittan, Malavolta, Sattath, and Vu.
  Public&#45;Key Encryption with Quantum Keys.
- IACR eprint, 2023. " alt="" coords="476,803,396,815,301,832,215,855,181,868,158,882,140,905,128,931,122,929,134,901,154,877,178,862,213,848,299,826,395,808,481,798"/>
-<area shape="rect" id="edge29-label" href="https://eprint.iacr.org/2023/877" title="BGH+23" alt="" coords="246,841,297,856"/>
-<area shape="poly" id="node25" title="CCA2 Symmetric Encryption with Classical Ciphers" alt="" coords="773,904,762,896,728,890,675,884,608,881,535,880,461,881,395,884,342,890,308,896,296,904,308,911,342,918,395,923,461,926,535,928,608,926,675,923,728,918,762,911"/>
-<area shape="poly" id="edge30" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
+ IACR eprint, 2023. " alt="" coords="540,1303,537,1344,537,1391,548,1438,559,1459,575,1476,616,1502,664,1521,659,1524,614,1507,572,1480,555,1462,543,1440,532,1392,531,1344,538,1308"/>
+<area shape="rect" id="edge29-label" href="https://eprint.iacr.org/2023/877" title="BGH+23" alt="" coords="534,1360,585,1375"/>
+<area shape="poly" id="node25" title="Selective CPA Symmetric Encryption with Quantum Ciphers" alt="" coords="685,1454,683,1447,676,1440,666,1435,653,1431,639,1430,624,1431,611,1435,601,1440,594,1447,592,1454,594,1462,601,1468,611,1474,624,1477,639,1478,653,1477,666,1474,676,1468,683,1462"/>
+<area shape="poly" id="edge30" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
+ Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
+ TCC&#39;22. " alt="" coords="565,1302,597,1342,615,1379,630,1415,624,1415,611,1381,592,1345,566,1307"/>
+<area shape="rect" id="edge30-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="617,1360,671,1375"/>
+<area shape="poly" id="node26" title="Reusable (Non&#45;CMA) Length Restricted MAC with Quantum Tags" alt="" coords="1014,1454,1007,1447,987,1440,955,1435,914,1431,869,1430,825,1431,784,1435,752,1440,732,1447,724,1454,732,1462,752,1468,784,1474,825,1477,869,1478,914,1477,955,1474,987,1468,1007,1462"/>
+<area shape="poly" id="edge31" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8" title="Ananth, Qian and Yuen.
+ Cryptography from Pseudorandom Quantum States.
+ Crypto&#39;22. " alt="" coords="596,1299,640,1318,682,1341,710,1365,738,1389,803,1424,798,1426,735,1394,706,1370,679,1346,637,1323,598,1304"/>
+<area shape="rect" id="edge31-label" href="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8" title="AQY22" alt="" coords="736,1360,780,1375"/>
+<area shape="poly" id="edge32" title="Trivial." alt="" coords="1450,1148,1602,1180,1789,1216,1987,1246,2154,1271,2149,1272,1986,1252,1788,1221,1601,1185,1451,1153"/>
+<area shape="poly" id="node27" title="Reusable CCA1 Encryption Scheme with Quantum Public&#45;Keys and Classical Ciphers" alt="" coords="1529,1541,1524,1533,1510,1527,1488,1521,1460,1518,1429,1517,1399,1518,1371,1521,1349,1527,1334,1533,1330,1541,1334,1548,1349,1555,1371,1560,1399,1564,1429,1565,1460,1564,1488,1560,1510,1555,1524,1548"/>
+<area shape="poly" id="edge33" href="https://eprint.iacr.org/2023/877" title="Barooti, Grilo, Huguenin&#45;Dumittan, Malavolta, Sattath, and Vu.
+ Public&#45;Key Encryption with Quantum Keys.
+ IACR eprint, 2023. " alt="" coords="1424,1157,1444,1178,1459,1202,1465,1229,1465,1257,1470,1281,1470,1293,1465,1306,1453,1321,1439,1328,1425,1334,1411,1345,1382,1385,1367,1431,1362,1455,1366,1477,1388,1508,1383,1508,1362,1479,1356,1455,1361,1430,1378,1382,1407,1342,1423,1330,1437,1323,1450,1317,1460,1304,1464,1292,1464,1282,1460,1257,1460,1230,1454,1204,1439,1181,1424,1163"/>
+<area shape="rect" id="edge33-label" href="https://eprint.iacr.org/2023/877" title="BGH+23" alt="" coords="1467,1273,1518,1288"/>
+<area shape="poly" id="node28" title="CCA2 Symmetric Encryption with Classical Ciphers" alt="" coords="1318,1281,1307,1273,1273,1267,1220,1261,1154,1258,1080,1257,1006,1258,940,1261,887,1267,853,1273,842,1281,853,1288,887,1295,940,1300,1006,1304,1080,1305,1154,1304,1220,1300,1273,1295,1307,1288"/>
+<area shape="poly" id="edge34" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
  Pseudorandomness with Proof of Destruction and Applications.
- IACR eprint, 2023. " alt="" coords="536,814,538,858,532,857,534,820"/>
-<area shape="rect" id="edge30-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="535,841,581,856"/>
-<area shape="poly" id="node26" title="Length Restricted CMA MAC with Classical Tags" alt="" coords="1170,904,1168,896,1162,890,1152,884,1140,881,1127,880,1113,881,1101,884,1092,890,1086,896,1084,904,1086,911,1092,918,1101,923,1113,926,1127,928,1140,926,1152,923,1162,918,1168,911"/>
-<area shape="poly" id="edge31" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
+ IACR eprint, 2023. " alt="" coords="1359,1158,1148,1253,1144,1249,1363,1155"/>
+<area shape="rect" id="edge34-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="1250,1203,1296,1218"/>
+<area shape="poly" id="node29" title="Length Restricted CMA MAC with Classical Tags" alt="" coords="1443,1281,1441,1273,1435,1267,1425,1261,1413,1258,1400,1257,1387,1258,1375,1261,1365,1267,1359,1273,1357,1281,1359,1288,1365,1295,1375,1300,1387,1304,1400,1305,1413,1304,1425,1300,1435,1295,1441,1288"/>
+<area shape="poly" id="edge35" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
  Pseudorandomness with Proof of Destruction and Applications.
- IACR eprint, 2023. " alt="" coords="588,799,787,830,1034,876,1071,886,1064,888,1033,883,785,837,591,805"/>
-<area shape="rect" id="edge31-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="897,841,943,856"/>
-<area shape="poly" id="edge32" href="https://eprint.iacr.org/2024/291" title="Bouaziz&#45;Ermann and Muguruza.
+ IACR eprint, 2023. " alt="" coords="1401,1160,1403,1242,1398,1240,1399,1165"/>
+<area shape="rect" id="edge35-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="1400,1203,1446,1218"/>
+<area shape="poly" id="edge36" href="https://eprint.iacr.org/2024/291" title="Bouaziz&#45;Ermann and Muguruza.
  Quantum Pseudorandomness Cannot Be Shrunk In a Black&#45;Box Way.
- IACR eprint, 2024. " alt="" coords="1661,496,1753,592,1796,630,1833,656,1867,685,1905,728,1933,766,1951,799,1979,879,1996,957,2003,1025,1997,1022,1990,958,1973,881,1945,802,1927,770,1900,732,1863,690,1829,662,1792,635,1749,597,1661,503"/>
-<area shape="rect" id="edge32-label" href="https://eprint.iacr.org/2024/291" title="BM24" alt="" coords="1914,730,1949,745"/>
-<area shape="poly" id="edge34" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
+ IACR eprint, 2024. " alt="" coords="1602,644,1268,874,1035,1036,799,1205,763,1235,736,1260,707,1283,667,1307,627,1321,594,1324,562,1329,525,1346,501,1365,480,1388,449,1432,445,1430,476,1385,498,1361,523,1341,560,1324,593,1319,626,1316,664,1302,704,1279,732,1256,759,1231,796,1201,1032,1032,1265,869,1606,640"/>
+<area shape="rect" id="edge36-label" href="https://eprint.iacr.org/2024/291" title="BM24" alt="" coords="1046,1041,1081,1056"/>
+<area shape="poly" id="edge38" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
- TCC&#39;22. " alt="" coords="1624,481,1614,536,1594,596,1570,642,1564,638,1588,593,1607,534,1621,487"/>
-<area shape="rect" id="edge34-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1607,563,1661,578"/>
-<area shape="poly" id="node27" title="Quantum Pseudorandom Generator with 1/poly error" alt="" coords="1051,571,1047,563,1035,557,1017,551,994,548,968,547,943,548,919,551,901,557,889,563,885,571,889,578,901,585,919,590,943,593,968,595,994,593,1017,590,1035,585,1047,578"/>
-<area shape="poly" id="edge33" href="https://eprint.iacr.org/2023/904" title="Ananth, &#160;Lin and Yuen.
+ TCC&#39;22. " alt="" coords="1705,628,1852,688,1945,732,2045,787,2146,852,2244,928,2334,1014,2374,1060,2410,1110,2427,1142,2438,1177,2449,1242,2444,1240,2433,1178,2422,1144,2406,1113,2370,1064,2330,1017,2241,932,2143,857,2042,792,1942,737,1850,692,1706,633"/>
+<area shape="rect" id="edge38-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="2302,952,2356,967"/>
+<area shape="poly" id="node30" title="Quantum Pseudorandom Generator with 1/poly error" alt="" coords="1799,783,1795,776,1783,769,1765,764,1742,761,1716,759,1690,761,1667,764,1649,769,1637,776,1633,783,1637,791,1649,797,1667,803,1690,806,1716,807,1742,806,1765,803,1783,797,1795,791"/>
+<area shape="poly" id="edge37" href="https://eprint.iacr.org/2023/904" title="Ananth, &#160;Lin and Yuen.
  Pseudorandom Strings from Pseudorandom Quantum States.
- IACR eprint, 2023. " alt="" coords="1533,473,1320,505,1063,550,1052,552,1049,547,1062,543,1319,498,1539,470"/>
-<area shape="rect" id="edge33-label" href="https://eprint.iacr.org/2023/904" title="ALY23" alt="" coords="1279,508,1320,523"/>
-<area shape="poly" id="edge35" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
+ IACR eprint, 2023. " alt="" coords="1659,632,1704,745,1699,745,1658,637"/>
+<area shape="rect" id="edge37-label" href="https://eprint.iacr.org/2023/904" title="ALY23" alt="" coords="1691,689,1731,704"/>
+<area shape="poly" id="edge39" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
- TCC&#39;22. " alt="" coords="1476,368,1574,425,1568,427,1477,375"/>
-<area shape="rect" id="edge35-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1544,397,1598,412"/>
-<area shape="poly" id="node28" title="Quantum Pseudorandom Function with 1/poly error" alt="" coords="1408,460,1404,452,1392,446,1374,440,1352,437,1327,436,1302,437,1279,440,1261,446,1250,452,1246,460,1250,467,1261,474,1279,479,1302,482,1327,484,1352,482,1374,479,1392,474,1404,467"/>
-<area shape="poly" id="edge36" href="https://eprint.iacr.org/2023/904" title="Ananth, &#160;Lin and Yuen.
+ TCC&#39;22. " alt="" coords="1187,455,1579,584,1574,586,1188,460"/>
+<area shape="rect" id="edge39-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1451,516,1505,531"/>
+<area shape="poly" id="node31" title="Quantum Pseudorandom Function with 1/poly error" alt="" coords="1147,610,1144,603,1132,596,1114,591,1092,587,1067,586,1042,587,1019,591,1001,596,990,603,986,610,990,617,1001,624,1019,629,1042,633,1067,634,1092,633,1114,629,1132,624,1144,617"/>
+<area shape="poly" id="edge40" href="https://eprint.iacr.org/2023/904" title="Ananth, &#160;Lin and Yuen.
  Pseudorandom Strings from Pseudorandom Quantum States.
- IACR eprint, 2023. " alt="" coords="1413,375,1367,424,1362,419,1418,370"/>
-<area shape="rect" id="edge36-label" href="https://eprint.iacr.org/2023/904" title="ALY23" alt="" coords="1390,397,1431,412"/>
-<area shape="poly" id="node29" title="Pseudo&#45;encryption with Classical Ciphers" alt="" coords="460,1048,455,1040,440,1034,416,1028,386,1025,353,1024,321,1025,291,1028,267,1034,252,1040,247,1048,252,1055,267,1062,291,1067,321,1070,353,1072,386,1070,416,1067,440,1062,455,1055"/>
-<area shape="poly" id="edge37" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
+ IACR eprint, 2023. " alt="" coords="1121,459,1083,572,1078,570,1119,463"/>
+<area shape="rect" id="edge40-label" href="https://eprint.iacr.org/2023/904" title="ALY23" alt="" coords="1105,516,1145,531"/>
+<area shape="poly" id="node32" title="Pseudo&#45;encryption with Classical Ciphers" alt="" coords="1267,1454,1262,1447,1246,1440,1223,1435,1193,1431,1160,1430,1127,1431,1097,1435,1074,1440,1059,1447,1053,1454,1059,1462,1074,1468,1097,1474,1127,1477,1160,1478,1193,1477,1223,1474,1246,1468,1262,1462"/>
+<area shape="poly" id="edge41" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
- TCC&#39;22. " alt="" coords="1334,360,1230,380,1169,395,1106,414,1043,438,983,469,926,505,876,549,840,592,822,633,815,678,814,736,814,905,812,933,806,956,795,975,782,990,765,1001,745,1009,699,1017,589,1019,529,1020,469,1027,454,1029,450,1024,468,1020,528,1013,588,1012,699,1010,743,1002,762,995,777,985,790,971,800,954,805,932,807,905,807,736,809,678,816,631,835,589,871,544,922,500,979,463,1041,432,1104,408,1167,388,1228,373,1339,357"/>
-<area shape="rect" id="edge37-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="814,674,868,689"/>
-<area shape="poly" id="edge66" title="Trivial." alt="" coords="1951,592,1906,731,1875,860,1869,856,1900,729,1947,597"/>
-<area shape="poly" id="node46" title="Pseudorandom Unitaries" alt="" coords="1949,460,1947,452,1942,446,1933,440,1923,437,1911,436,1899,437,1888,440,1880,446,1874,452,1872,460,1874,467,1880,474,1888,479,1899,482,1911,484,1923,482,1933,479,1942,474,1947,467"/>
-<area shape="poly" id="edge68" title="Trivial." alt="" coords="1897,370,1906,416,1900,413,1895,376"/>
-<area shape="poly" id="edge21" title="Trivial." alt="" coords="1885,1170,1912,1157,1937,1141,1955,1120,1976,1092,1981,1087,1960,1124,1941,1146,1915,1163,1888,1176"/>
-<area shape="poly" id="node19" title="Computationally Hiding Statistically Binding Quantum Bit Commitments" alt="" coords="1746,1813,1743,1805,1732,1799,1717,1793,1697,1790,1675,1789,1653,1790,1633,1793,1617,1799,1607,1805,1604,1813,1607,1820,1617,1827,1633,1832,1653,1835,1675,1837,1697,1835,1717,1832,1732,1827,1743,1820"/>
-<area shape="poly" id="edge22" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
+ TCC&#39;22. " alt="" coords="1139,458,1156,499,1180,584,1193,654,1194,688,1191,723,1169,808,1157,834,1139,862,1086,925,953,1063,890,1133,842,1199,826,1229,817,1257,817,1282,825,1303,841,1320,865,1337,931,1371,1009,1402,1085,1429,1080,1431,1007,1407,929,1376,862,1342,837,1324,820,1306,811,1283,812,1256,821,1227,837,1196,886,1130,949,1060,1082,921,1134,859,1153,831,1164,806,1186,723,1189,688,1188,654,1175,585,1151,500,1139,464"/>
+<area shape="rect" id="edge41-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1074,952,1128,967"/>
+<area shape="poly" id="edge73" title="Trivial." alt="" coords="564,1071,569,1111,569,1165,556,1242,551,1241,564,1164,564,1111,564,1076"/>
+<area shape="poly" id="edge74" href="https://arxiv.org/abs/2609.14626" title="Hhan.
+ Derivatives of Quantum Randomness: Separating Pseudorandom Unitaries from Pseudorandom (Function&#45;like) States.
+ arXiv, 2026" alt="" coords="532,1088,523,1112,517,1151,520,1190,528,1227,537,1257,532,1257,523,1228,515,1191,512,1151,518,1110,534,1083"/>
+<area shape="rect" id="edge74-label" href="https://arxiv.org/abs/2609.14626" title="Hha26" alt="" coords="520,1130,557,1145"/>
+<area shape="poly" id="node48" title="Pseudorandom Unitaries" alt="" coords="624,870,622,863,616,856,608,851,597,847,585,846,574,847,563,851,554,856,549,863,547,870,549,877,554,884,563,889,574,893,585,894,597,893,608,889,616,884,622,877"/>
+<area shape="poly" id="edge76" title="Trivial." alt="" coords="660,722,644,740,628,761,609,796,597,832,592,830,605,794,623,758,641,736,663,717"/>
+<area shape="poly" id="node20" title="One&#45;time Signature with a Classical Public&#45;Key" alt="" coords="2527,1628,2525,1620,2520,1613,2512,1608,2501,1605,2489,1604,2478,1605,2467,1608,2459,1613,2453,1620,2452,1628,2453,1635,2459,1642,2467,1647,2478,1650,2489,1652,2501,1650,2512,1647,2520,1642,2525,1635"/>
+<area shape="poly" id="edge88" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="Chung, Goldin and Gray.
+ On Central Primitives for Quantum Cryptography with Classical Communication.
+ CRYPTO&#39;24." alt="" coords="2619,1486,2586,1519,2545,1567,2519,1596,2515,1592,2541,1563,2582,1515,2615,1489"/>
+<area shape="rect" id="edge88-label" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="CGG24" alt="" coords="2584,1533,2627,1548"/>
+<area shape="poly" id="node33" title="(Mixed) One&#45;way States Generator" alt="" coords="1985,1974,1982,1967,1975,1960,1964,1955,1949,1951,1933,1950,1918,1951,1903,1955,1892,1960,1885,1967,1882,1974,1885,1982,1892,1988,1903,1994,1918,1997,1933,1998,1949,1997,1964,1994,1975,1988,1982,1982"/>
+<area shape="poly" id="edge85" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="Chung, Goldin and Gray.
+ On Central Primitives for Quantum Cryptography with Classical Communication.
+ CRYPTO&#39;24." alt="" coords="2590,1472,2457,1510,2292,1561,2213,1592,2143,1624,2088,1658,2067,1675,2053,1692,2046,1704,2044,1714,2053,1737,2062,1747,2072,1752,2095,1755,2119,1758,2131,1764,2141,1776,2149,1800,2141,1826,2111,1869,2071,1905,2028,1933,1988,1954,1985,1949,2025,1929,2068,1901,2107,1866,2136,1824,2144,1800,2136,1778,2128,1768,2118,1763,2094,1760,2070,1757,2058,1751,2048,1740,2039,1714,2041,1702,2048,1689,2064,1671,2085,1653,2141,1619,2211,1587,2291,1556,2455,1504,2595,1470"/>
+<area shape="rect" id="edge85-label" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="CGG24" alt="" coords="2050,1707,2093,1722"/>
+<area shape="poly" id="node36" title="(Inefficiently Verifiable) One&#45;Way Puzzle" alt="" coords="2363,2395,2360,2388,2350,2381,2335,2376,2316,2372,2295,2371,2274,2372,2254,2376,2239,2381,2230,2388,2226,2395,2230,2403,2239,2409,2254,2415,2274,2418,2295,2419,2316,2418,2335,2415,2350,2409,2360,2403"/>
+<area shape="poly" id="edge86" title="Trivial." alt="" coords="2656,1476,2628,1708,2614,1873,2608,2043,2608,2256,2602,2291,2585,2320,2560,2343,2528,2361,2492,2374,2454,2384,2379,2394,2378,2389,2453,2378,2490,2369,2525,2356,2556,2338,2581,2317,2597,2289,2603,2256,2603,2043,2609,1873,2623,1707,2652,1481"/>
+<area shape="poly" id="edge87" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="Chung, Goldin and Gray.
+ On Central Primitives for Quantum Cryptography with Classical Communication.
+ CRYPTO&#39;24." alt="" coords="2674,1490,2695,1554,2703,1590,2705,1626,2705,2256,2703,2275,2697,2290,2687,2301,2674,2309,2606,2335,2544,2358,2479,2375,2362,2392,2361,2387,2478,2370,2542,2353,2604,2330,2672,2304,2683,2296,2692,2287,2698,2274,2700,2256,2700,1626,2697,1591,2690,1555,2672,1495"/>
+<area shape="rect" id="edge87-label" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="CGG24" alt="" coords="2703,1967,2746,1982"/>
+<area shape="poly" id="edge93" href="https://arxiv.org/abs/2409.15248" title="Khurana, Tomer.
+ Founding Quantum Cryptography on Quantum Advantage.
+ STOC&#39;25." alt="" coords="2476,539,2602,571,2742,612,2804,634,2856,655,2890,675,2900,685,2904,695,2904,2256,2900,2276,2888,2294,2869,2310,2844,2324,2781,2347,2703,2364,2618,2377,2531,2386,2379,2395,2378,2390,2530,2381,2617,2372,2702,2359,2779,2342,2842,2319,2866,2305,2884,2290,2895,2274,2899,2256,2899,696,2896,688,2887,680,2853,660,2803,639,2740,617,2601,577,2477,545"/>
+<area shape="rect" id="edge93-label" href="https://arxiv.org/abs/2409.15248" title="KT25" alt="" coords="2901,1447,2933,1462"/>
+<area shape="poly" id="edge124" href="https://arxiv.org/abs/2402.08194" title="Coladangelo and Mutreja.
+ On black&#45;box separations of quantum digital signatures from pseudorandom states.
+ arXiv, 2024. " alt="" coords="1905,1292,1603,1341,1397,1370,1186,1394,1014,1408,879,1412,745,1418,574,1433,471,1448,468,1444,573,1428,745,1412,879,1407,1013,1402,1185,1389,1396,1364,1602,1336,1910,1289"/>
+<area shape="rect" id="edge124-label" href="https://arxiv.org/abs/2402.08194" title="CM24" alt="" coords="1566,1360,1601,1375"/>
+<area shape="poly" id="edge126" title="Trivial." alt="" coords="1982,1296,2056,1341,2148,1389,2181,1401,2209,1406,2236,1413,2269,1428,2328,1467,2382,1511,2465,1595,2459,1595,2378,1515,2325,1471,2267,1433,2235,1418,2208,1412,2180,1406,2146,1394,2053,1346,1982,1302"/>
+<area shape="poly" id="node56" title="Digital Signature with Quantum Public Keys" alt="" coords="2437,1714,2429,1707,2406,1700,2370,1695,2325,1691,2275,1690,2224,1691,2179,1695,2143,1700,2120,1707,2112,1714,2120,1722,2143,1728,2179,1734,2224,1737,2275,1738,2325,1737,2370,1734,2406,1728,2429,1722"/>
+<area shape="poly" id="edge125" title="Trivial." alt="" coords="1960,1303,1957,1350,1948,1373,1934,1393,1911,1410,1887,1416,1862,1415,1838,1411,1815,1408,1793,1408,1772,1415,1753,1432,1746,1443,1744,1453,1753,1477,1774,1494,1814,1518,1936,1575,2206,1685,2200,1686,1934,1580,1812,1523,1771,1499,1749,1480,1739,1454,1741,1441,1749,1428,1770,1410,1792,1403,1816,1402,1839,1406,1863,1410,1886,1410,1908,1405,1930,1390,1944,1371,1951,1349,1957,1308"/>
+<area shape="poly" id="node22" title="Computationally Hiding Statistically Binding Quantum Bit Commitments" alt="" coords="1145,2676,1141,2668,1131,2662,1115,2656,1095,2653,1073,2652,1051,2653,1032,2656,1016,2662,1006,2668,1002,2676,1006,2683,1016,2690,1032,2695,1051,2699,1073,2700,1095,2699,1115,2695,1131,2690,1141,2683"/>
+<area shape="poly" id="edge26" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
- TCC&#39;22. " alt="" coords="1788,1213,1759,1239,1732,1266,1711,1298,1706,1316,1703,1335,1703,1703,1700,1737,1692,1771,1687,1766,1694,1736,1697,1703,1697,1334,1699,1314,1705,1295,1727,1262,1755,1234,1782,1216"/>
-<area shape="rect" id="edge22-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1700,1528,1754,1543"/>
-<area shape="poly" id="node20" title="Pseudo&#45;encryption With Quantum Ciphers" alt="" coords="925,1336,917,1328,895,1322,860,1316,817,1313,768,1312,720,1313,676,1316,642,1322,619,1328,612,1336,619,1343,642,1350,676,1355,720,1358,768,1360,817,1358,860,1355,895,1350,917,1343"/>
-<area shape="poly" id="edge23" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
+ TCC&#39;22. " alt="" coords="535,1648,647,1719,696,1753,722,1775,751,1820,771,1860,785,1898,793,1935,799,2014,799,2113,799,2537,804,2566,817,2591,837,2611,863,2628,893,2642,925,2652,991,2667,986,2668,924,2657,891,2647,861,2633,834,2616,813,2594,798,2568,793,2537,793,2113,794,2014,788,1935,780,1899,766,1862,746,1823,718,1779,693,1757,644,1723,536,1653"/>
+<area shape="rect" id="edge26-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="796,2177,850,2192"/>
+<area shape="poly" id="node23" title="Pseudo&#45;encryption With Quantum Ciphers" alt="" coords="1394,1801,1386,1793,1364,1787,1329,1781,1286,1778,1237,1777,1189,1778,1145,1781,1111,1787,1089,1793,1081,1801,1089,1808,1111,1815,1145,1820,1189,1824,1237,1825,1286,1824,1329,1820,1364,1815,1386,1808"/>
+<area shape="poly" id="edge27" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
- TCC&#39;22. " alt="" coords="1749,1211,1570,1253,1458,1274,1346,1291,1231,1302,1141,1305,1051,1307,936,1315,901,1319,899,1313,936,1308,1051,1300,1141,1298,1231,1295,1345,1284,1457,1267,1568,1247,1755,1209"/>
-<area shape="rect" id="edge23-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1618,1256,1672,1271"/>
-<area shape="poly" id="node36" title="Pure One&#45;way States Generator" alt="" coords="1103,1336,1099,1328,1088,1322,1071,1316,1049,1313,1025,1312,1002,1313,980,1316,963,1322,952,1328,948,1336,952,1343,963,1350,980,1355,1002,1358,1025,1360,1049,1358,1071,1355,1088,1350,1099,1343"/>
-<area shape="poly" id="edge80" href="https://eprint.iacr.org/2022/1336" title="Morimae and Yamakawa.
+ TCC&#39;22. " alt="" coords="553,1646,690,1690,853,1736,981,1761,1105,1782,1100,1784,980,1766,852,1741,688,1695,555,1651"/>
+<area shape="rect" id="edge27-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="853,1707,907,1722"/>
+<area shape="poly" id="node39" title="Pure One&#45;way States Generator" alt="" coords="2119,1801,2115,1793,2104,1787,2087,1781,2065,1778,2041,1777,2017,1778,1996,1781,1979,1787,1968,1793,1964,1801,1968,1808,1979,1815,1996,1820,2017,1824,2041,1825,2065,1824,2087,1820,2104,1815,2115,1808"/>
+<area shape="poly" id="edge89" href="https://eprint.iacr.org/2022/1336" title="Morimae and Yamakawa.
  One&#45;Wayness in Quantum Cryptography.
- IACR eprint, 2022. " alt="" coords="1275,1217,1138,1291,1093,1311,1090,1305,1135,1285,1280,1213"/>
-<area shape="rect" id="edge80-label" href="https://eprint.iacr.org/2022/1336" title="MY22b" alt="" coords="1231,1256,1274,1271"/>
-<area shape="poly" id="node52" title="Private Quantum Money" alt="" coords="1629,1408,1622,1400,1603,1394,1572,1388,1533,1385,1491,1384,1448,1385,1410,1388,1379,1394,1360,1400,1353,1408,1360,1415,1379,1422,1410,1427,1448,1430,1491,1432,1533,1430,1572,1427,1603,1422,1622,1415"/>
-<area shape="poly" id="edge81" title="Trivial." alt="" coords="1401,1207,1428,1220,1451,1237,1471,1265,1484,1298,1492,1331,1494,1364,1488,1361,1485,1332,1478,1300,1465,1269,1446,1242,1424,1226,1401,1214"/>
-<area shape="poly" id="node53" title="Almost Public Quantum Coins" alt="" coords="1463,1336,1455,1328,1431,1322,1394,1316,1347,1313,1295,1312,1243,1313,1196,1316,1159,1322,1135,1328,1127,1336,1135,1343,1159,1350,1196,1355,1243,1358,1295,1360,1347,1358,1394,1355,1431,1350,1455,1343"/>
-<area shape="poly" id="edge82" href="https://arxiv.org/abs/2002.12438" title="Behera and Sattath.
+ IACR eprint, 2022. " alt="" coords="1782,1648,1926,1736,1992,1773,1986,1773,1924,1741,1782,1654"/>
+<area shape="rect" id="edge89-label" href="https://eprint.iacr.org/2022/1336" title="MY22b" alt="" coords="1925,1707,1968,1722"/>
+<area shape="poly" id="node53" title="Private Quantum Money" alt="" coords="1755,1888,1749,1880,1729,1873,1699,1868,1660,1865,1617,1864,1575,1865,1536,1868,1506,1873,1486,1880,1479,1888,1486,1895,1506,1902,1536,1907,1575,1910,1617,1912,1660,1910,1699,1907,1729,1902,1749,1895"/>
+<area shape="poly" id="edge90" title="Trivial." alt="" coords="1702,1652,1670,1674,1632,1703,1598,1737,1572,1778,1566,1801,1572,1824,1587,1852,1581,1851,1567,1826,1561,1801,1567,1776,1594,1734,1629,1699,1667,1670,1706,1649"/>
+<area shape="poly" id="node54" title="Almost Public Quantum Coins" alt="" coords="1925,1801,1917,1793,1893,1787,1856,1781,1809,1778,1757,1777,1705,1778,1659,1781,1621,1787,1598,1793,1589,1801,1598,1808,1621,1815,1659,1820,1705,1824,1757,1825,1809,1824,1856,1820,1893,1815,1917,1808"/>
+<area shape="poly" id="edge91" href="https://arxiv.org/abs/2002.12438" title="Behera and Sattath.
  Almost Public Coins.
- QIP&#39;21. " alt="" coords="1316,1213,1305,1292,1299,1288,1312,1218"/>
-<area shape="rect" id="edge82-label" href="https://arxiv.org/abs/2002.12438" title="BS20" alt="" coords="1310,1256,1340,1271"/>
-<area shape="poly" id="edge90" title="Trivial." alt="" coords="1827,1724,1782,1767,1743,1789,1741,1783,1778,1762,1821,1727"/>
-<area shape="poly" id="node54" title="Non&#45;Interactive Statistically Hiding Computationally Binding Quantum Bit Commitments" alt="" coords="1965,1813,1961,1805,1948,1799,1928,1793,1904,1790,1876,1789,1849,1790,1824,1793,1804,1799,1792,1805,1787,1813,1792,1820,1804,1827,1824,1832,1849,1835,1876,1837,1904,1835,1928,1832,1948,1827,1961,1820"/>
-<area shape="poly" id="edge91" href="https://doi.org/10.1007/978-3-031-30545-0_22" title="Hhan, Morimae, and Yamakawa.
+ QIP&#39;21. " alt="" coords="1751,1650,1758,1762,1753,1760,1748,1654"/>
+<area shape="rect" id="edge91-label" href="https://arxiv.org/abs/2002.12438" title="BS20" alt="" coords="1754,1707,1784,1722"/>
+<area shape="poly" id="node38" title="Efficiently samplable, statistically Far but computationally Indistinguishable pairs of mixed quantum states" alt="" coords="1419,2536,1417,2528,1412,2521,1404,2516,1394,2513,1383,2512,1372,2513,1362,2516,1354,2521,1348,2528,1347,2536,1348,2543,1354,2550,1362,2555,1372,2558,1383,2560,1394,2558,1404,2555,1412,2550,1417,2543"/>
+<area shape="poly" id="node55" title="Non&#45;Interactive Statistically Hiding Computationally Binding Quantum Bit Commitments" alt="" coords="1097,2957,1093,2949,1080,2942,1060,2937,1036,2934,1008,2933,981,2934,956,2937,936,2942,923,2949,919,2957,923,2964,936,2971,956,2976,981,2979,1008,2981,1036,2979,1060,2976,1080,2971,1093,2964"/>
+<area shape="poly" id="edge101" href="https://doi.org/10.1007/978-3-031-30545-0_22" title="Hhan, Morimae, and Yamakawa.
  From the Hardness of Detecting Superpositions to Cryptography: Quantum Public Key Encryption and Commitments.
- EUROCRYPT&#39;23. " alt="" coords="1874,1722,1894,1748,1896,1770,1891,1766,1888,1751,1871,1728"/>
-<area shape="rect" id="edge91-label" href="https://doi.org/10.1007/978-3-031-30545-0_22" title="HMY23" alt="" coords="1894,1750,1940,1765"/>
-<area shape="poly" id="node15" title="Efficiently Verifiable One&#45;Way Puzzle" alt="" coords="391,1336,387,1328,374,1322,355,1316,330,1313,303,1312,276,1313,251,1316,231,1322,219,1328,215,1336,219,1343,231,1350,251,1355,276,1358,303,1360,330,1358,355,1355,374,1350,387,1343"/>
-<area shape="poly" id="edge16" title="Trivial." alt="" coords="167,912,79,927,40,939,16,954,10,964,9,974,17,998,38,1046,65,1092,96,1135,130,1176,198,1245,259,1298,253,1300,194,1250,125,1180,91,1139,60,1096,32,1049,10,1001,2,975,4,962,11,949,37,933,77,920,171,907"/>
-<area shape="poly" id="node16" title="Classically Verifiable Private Quantum Coins" alt="" coords="1015,1048,1003,1040,969,1034,916,1028,849,1025,775,1024,701,1025,634,1028,581,1034,547,1040,535,1048,547,1055,581,1062,634,1067,701,1070,775,1072,849,1070,916,1067,969,1062,1003,1055"/>
-<area shape="poly" id="edge17" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
+ EUROCRYPT&#39;23. " alt="" coords="980,2851,972,2873,973,2893,984,2921,979,2919,967,2894,967,2872,976,2854"/>
+<area shape="rect" id="edge101-label" href="https://doi.org/10.1007/978-3-031-30545-0_22" title="HMY23" alt="" coords="970,2879,1016,2894"/>
+<area shape="poly" id="edge20" title="Trivial." alt="" coords="2239,1301,2283,1342,2307,1368,2317,1379,2333,1389,2388,1411,2433,1418,2481,1420,2540,1428,2575,1436,2570,1437,2540,1433,2480,1425,2433,1423,2386,1416,2331,1394,2314,1383,2303,1372,2279,1345,2238,1306"/>
+<area shape="poly" id="node19" title="Classically Verifiable Private Quantum Coins" alt="" coords="2249,1454,2237,1447,2203,1440,2150,1435,2083,1431,2009,1430,1935,1431,1868,1435,1815,1440,1781,1447,1770,1454,1781,1462,1815,1468,1868,1474,1935,1477,2009,1478,2083,1477,2150,1474,2203,1468,2237,1462"/>
+<area shape="poly" id="edge21" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
  Pseudorandomness with Proof of Destruction and Applications.
- IACR eprint, 2023. " alt="" coords="257,917,285,924,320,930,350,931,403,927,455,927,484,935,517,949,531,961,538,974,545,986,557,997,608,1021,602,1023,554,1002,540,990,533,977,526,965,513,955,482,941,454,934,403,933,350,938,319,937,283,931,260,923"/>
-<area shape="rect" id="edge17-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="555,968,601,983"/>
-<area shape="poly" id="node17" title="One&#45;time Signature with a Classical Public&#45;Key" alt="" coords="482,1264,480,1256,475,1250,466,1244,456,1241,444,1240,432,1241,422,1244,414,1250,408,1256,406,1264,408,1271,414,1278,422,1283,432,1286,444,1288,456,1286,466,1283,475,1278,480,1271"/>
-<area shape="poly" id="edge18" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
+ IACR eprint, 2023. " alt="" coords="2194,1301,2051,1422,2047,1418,2189,1304"/>
+<area shape="rect" id="edge21-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="2137,1360,2183,1375"/>
+<area shape="poly" id="edge22" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
  Pseudorandomness with Proof of Destruction and Applications.
- IACR eprint, 2023. " alt="" coords="224,925,228,963,219,1001,212,1010,204,1015,197,1018,192,1025,185,1048,192,1070,210,1100,232,1128,286,1175,343,1212,396,1240,390,1243,339,1218,282,1180,228,1132,205,1104,186,1073,179,1048,186,1022,193,1013,201,1009,208,1005,213,998,222,963,224,931"/>
-<area shape="rect" id="edge18-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="189,1040,235,1055"/>
-<area shape="poly" id="node30" title="(Mixed) One&#45;way States Generator" alt="" coords="1018,1480,1016,1472,1008,1466,997,1460,983,1457,967,1456,951,1457,937,1460,925,1466,918,1472,915,1480,918,1487,925,1494,937,1499,951,1502,967,1504,983,1502,997,1499,1008,1494,1016,1487"/>
-<area shape="poly" id="edge77" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="Chung, Goldin and Gray.
- On Central Primitives for Quantum Cryptography with Classical Communication.
- CRYPTO&#39;24." alt="" coords="314,1357,340,1403,358,1429,392,1438,454,1444,623,1448,794,1449,897,1452,910,1457,904,1459,896,1459,794,1455,623,1455,453,1451,391,1445,354,1434,335,1406,314,1363"/>
-<area shape="rect" id="edge77-label" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="CGG24" alt="" coords="356,1400,399,1415"/>
-<area shape="poly" id="node33" title="(Inefficiently Verifiable) One&#45;Way Puzzle" alt="" coords="563,1591,560,1583,550,1577,535,1571,516,1568,495,1567,474,1568,455,1571,439,1577,430,1583,426,1591,430,1598,439,1605,455,1610,474,1613,495,1615,516,1613,535,1610,550,1605,560,1598"/>
-<area shape="poly" id="edge78" title="Trivial." alt="" coords="307,1357,319,1394,333,1430,365,1491,384,1514,412,1540,438,1560,431,1561,407,1545,379,1518,360,1494,326,1433,312,1395,307,1363"/>
-<area shape="poly" id="edge79" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="Chung, Goldin and Gray.
- On Central Primitives for Quantum Cryptography with Classical Communication.
- CRYPTO&#39;24." alt="" coords="288,1377,284,1410,281,1442,284,1473,296,1502,323,1531,358,1553,396,1568,435,1580,428,1582,393,1574,355,1559,319,1536,290,1505,277,1475,274,1442,277,1409,286,1383"/>
-<area shape="rect" id="edge79-label" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="CGG24" alt="" coords="293,1472,336,1487"/>
-<area shape="poly" id="edge84" title="Trivial." alt="" coords="919,1064,991,1076,1061,1092,1161,1124,1251,1160,1245,1161,1158,1130,1059,1099,990,1083,921,1070"/>
-<area shape="poly" id="edge108" href="https://arxiv.org/abs/2310.11526" title="Khurana and Tomer.
+ IACR eprint, 2023. " alt="" coords="2225,1302,2250,1348,2267,1370,2287,1389,2304,1400,2320,1405,2352,1406,2384,1409,2401,1416,2418,1428,2447,1465,2467,1507,2480,1550,2488,1589,2483,1587,2475,1551,2462,1509,2443,1468,2414,1432,2398,1421,2383,1414,2352,1412,2319,1410,2302,1404,2284,1394,2263,1374,2246,1351,2224,1307"/>
+<area shape="rect" id="edge22-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="2451,1447,2497,1462"/>
+<area shape="poly" id="edge94" title="Trivial." alt="" coords="1972,1480,1797,1597,1794,1593,1976,1477"/>
+<area shape="poly" id="edge121" href="https://arxiv.org/abs/2310.11526" title="Khurana and Tomer.
  Commitments from Quantum One&#45;Wayness.
- STOC&#39;24. " alt="" coords="439,1285,430,1353,429,1392,433,1431,451,1492,475,1548,469,1547,445,1495,426,1432,422,1392,424,1353,437,1291"/>
-<area shape="rect" id="edge108-label" href="https://arxiv.org/abs/2310.11526" title="KT24" alt="" coords="429,1400,461,1415"/>
-<area shape="poly" id="node34" title="One&#45;time Signatures with Quantum Public Keys" alt="" coords="1050,1591,1041,1583,1016,1577,977,1571,928,1568,873,1567,819,1568,770,1571,731,1577,706,1583,697,1591,706,1598,731,1605,770,1610,819,1613,873,1615,928,1613,977,1610,1016,1605,1041,1598"/>
-<area shape="poly" id="edge109" title="Trivial." alt="" coords="449,1285,474,1401,491,1461,508,1502,531,1525,561,1540,626,1560,696,1576,689,1578,624,1567,559,1546,527,1531,503,1506,484,1463,468,1403,447,1291"/>
-<area shape="poly" id="edge106" title="Trivial." alt="" coords="1557,702,1677,867,1741,951,1780,997,1791,1004,1803,1007,1814,1011,1824,1022,1834,1048,1832,1061,1824,1074,1801,1087,1769,1091,1688,1087,1608,1083,1577,1087,1557,1098,1552,1108,1552,1117,1558,1143,1569,1195,1583,1237,1614,1309,1629,1344,1641,1381,1650,1425,1653,1478,1653,1703,1656,1736,1663,1770,1657,1767,1649,1737,1646,1703,1646,1478,1643,1426,1635,1383,1623,1346,1608,1312,1576,1240,1562,1196,1552,1144,1545,1118,1545,1106,1552,1093,1575,1081,1608,1076,1688,1080,1768,1084,1799,1080,1819,1069,1826,1059,1828,1049,1819,1025,1810,1017,1801,1013,1789,1010,1775,1002,1735,955,1672,871,1555,709"/>
-<area shape="poly" id="edge89" href="https://link.springer.com/chapter/10.1007/978-3-031-22972-5_22" title="Jun Yan.
+ STOC&#39;24. " alt="" coords="2496,1650,2508,1718,2515,1799,2515,2256,2511,2281,2501,2304,2485,2323,2466,2339,2419,2365,2370,2381,2369,2376,2417,2360,2463,2335,2482,2319,2496,2301,2506,2280,2509,2256,2509,1800,2503,1718,2493,1654"/>
+<area shape="rect" id="edge121-label" href="https://arxiv.org/abs/2310.11526" title="KT24" alt="" coords="2512,2037,2544,2052"/>
+<area shape="poly" id="node37" title="One&#45;time Signatures with Quantum Public Keys" alt="" coords="2175,2115,2166,2107,2141,2100,2102,2095,2053,2092,1999,2091,1944,2092,1895,2095,1856,2100,1831,2107,1822,2115,1831,2122,1856,2129,1895,2134,1944,2137,1999,2139,2053,2137,2102,2134,2141,2129,2166,2122"/>
+<area shape="poly" id="edge123" title="Trivial." alt="" coords="2491,1650,2490,1720,2476,1813,2463,1863,2444,1913,2419,1959,2386,2000,2367,2015,2341,2028,2273,2054,2194,2076,2116,2094,2115,2089,2193,2071,2272,2049,2339,2024,2364,2010,2382,1996,2414,1956,2439,1910,2458,1861,2471,1812,2485,1719,2488,1654"/>
+<area shape="poly" id="edge118" href="https://arxiv.org/abs/2609.33098" title="Chen, Wang and Xie.
+ The Breakdown of Classical Minicrypt Equivalences in the Quantum&#45;Computation Classical&#45;Communication Model.
+ arXiv, 2026" alt="" coords="2471,1315,2501,1354,2537,1389,2572,1413,2611,1434,2606,1434,2570,1418,2534,1394,2497,1357,2470,1320"/>
+<area shape="rect" id="edge118-label" href="https://arxiv.org/abs/2609.33098" title="CWX26" alt="" coords="2535,1360,2581,1375"/>
+<area shape="poly" id="edge119" title="Trivial." alt="" coords="2436,1303,2410,1345,2372,1393,2325,1441,2269,1480,2221,1504,2174,1521,2129,1532,2086,1538,2004,1538,1925,1532,1848,1527,1769,1532,1729,1541,1687,1556,1644,1577,1599,1606,1559,1639,1531,1673,1512,1707,1498,1743,1473,1821,1455,1865,1429,1913,1382,1984,1337,2041,1256,2135,1218,2181,1182,2233,1148,2295,1115,2372,1094,2443,1082,2516,1077,2583,1075,2638,1070,2635,1071,2583,1077,2515,1089,2442,1110,2370,1143,2292,1178,2230,1214,2178,1252,2132,1333,2038,1377,1981,1424,1910,1450,1863,1468,1819,1493,1741,1507,1705,1527,1670,1555,1636,1596,1601,1641,1572,1685,1551,1727,1536,1768,1527,1848,1522,1926,1527,2004,1533,2086,1532,2128,1527,2172,1516,2218,1499,2267,1476,2321,1437,2368,1389,2406,1342,2433,1307"/>
+<area shape="poly" id="edge117" href="https://arxiv.org/abs/2410.14792" title="Goldin, Morimae, Mutreja and Yamakawa.
+ CountCrypt: Quantum Cryptography between QCMA and PP.
+ arXiv, 2024." alt="" coords="2502,1291,2564,1309,2634,1336,2706,1376,2738,1400,2767,1428,2788,1455,2800,1479,2806,1506,2807,1539,2807,2256,2803,2273,2794,2288,2759,2314,2708,2336,2645,2353,2505,2378,2378,2391,2377,2386,2505,2373,2644,2348,2706,2331,2756,2310,2790,2285,2798,2271,2801,2256,2801,1540,2800,1506,2795,1481,2784,1458,2763,1432,2735,1404,2703,1380,2632,1341,2562,1314,2502,1296"/>
+<area shape="rect" id="edge117-label" href="https://arxiv.org/abs/2410.14792" title="GMMY24" alt="" coords="2804,1880,2862,1895"/>
+<area shape="poly" id="edge99" href="https://link.springer.com/chapter/10.1007/978-3-031-22972-5_22" title="Jun Yan.
  General Properties of Quantum Bit Commitments.
- ASIACRYPT&#39;22 . " alt="" coords="1695,1787,1743,1747,1773,1733,1780,1730,1747,1752,1698,1793"/>
-<area shape="rect" id="edge89-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22972-5_22" title="Yan22" alt="" coords="1745,1750,1780,1765"/>
-<area shape="poly" id="node35" title="Efficiently samplable, statistically Far but computationally Indistinguishable pairs of mixed quantum states" alt="" coords="1235,1924,1233,1916,1228,1910,1220,1904,1210,1901,1199,1900,1188,1901,1178,1904,1170,1910,1165,1916,1163,1924,1165,1931,1170,1938,1178,1943,1188,1946,1199,1948,1210,1946,1220,1943,1228,1938,1233,1931"/>
-<area shape="poly" id="edge88" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="Brakerski, Canetti, and Qian.
- On the computational hardness needed for quantum cryptography.
- ITCS&#39;23. " alt="" coords="1615,1824,1424,1864,1252,1910,1251,1903,1423,1857,1608,1825"/>
-<area shape="rect" id="edge88-label" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="BCQ23" alt="" coords="1423,1861,1465,1876"/>
-<area shape="poly" id="edge95" href="https://eprint.iacr.org/2022/1336" title="Morimae and Yamakawa.
+ ASIACRYPT&#39;22 . " alt="" coords="1058,2712,1027,2780,1024,2776,1054,2716"/>
+<area shape="rect" id="edge99-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22972-5_22" title="Yan22" alt="" coords="1043,2739,1078,2754"/>
+<area shape="poly" id="edge106" href="https://eprint.iacr.org/2022/1336" title="Morimae and Yamakawa.
  One&#45;Wayness in Quantum Cryptography.
- IACR eprint, 2022. " alt="" coords="800,1356,925,1446,919,1447,800,1363"/>
-<area shape="rect" id="edge95-label" href="https://eprint.iacr.org/2022/1336" title="MY22b" alt="" coords="897,1400,940,1415"/>
-<area shape="poly" id="edge96" href="https://eprint.iacr.org/2022/1336" title="Morimae and Yamakawa.
+ IACR eprint, 2022. " alt="" coords="1274,1822,1340,1861,1378,1888,1395,1899,1418,1909,1487,1922,1610,1937,1870,1966,1865,1967,1609,1942,1486,1927,1416,1914,1392,1904,1375,1893,1337,1866,1275,1827"/>
+<area shape="rect" id="edge106-label" href="https://eprint.iacr.org/2022/1336" title="MY22b" alt="" coords="1417,1880,1460,1895"/>
+<area shape="poly" id="edge107" href="https://eprint.iacr.org/2022/1336" title="Morimae and Yamakawa.
  One&#45;Wayness in Quantum Cryptography.
- IACR eprint, 2022. " alt="" coords="861,1352,905,1365,947,1381,985,1403,1020,1429,1074,1453,1120,1467,1162,1486,1184,1503,1205,1526,1222,1555,1225,1589,1225,1814,1222,1848,1214,1882,1210,1877,1215,1847,1218,1814,1218,1589,1216,1557,1200,1530,1179,1508,1159,1492,1117,1474,1072,1459,1017,1435,981,1409,944,1387,903,1371,862,1359"/>
-<area shape="rect" id="edge96-label" href="https://eprint.iacr.org/2022/1336" title="MY22b" alt="" coords="1221,1639,1264,1654"/>
-<area shape="poly" id="node55" title="Quantum Garbled Circuits for P/poly" alt="" coords="810,1480,803,1472,782,1466,750,1460,709,1457,664,1456,619,1457,578,1460,546,1466,525,1472,518,1480,525,1487,546,1494,578,1499,619,1502,664,1504,709,1502,750,1499,782,1494,803,1487"/>
-<area shape="poly" id="edge97" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
+ IACR eprint, 2022. " alt="" coords="1246,1823,1283,1950,1316,2108,1344,2264,1380,2497,1375,2495,1339,2265,1311,2109,1277,1951,1244,1828"/>
+<area shape="rect" id="edge107-label" href="https://eprint.iacr.org/2022/1336" title="MY22b" alt="" coords="1328,2177,1371,2192"/>
+<area shape="poly" id="node57" title="Quantum Garbled Circuits for P/poly" alt="" coords="1261,1974,1254,1967,1233,1960,1201,1955,1160,1951,1115,1950,1070,1951,1029,1955,996,1960,976,1967,968,1974,976,1982,996,1988,1029,1994,1070,1997,1115,1998,1160,1997,1201,1994,1233,1988,1254,1982"/>
+<area shape="poly" id="edge108" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="Ananth, &#160;Gulati, Qian and Yuen.
  Pseudorandom (Function&#45;Like) Quantum State Generators: New Definitions and Applications.
- TCC&#39;22. " alt="" coords="725,1362,703,1386,689,1410,678,1437,672,1433,683,1407,698,1382,730,1357"/>
-<area shape="rect" id="edge97-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="701,1400,755,1415"/>
-<area shape="poly" id="edge87" title="Trivial." alt="" coords="1686,1145,1585,1183,1461,1219,1414,1225,1376,1224,1341,1227,1299,1243,1287,1253,1280,1266,1272,1279,1258,1291,1228,1301,1190,1307,1099,1312,1007,1313,936,1315,902,1319,900,1313,936,1308,1007,1306,1099,1306,1189,1301,1226,1294,1255,1285,1267,1275,1274,1262,1282,1249,1296,1237,1339,1220,1376,1217,1414,1218,1459,1212,1583,1177,1692,1142"/>
-<area shape="poly" id="edge101" title="Trivial." alt="" coords="1363,1067,838,1307,835,1301,1368,1062"/>
-<area shape="poly" id="edge86" title="Trivial." alt="" coords="124,997,148,1035,162,1053,178,1069,222,1094,282,1116,429,1154,577,1192,638,1213,685,1237,698,1249,706,1260,723,1286,732,1296,725,1297,718,1290,700,1264,693,1253,681,1242,636,1219,575,1198,428,1160,280,1122,220,1100,174,1074,157,1058,142,1039,125,1003"/>
-<area shape="poly" id="edge103" title="Trivial." alt="" coords="656,922,1338,1034,1333,1038,657,928"/>
-<area shape="poly" id="edge102" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
+ TCC&#39;22. " alt="" coords="1223,1823,1142,1939,1138,1936,1219,1827"/>
+<area shape="rect" id="edge108-label" href="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9" title="AGQY22" alt="" coords="1191,1880,1245,1895"/>
+<area shape="poly" id="edge97" title="Trivial." alt="" coords="885,1562,998,1614,1061,1649,1122,1688,1168,1725,1208,1765,1203,1765,1164,1729,1119,1692,1058,1654,995,1619,886,1567"/>
+<area shape="poly" id="edge112" title="Trivial." alt="" coords="674,1467,706,1476,800,1481,957,1485,1113,1494,1169,1502,1200,1515,1213,1533,1222,1558,1234,1625,1239,1698,1240,1762,1235,1760,1234,1698,1229,1625,1217,1560,1208,1535,1197,1519,1168,1507,1112,1499,957,1490,799,1486,705,1481,676,1472"/>
+<area shape="poly" id="edge96" title="Trivial." alt="" coords="1424,1563,1393,1647,1367,1696,1334,1740,1297,1771,1293,1767,1330,1736,1362,1693,1388,1645,1421,1567"/>
+<area shape="poly" id="edge114" title="Trivial." alt="" coords="1020,1307,691,1435,688,1431,1024,1303"/>
+<area shape="poly" id="edge113" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
  Pseudorandomness with Proof of Destruction and Applications.
- IACR eprint, 2023. " alt="" coords="499,931,471,954,398,1013,393,1008,467,949,503,925"/>
-<area shape="rect" id="edge102-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="469,968,515,983"/>
-<area shape="poly" id="edge104" title="Trivial." alt="" coords="1161,915,1189,924,1385,979,1562,1022,1556,1024,1383,985,1187,931,1162,922"/>
-<area shape="poly" id="node49" title="Imperfect CMA MAC with Classical Tags" alt="" coords="1229,1048,1224,1040,1210,1034,1189,1028,1163,1025,1133,1024,1104,1025,1078,1028,1057,1034,1043,1040,1038,1048,1043,1055,1057,1062,1078,1067,1104,1070,1133,1072,1163,1070,1189,1067,1210,1062,1224,1055"/>
-<area shape="poly" id="edge105" title="Trivial." alt="" coords="1129,925,1135,1003,1128,1000,1127,931"/>
-<area shape="poly" id="edge55" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="Chung, Goldin and Gray.
+ IACR eprint, 2023. " alt="" coords="1091,1303,1145,1416,1140,1416,1091,1308"/>
+<area shape="rect" id="edge113-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="1130,1360,1176,1375"/>
+<area shape="poly" id="edge115" title="Trivial." alt="" coords="1370,1301,1291,1348,1240,1373,1186,1394,1092,1421,999,1439,996,1434,1090,1415,1185,1389,1238,1368,1289,1343,1374,1298"/>
+<area shape="poly" id="node51" title="Imperfect CMA MAC with Classical Tags" alt="" coords="1574,1454,1569,1447,1556,1440,1535,1435,1508,1431,1479,1430,1449,1431,1423,1435,1402,1440,1388,1447,1384,1454,1388,1462,1402,1468,1423,1474,1449,1477,1479,1478,1508,1477,1535,1474,1556,1468,1569,1462"/>
+<area shape="poly" id="edge116" title="Trivial." alt="" coords="1436,1291,1594,1341,1601,1355,1604,1367,1594,1393,1576,1414,1553,1430,1550,1426,1573,1410,1590,1390,1598,1367,1596,1357,1590,1346,1438,1296"/>
+<area shape="poly" id="edge60" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="Chung, Goldin and Gray.
  On Central Primitives for Quantum Cryptography with Classical Communication.
- CRYPTO&#39;24." alt="" coords="956,592,943,625,931,658,927,682,931,705,941,723,953,735,966,748,977,768,986,814,982,852,967,888,943,929,918,972,903,988,880,1003,847,1013,804,1017,701,1016,599,1015,557,1018,524,1027,452,1098,415,1148,381,1201,327,1294,321,1291,375,1198,409,1145,447,1093,521,1021,555,1011,599,1008,701,1010,803,1011,846,1006,877,997,899,983,913,968,937,926,961,885,976,850,980,814,970,770,961,752,948,740,936,727,925,707,921,682,925,657,936,623,953,598"/>
-<area shape="rect" id="edge55-label" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="CGG24" alt="" coords="968,896,1011,911"/>
-<area shape="poly" id="edge57" href="https://eprint.iacr.org/2023/904" title="Ananth, &#160;Lin and Yuen.
- Pseudorandom Strings from Pseudorandom Quantum States.
- IACR eprint, 2023. " alt="" coords="1027,584,1063,591,1158,604,1253,615,1471,662,1464,664,1252,622,1157,610,1062,598,1030,591"/>
-<area shape="rect" id="edge57-label" href="https://eprint.iacr.org/2023/904" title="ALY23" alt="" coords="1332,619,1373,634"/>
-<area shape="poly" id="edge56" href="https://eprint.iacr.org/2023/904" title="Ananth, &#160;Lin and Yuen.
- Pseudorandom Strings from Pseudorandom Quantum States.
- IACR eprint, 2023. " alt="" coords="1028,584,1097,603,1134,616,1144,625,1152,636,1149,661,1128,707,1112,734,1095,755,1058,782,1017,807,972,843,934,890,909,931,880,969,859,986,831,1003,798,1013,756,1020,657,1024,557,1024,479,1027,455,1030,451,1025,479,1020,556,1017,657,1018,756,1013,797,1007,828,997,855,981,875,964,903,928,929,886,967,838,1014,801,1054,777,1090,750,1107,730,1123,704,1142,659,1145,638,1139,629,1130,622,1095,609,1030,591"/>
-<area shape="rect" id="edge56-label" href="https://eprint.iacr.org/2023/904" title="ALY23" alt="" coords="1072,785,1113,800"/>
-<area shape="poly" id="node40" title="Quantum One&#45;Way Function with 1/poly error" alt="" coords="1114,682,1109,674,1097,668,1078,662,1054,659,1027,658,1000,659,976,662,957,668,944,674,940,682,944,689,957,696,976,701,1000,704,1027,706,1054,704,1078,701,1097,696,1109,689"/>
-<area shape="poly" id="edge53" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
- Signatures From Pseudorandom States via ⊥&#45;PRFs.
- arXiv, 2024. " alt="" coords="981,592,1007,639,1001,638,980,598"/>
-<area shape="rect" id="edge53-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="1001,619,1051,634"/>
-<area shape="poly" id="node41" title="⊥&#45;PRG (a quantum PRG with a recognizable abort)" alt="" coords="1315,682,1312,674,1305,668,1293,662,1279,659,1263,658,1247,659,1232,662,1221,668,1213,674,1211,682,1213,689,1221,696,1232,701,1247,704,1263,706,1279,704,1293,701,1305,696,1312,689"/>
-<area shape="poly" id="edge54" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
- Signatures From Pseudorandom States via ⊥&#45;PRFs.
- arXiv, 2024. " alt="" coords="1029,584,1063,591,1118,600,1142,605,1171,616,1224,647,1217,648,1168,622,1140,612,1117,607,1062,598,1031,590"/>
-<area shape="rect" id="edge54-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="1197,619,1247,634"/>
-<area shape="poly" id="edge61" title="Trivial." alt="" coords="1267,479,1165,511,1044,548,1041,543,1163,504,1272,475"/>
-<area shape="poly" id="node43" title="Non&#45;adaptive CPA Symmetric Encryption with Classical Ciphers" alt="" coords="1578,571,1566,563,1530,557,1475,551,1404,548,1327,547,1249,548,1179,551,1123,557,1088,563,1075,571,1088,578,1123,585,1179,590,1249,593,1327,595,1404,593,1475,590,1530,585,1566,578"/>
+ CRYPTO&#39;24." alt="" coords="1767,800,1810,819,1851,844,1902,885,1941,925,1998,1000,2054,1078,2091,1119,2139,1162,2178,1192,2212,1211,2289,1255,2344,1293,2384,1326,2426,1356,2483,1389,2533,1411,2585,1431,2579,1432,2531,1416,2480,1394,2423,1361,2381,1330,2341,1298,2287,1259,2209,1216,2175,1196,2135,1167,2087,1122,2050,1081,1994,1004,1937,928,1898,889,1848,848,1808,824,1768,805"/>
+<area shape="rect" id="edge60-label" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="CGG24" alt="" coords="2137,1130,2180,1145"/>
 <area shape="poly" id="edge62" href="https://eprint.iacr.org/2023/904" title="Ananth, &#160;Lin and Yuen.
  Pseudorandom Strings from Pseudorandom Quantum States.
- IACR eprint, 2023. " alt="" coords="1328,481,1330,526,1324,524,1326,487"/>
-<area shape="rect" id="edge62-label" href="https://eprint.iacr.org/2023/904" title="ALY23" alt="" coords="1327,508,1368,523"/>
-<area shape="poly" id="edge99" title="Trivial." alt="" coords="423,1063,466,1076,507,1093,574,1124,625,1151,671,1185,723,1238,741,1263,755,1292,749,1291,735,1267,718,1242,667,1190,621,1157,571,1130,504,1099,464,1082,426,1069"/>
-<area shape="poly" id="edge98" href="https://arxiv.org/abs/2310.11526" title="Khurana and Tomer.
+ IACR eprint, 2023. " alt="" coords="1797,785,1845,791,1895,802,1945,819,1991,844,2027,876,2047,908,2064,944,2090,984,2164,1080,2199,1118,2250,1162,2324,1214,2398,1255,2393,1255,2322,1218,2246,1167,2196,1122,2160,1083,2086,987,2059,946,2042,911,2023,879,1988,848,1943,824,1893,807,1844,796,1799,790"/>
+<area shape="rect" id="edge62-label" href="https://eprint.iacr.org/2023/904" title="ALY23" alt="" coords="2154,1041,2194,1056"/>
+<area shape="poly" id="edge61" href="https://eprint.iacr.org/2023/904" title="Ananth, &#160;Lin and Yuen.
+ Pseudorandom Strings from Pseudorandom Quantum States.
+ IACR eprint, 2023. " alt="" coords="1715,805,1705,899,1693,962,1675,1031,1651,1104,1619,1177,1579,1245,1530,1307,1501,1333,1469,1356,1399,1394,1328,1421,1262,1438,1259,1434,1326,1415,1397,1389,1466,1352,1498,1329,1526,1303,1575,1242,1615,1174,1646,1102,1670,1030,1687,960,1700,898,1713,810"/>
+<area shape="rect" id="edge61-label" href="https://eprint.iacr.org/2023/904" title="ALY23" alt="" coords="1644,1130,1684,1145"/>
+<area shape="poly" id="node42" title="Quantum One&#45;Way Function with 1/poly error" alt="" coords="1596,959,1592,952,1580,945,1560,940,1536,936,1509,935,1483,936,1458,940,1439,945,1427,952,1422,959,1427,967,1439,973,1458,979,1483,982,1509,983,1536,982,1560,979,1580,973,1592,967"/>
+<area shape="poly" id="edge58" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
+ Signatures From Pseudorandom States via ⊥&#45;PRFs.
+ arXiv, 2024. " alt="" coords="1656,803,1616,822,1577,848,1548,883,1526,922,1522,919,1543,880,1574,844,1614,817,1660,799"/>
+<area shape="rect" id="edge58-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="1575,862,1625,878"/>
+<area shape="poly" id="node43" title="⊥&#45;PRG (a quantum PRG with a recognizable abort)" alt="" coords="1894,959,1891,951,1883,944,1870,938,1854,934,1836,933,1818,934,1802,938,1790,944,1781,951,1779,959,1781,968,1790,975,1802,981,1818,985,1836,986,1854,985,1870,981,1883,975,1891,968"/>
+<area shape="poly" id="edge59" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
+ Signatures From Pseudorandom States via ⊥&#45;PRFs.
+ arXiv, 2024. " alt="" coords="1732,805,1813,921,1808,921,1732,810"/>
+<area shape="rect" id="edge59-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="1790,862,1840,878"/>
+<area shape="poly" id="edge68" title="Trivial." alt="" coords="1139,618,1267,639,1410,670,1543,712,1658,756,1653,758,1541,717,1409,675,1266,644,1141,623"/>
+<area shape="poly" id="node45" title="Non&#45;adaptive CPA Symmetric Encryption with Classical Ciphers" alt="" coords="1147,783,1135,776,1099,769,1044,764,974,761,896,759,818,761,748,764,693,769,657,776,645,783,657,791,693,797,748,803,818,806,896,807,974,806,1044,803,1099,797,1135,791"/>
+<area shape="poly" id="edge69" href="https://eprint.iacr.org/2023/904" title="Ananth, &#160;Lin and Yuen.
+ Pseudorandom Strings from Pseudorandom Quantum States.
+ IACR eprint, 2023. " alt="" coords="1043,636,932,750,928,747,1046,631"/>
+<area shape="rect" id="edge69-label" href="https://eprint.iacr.org/2023/904" title="ALY23" alt="" coords="1002,689,1042,704"/>
+<area shape="poly" id="edge110" title="Trivial." alt="" coords="1209,1473,1236,1491,1256,1516,1269,1547,1276,1580,1279,1614,1278,1648,1268,1711,1254,1763,1249,1761,1263,1710,1273,1647,1274,1614,1271,1581,1264,1548,1251,1518,1232,1495,1210,1479"/>
+<area shape="poly" id="edge109" href="https://arxiv.org/abs/2310.11526" title="Khurana and Tomer.
  Commitments from Quantum One&#45;Wayness.
- STOC&#39;24. " alt="" coords="281,1069,209,1092,132,1121,98,1138,72,1155,55,1173,49,1191,49,1481,51,1493,58,1504,85,1524,126,1541,177,1555,294,1573,408,1584,402,1588,293,1580,176,1561,124,1547,82,1530,53,1508,45,1495,42,1481,42,1190,49,1169,68,1150,95,1132,129,1115,207,1086,285,1064"/>
-<area shape="rect" id="edge98-label" href="https://arxiv.org/abs/2310.11526" title="KT24" alt="" coords="45,1328,77,1343"/>
-<area shape="poly" id="node56" title="Classical Garbled Circuits for P/poly" alt="" coords="682,1264,677,1256,664,1250,642,1244,615,1241,585,1240,556,1241,529,1244,507,1250,494,1256,489,1264,494,1271,507,1278,529,1283,556,1286,585,1288,615,1286,642,1283,664,1278,677,1271"/>
-<area shape="poly" id="edge100" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
+ STOC&#39;24. " alt="" coords="1249,1465,1391,1486,1549,1514,1727,1548,1804,1568,1900,1601,2062,1688,2127,1758,2222,1874,2308,1986,2345,2042,2345,2256,2343,2284,2336,2311,2317,2359,2313,2356,2331,2309,2338,2283,2340,2256,2340,2044,2303,1989,2218,1877,2123,1761,2058,1692,1898,1606,1802,1573,1726,1553,1548,1519,1390,1491,1251,1470"/>
+<area shape="rect" id="edge109-label" href="https://arxiv.org/abs/2310.11526" title="KT24" alt="" coords="2313,1967,2345,1982"/>
+<area shape="poly" id="node58" title="Classical Garbled Circuits for P/poly" alt="" coords="1119,1714,1114,1707,1101,1700,1079,1695,1053,1691,1023,1690,993,1691,966,1695,945,1700,931,1707,926,1714,931,1722,945,1728,966,1734,993,1737,1023,1738,1053,1737,1079,1734,1101,1728,1114,1722"/>
+<area shape="poly" id="edge111" href="https://eprint.iacr.org/2023/543" title="Behera, Brakerski, Sattath and Shmueli.
  Pseudorandomness with Proof of Destruction and Applications.
- IACR eprint, 2023. " alt="" coords="378,1068,549,1224,542,1227,378,1075"/>
-<area shape="rect" id="edge100-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="455,1112,501,1127"/>
-<area shape="poly" id="edge38" href="https://eprint.iacr.org/2024/1568" title="Bostanci, Chen, and Nehoran.
+ IACR eprint, 2023. " alt="" coords="1109,1478,1086,1496,1064,1518,1045,1557,1033,1598,1026,1639,1024,1676,1019,1674,1021,1639,1027,1597,1040,1555,1060,1515,1083,1492,1113,1474"/>
+<area shape="rect" id="edge111-label" href="https://eprint.iacr.org/2023/543" title="BBSS23" alt="" coords="1062,1533,1108,1548"/>
+<area shape="poly" id="edge42" href="https://eprint.iacr.org/2024/1568" title="Bostanci, Chen, and Nehoran.
  Oracle Separation Between Quantum Commitments and Quantum One&#45;wayness.
- arXiv, 2024." alt="" coords="1036,1488,1139,1500,1653,1552,2015,1585,2008,1586,1652,1558,1138,1507,1037,1494"/>
-<area shape="rect" id="edge38-label" href="https://eprint.iacr.org/2024/1568" title="BCN24" alt="" coords="1515,1528,1557,1543"/>
-<area shape="poly" id="node31" title="(Mixed) Inefficiently Verifiable One&#45;way States Generator" alt="" coords="1069,2035,1066,2027,1056,2021,1041,2015,1022,2012,1001,2011,981,2012,962,2015,947,2021,937,2027,934,2035,937,2042,947,2049,962,2054,981,2057,1001,2059,1022,2057,1041,2054,1056,2049,1066,2042"/>
-<area shape="poly" id="edge39" title="Trivial." alt="" coords="926,1498,909,1507,866,1516,823,1520,743,1520,710,1524,685,1535,676,1543,669,1555,663,1590,663,1924,670,1942,688,1958,716,1973,751,1986,834,2006,919,2023,913,2023,833,2013,749,1992,713,1979,684,1964,664,1946,657,1926,657,1589,663,1553,671,1539,682,1529,709,1518,742,1513,823,1513,865,1510,907,1500,932,1495"/>
-<area shape="poly" id="node32" title="Quantum Efficiently samplable, statistically Far but computationally Indistinguishable Distributions" alt="" coords="1175,1591,1172,1583,1165,1577,1154,1571,1140,1568,1124,1567,1108,1568,1094,1571,1083,1577,1076,1583,1073,1591,1076,1598,1083,1605,1094,1610,1108,1613,1124,1615,1140,1613,1154,1610,1165,1605,1172,1598"/>
-<area shape="poly" id="edge40" href="https://arxiv.org/abs/2410.03453" title="Behera, &#160;Malavolta, Morimae, Mour and Yamakawa.
+ arXiv, 2024. Common Haar random state model (the unitary oracle claim was retracted, see [GZ25](https://arxiv.org/abs/2503.11634))." alt="" coords="1867,1985,721,2111,720,2106,1869,1980"/>
+<area shape="rect" id="edge42-label" href="https://eprint.iacr.org/2024/1568" title="BCN24" alt="" coords="1344,2037,1386,2052"/>
+<area shape="poly" id="node34" title="(Mixed) Inefficiently Verifiable One&#45;way States Generator" alt="" coords="1571,2676,1567,2668,1558,2662,1543,2656,1524,2653,1503,2652,1482,2653,1463,2656,1448,2662,1438,2668,1435,2676,1438,2683,1448,2690,1463,2695,1482,2699,1503,2700,1524,2699,1543,2695,1558,2690,1567,2683"/>
+<area shape="poly" id="edge43" title="Trivial." alt="" coords="1984,1976,2106,1989,2250,2013,2317,2031,2372,2053,2393,2066,2410,2080,2420,2096,2424,2113,2424,2537,2417,2554,2396,2569,2365,2582,2323,2594,2217,2616,2088,2634,1812,2660,1586,2673,1585,2668,1811,2654,2088,2628,2216,2611,2322,2589,2363,2577,2393,2564,2412,2550,2419,2536,2419,2113,2415,2098,2406,2084,2390,2070,2369,2058,2315,2036,2249,2019,2105,1994,1985,1982"/>
+<area shape="poly" id="node35" title="Quantum Efficiently samplable, statistically Far but computationally Indistinguishable Distributions" alt="" coords="1672,2115,1670,2107,1662,2100,1651,2095,1637,2092,1621,2091,1606,2092,1592,2095,1580,2100,1573,2107,1571,2115,1573,2122,1580,2129,1592,2134,1606,2137,1621,2139,1637,2137,1651,2134,1662,2129,1670,2122"/>
+<area shape="poly" id="edge44" href="https://arxiv.org/abs/2410.03453" title="Behera, &#160;Malavolta, Morimae, Mour and Yamakawa.
  A New World in the Depths of Microcrypt: Separating OWSGs and Quantum Money from QEFID.
- arXiv, 2024." alt="" coords="1006,1512,1043,1540,1094,1572,1087,1572,1039,1545,1005,1519"/>
-<area shape="rect" id="edge40-label" href="https://arxiv.org/abs/2410.03453" title="BMM+24" alt="" coords="1041,1528,1096,1543"/>
-<area shape="poly" id="edge41" href="https://eprint.iacr.org/2024/1568" title="Bostanci, Chen, and Nehoran.
+ arXiv, 2024." alt="" coords="1864,1980,1823,1988,1775,1999,1726,2016,1681,2039,1654,2064,1635,2093,1631,2089,1650,2061,1678,2035,1724,2011,1773,1994,1822,1983,1869,1979"/>
+<area shape="rect" id="edge44-label" href="https://arxiv.org/abs/2410.03453" title="BMM+24" alt="" coords="1680,2037,1735,2052"/>
+<area shape="poly" id="edge45" href="https://eprint.iacr.org/2024/1568" title="Bostanci, Chen, and Nehoran.
  Oracle Separation Between Quantum Commitments and Quantum One&#45;wayness.
- arXiv, 2024." alt="" coords="904,1503,897,1507,852,1514,813,1516,746,1514,681,1514,644,1519,601,1531,560,1549,524,1571,520,1566,556,1543,598,1525,642,1513,681,1507,747,1507,813,1509,851,1507,896,1500,910,1500"/>
-<area shape="rect" id="edge41-label" href="https://eprint.iacr.org/2024/1568" title="BCN24" alt="" coords="599,1528,641,1543"/>
-<area shape="poly" id="edge42" href="https://eprint.iacr.org/2022/1336" title="Morimae and Yamakawa.
+ arXiv, 2024. Common Haar random state model (the unitary oracle claim was retracted, see [GZ25](https://arxiv.org/abs/2503.11634))." alt="" coords="1889,2000,1850,2030,1817,2064,1805,2081,1798,2100,1798,2118,1805,2137,1846,2191,1897,2238,1954,2277,2015,2309,2076,2335,2135,2355,2237,2383,2232,2383,2134,2360,2074,2340,2013,2314,1951,2281,1894,2242,1842,2195,1800,2140,1793,2119,1793,2099,1800,2079,1812,2060,1847,2026,1885,2003"/>
+<area shape="rect" id="edge45-label" href="https://eprint.iacr.org/2024/1568" title="BCN24" alt="" coords="1840,2177,1882,2192"/>
+<area shape="poly" id="edge46" href="https://eprint.iacr.org/2022/1336" title="Morimae and Yamakawa.
  One&#45;Wayness in Quantum Cryptography.
- IACR eprint, 2022. " alt="" coords="922,1496,869,1517,838,1530,835,1539,837,1551,831,1548,829,1538,833,1525,866,1511,928,1493"/>
-<area shape="rect" id="edge42-label" href="https://eprint.iacr.org/2022/1336" title="MY22b" alt="" coords="836,1528,879,1543"/>
-<area shape="poly" id="edge43" href="https://arxiv.org/abs/2404.03220" title="Batra and Jain.
+ IACR eprint, 2022. " alt="" coords="1952,2010,1984,2077,1978,2075,1950,2015"/>
+<area shape="rect" id="edge46-label" href="https://eprint.iacr.org/2022/1336" title="MY22b" alt="" coords="1968,2037,2011,2052"/>
+<area shape="poly" id="edge47" href="https://arxiv.org/abs/2404.03220" title="Batra and Jain.
  Commitments are equivalent to statistically&#45;verifiable one&#45;way state generators.
- arXiv, 2024. " alt="" coords="993,2008,992,1990,1000,1970,1023,1954,1059,1943,1138,1931,1145,1930,1060,1949,1026,1960,1005,1974,999,1991,998,2013"/>
-<area shape="rect" id="edge43-label" href="https://arxiv.org/abs/2404.03220" title="BJ24" alt="" coords="1003,1972,1031,1987"/>
-<area shape="poly" id="edge50" title="Trivial." alt="" coords="1131,1612,1192,1880,1186,1877,1127,1617"/>
-<area shape="poly" id="node39" title="Non&#45;Uniform Quantum Efficiently samplable, statistically Far but computationally Indistinguishable Distributions" alt="" coords="1002,1702,999,1694,990,1688,976,1682,958,1679,939,1678,919,1679,902,1682,888,1688,879,1694,876,1702,879,1709,888,1716,902,1721,919,1724,939,1726,958,1724,976,1721,990,1716,999,1709"/>
-<area shape="poly" id="edge51" title="Trivial." alt="" coords="1096,1609,992,1673,989,1667,1090,1612"/>
-<area shape="poly" id="edge73" href="https://arxiv.org/abs/2310.11526" title="Khurana and Tomer.
+ arXiv, 2024. " alt="" coords="1469,2641,1443,2615,1408,2572,1409,2567,1447,2611,1474,2642"/>
+<area shape="rect" id="edge47-label" href="https://arxiv.org/abs/2404.03220" title="BJ24" alt="" coords="1445,2598,1473,2613"/>
+<area shape="poly" id="edge54" title="Trivial." alt="" coords="1608,2136,1549,2232,1483,2352,1420,2474,1405,2501,1401,2497,1415,2472,1478,2350,1544,2230,1604,2140"/>
+<area shape="poly" id="node41" title="Non&#45;Uniform Quantum Efficiently samplable, statistically Far but computationally Indistinguishable Distributions" alt="" coords="1692,2255,1689,2247,1680,2241,1666,2235,1649,2232,1629,2231,1610,2232,1592,2235,1578,2241,1569,2247,1566,2255,1569,2262,1578,2269,1592,2274,1610,2278,1629,2279,1649,2278,1666,2274,1680,2269,1689,2262"/>
+<area shape="poly" id="edge55" title="Trivial." alt="" coords="1624,2136,1629,2216,1625,2214,1621,2141"/>
+<area shape="poly" id="edge81" href="https://arxiv.org/abs/2310.11526" title="Khurana and Tomer.
  Commitments from Quantum One&#45;Wayness.
- STOC&#39;24. " alt="" coords="536,1607,1153,1898,1148,1902,534,1614"/>
-<area shape="rect" id="edge73-label" href="https://arxiv.org/abs/2310.11526" title="KT24" alt="" coords="855,1750,887,1765"/>
-<area shape="poly" id="edge74" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="Chung, Goldin and Gray.
+ STOC&#39;24. " alt="" coords="2230,2407,1434,2529,1433,2524,2235,2405"/>
+<area shape="rect" id="edge81-label" href="https://arxiv.org/abs/2310.11526" title="KT24" alt="" coords="1866,2458,1898,2473"/>
+<area shape="poly" id="node52" title="State puzzles" alt="" coords="2349,2536,2345,2528,2334,2521,2316,2516,2294,2513,2269,2512,2245,2513,2223,2516,2205,2521,2194,2528,2190,2536,2194,2543,2205,2550,2223,2555,2245,2558,2269,2560,2294,2558,2316,2555,2334,2550,2345,2543"/>
+<area shape="poly" id="edge83" href="https://arxiv.org/abs/2409.15248" title="Khurana, Tomer.
+ Founding Quantum Cryptography on Quantum Advantage.
+ STOC&#39;25." alt="" coords="2290,2433,2278,2498,2274,2494,2286,2436"/>
+<area shape="rect" id="edge83-label" href="https://arxiv.org/abs/2409.15248" title="KT25" alt="" coords="2283,2458,2315,2473"/>
+<area shape="poly" id="edge51" href="https://arxiv.org/abs/2610.18799" title="Batra.
+ EFI ⇔ 1PRS.
+ arXiv, 2026. Expanding 1PRS ⇒ EFI follows from [MY22a](https://link.springer.com/chapter/10.1007/978&#45;3&#45;031&#45;15802&#45;5_10) and [CCC+25](https://arxiv.org/abs/2510.07859). " alt="" coords="1331,2522,1290,2505,1270,2491,1252,2475,1240,2456,1235,2437,1237,2433,1245,2454,1256,2471,1273,2487,1293,2501,1337,2522"/>
+<area shape="rect" id="edge51-label" href="https://arxiv.org/abs/2610.18799" title="Bat26" alt="" coords="1254,2458,1287,2473"/>
+<area shape="poly" id="edge52" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="Brakerski, Canetti, and Qian.
+ On the computational hardness needed for quantum cryptography.
+ ITCS&#39;23. " alt="" coords="1330,2546,1253,2567,1209,2582,1167,2601,1136,2621,1107,2644,1105,2640,1133,2617,1165,2596,1207,2577,1252,2562,1335,2544"/>
+<area shape="rect" id="edge52-label" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="BCQ23" alt="" coords="1166,2598,1208,2613"/>
+<area shape="poly" id="node40" title="Quantum MPC for P/poly with Dishonest Majority" alt="" coords="1381,2676,1378,2668,1371,2662,1360,2656,1346,2653,1331,2652,1315,2653,1301,2656,1290,2662,1283,2668,1281,2676,1283,2683,1290,2690,1301,2695,1315,2699,1331,2700,1346,2699,1360,2695,1371,2690,1378,2683"/>
+<area shape="poly" id="edge53" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="Brakerski, Canetti, and Qian.
+ On the computational hardness needed for quantum cryptography.
+ ITCS&#39;23. " alt="" coords="1346,2559,1327,2579,1314,2599,1310,2618,1314,2639,1309,2636,1305,2618,1309,2597,1323,2576,1341,2562"/>
+<area shape="rect" id="edge53-label" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="BCQ23" alt="" coords="1311,2598,1353,2613"/>
+<area shape="poly" id="edge48" title="Trivial." alt="" coords="2029,1823,1958,1940,1954,1936,2025,1827"/>
+<area shape="poly" id="edge49" href="https://arxiv.org/abs/2310.11526" title="Khurana and Tomer.
+ Commitments from Quantum One&#45;Wayness.
+ STOC&#39;24. " alt="" coords="2056,1823,2122,1936,2161,2011,2197,2090,2251,2236,2287,2357,2282,2355,2246,2237,2192,2092,2156,2014,2117,1939,2054,1828"/>
+<area shape="rect" id="edge49-label" href="https://arxiv.org/abs/2310.11526" title="KT24" alt="" coords="2214,2107,2246,2122"/>
+<area shape="poly" id="edge56" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="Chung, Goldin and Gray.
  On Central Primitives for Quantum Cryptography with Classical Communication.
- CRYPTO&#39;24." alt="" coords="550,1602,869,1681,863,1684,550,1609"/>
-<area shape="rect" id="edge74-label" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="CGG24" alt="" coords="743,1639,786,1654"/>
-<area shape="poly" id="node51" title="State puzzles" alt="" coords="612,1702,608,1694,596,1688,579,1682,557,1679,532,1678,508,1679,485,1682,468,1688,457,1694,453,1702,457,1709,468,1716,485,1721,508,1724,532,1726,557,1724,579,1721,596,1716,608,1709"/>
-<area shape="poly" id="edge75" href="https://arxiv.org/pdf/2410.14792" title="Khurana, Tomer.
- Founding Quantum Cryptography on Quantum Advantage.
- STOC&#39;25." alt="" coords="491,1612,492,1634,495,1653,499,1661,492,1660,489,1655,485,1634,488,1618"/>
-<area shape="rect" id="edge75-label" href="https://arxiv.org/pdf/2410.14792" title="KT25" alt="" coords="492,1639,524,1654"/>
-<area shape="poly" id="edge93" href="https://eprint.iacr.org/2022/1336" title="Morimae and Yamakawa.
- One&#45;Wayness in Quantum Cryptography.
- IACR eprint, 2022. " alt="" coords="882,1564,907,1526,920,1516,925,1512,912,1530,887,1569"/>
-<area shape="rect" id="edge93-label" href="https://eprint.iacr.org/2022/1336" title="MY22b" alt="" coords="909,1528,952,1543"/>
-<area shape="poly" id="edge48" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="Brakerski, Canetti, and Qian.
- On the computational hardness needed for quantum cryptography.
- ITCS&#39;23. " alt="" coords="1234,1914,1340,1898,1470,1872,1602,1838,1609,1837,1472,1879,1341,1905,1235,1921"/>
-<area shape="rect" id="edge48-label" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="BCQ23" alt="" coords="1527,1861,1569,1876"/>
-<area shape="poly" id="edge46" href="https://arxiv.org/abs/2404.03220" title="Batra and Jain.
- Commitments are equivalent to statistically&#45;verifiable one&#45;way state generators.
- arXiv, 2024. " alt="" coords="1170,1934,1126,1953,1082,1975,1043,2001,1041,1995,1078,1969,1123,1947,1163,1936"/>
-<area shape="rect" id="edge46-label" href="https://arxiv.org/abs/2404.03220" title="BJ24" alt="" coords="1080,1972,1108,1987"/>
-<area shape="poly" id="node37" title="Non&#45;Uniform single&#45;copy PRS, with m&gt;n, for key&#45;length n and output size m" alt="" coords="1203,2035,1200,2027,1193,2021,1180,2015,1165,2012,1148,2011,1131,2012,1116,2015,1104,2021,1096,2027,1093,2035,1096,2042,1104,2049,1116,2054,1131,2057,1148,2059,1165,2057,1180,2054,1193,2049,1200,2042"/>
-<area shape="poly" id="edge47" href="https://eccc.weizmann.ac.il/report/2025/221" title="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li 
- A Meta&#45;Complexity Characterization of Minimal Quantum Cryptography
- IACR eprint 2025 " alt="" coords="1191,1945,1170,1994,1166,1989,1186,1949"/>
-<area shape="rect" id="edge47-label" href="https://eccc.weizmann.ac.il/report/2025/221" title="CCC+25" alt="" coords="1177,1972,1226,1987"/>
-<area shape="poly" id="node38" title="Quantum MPC for P/poly with Dishonest Majority" alt="" coords="1365,2035,1362,2027,1355,2021,1344,2015,1330,2012,1315,2011,1299,2012,1285,2015,1274,2021,1267,2027,1265,2035,1267,2042,1274,2049,1285,2054,1299,2057,1315,2059,1330,2057,1344,2054,1355,2049,1362,2042"/>
-<area shape="poly" id="edge49" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="Brakerski, Canetti, and Qian.
- On the computational hardness needed for quantum cryptography.
- ITCS&#39;23. " alt="" coords="1235,1924,1284,1938,1307,1951,1326,1970,1331,1992,1325,1988,1320,1973,1303,1956,1281,1944,1235,1931"/>
-<area shape="rect" id="edge49-label" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="BCQ23" alt="" coords="1328,1972,1370,1987"/>
-<area shape="poly" id="edge44" title="Trivial." alt="" coords="1018,1357,987,1438,982,1434,1014,1362"/>
-<area shape="poly" id="edge45" href="https://arxiv.org/abs/2310.11526" title="Khurana and Tomer.
- Commitments from Quantum One&#45;Wayness.
- STOC&#39;24. " alt="" coords="998,1356,939,1405,873,1458,851,1484,841,1496,824,1507,786,1520,752,1525,721,1524,691,1520,631,1514,599,1518,562,1531,529,1554,524,1549,559,1525,597,1512,631,1507,692,1513,722,1517,752,1518,785,1514,821,1501,836,1491,846,1480,868,1453,935,1399,993,1360"/>
-<area shape="rect" id="edge45-label" href="https://arxiv.org/abs/2310.11526" title="KT24" alt="" coords="871,1472,903,1487"/>
-<area shape="poly" id="edge52" href="https://eccc.weizmann.ac.il/report/2025/221" title="Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li 
- A Meta&#45;Complexity Characterization of Minimal Quantum Cryptography
- IACR eprint 2025 " alt="" coords="1124,2011,1112,1994,1110,1982,1114,1970,1127,1953,1143,1945,1150,1943,1132,1958,1119,1973,1117,1982,1118,1991,1129,2014"/>
-<area shape="rect" id="edge52-label" href="https://eccc.weizmann.ac.il/report/2025/221" title="CCC+25" alt="" coords="1116,1972,1165,1987"/>
-<area shape="poly" id="edge94" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="Brakerski, Canetti, and Qian.
- On the computational hardness needed for quantum cryptography.
- ITCS&#39;23. " alt="" coords="1290,2012,1233,1961,1236,1955,1296,2014"/>
-<area shape="rect" id="edge94-label" href="https://doi.org/10.4230/LIPIcs.ITCS.2023.24" title="BCQ23" alt="" coords="1264,1972,1306,1987"/>
-<area shape="poly" id="node47" title="⊥&#45;PRF (a quantum PRF with a recognizable abort)" alt="" coords="1358,793,1356,785,1349,779,1338,773,1324,770,1308,769,1293,770,1279,773,1268,779,1261,785,1258,793,1261,800,1268,807,1279,812,1293,815,1308,817,1324,815,1338,812,1349,807,1356,800"/>
-<area shape="poly" id="edge69" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
+ CRYPTO&#39;24." alt="" coords="1650,2289,1670,2312,1693,2330,1734,2346,1790,2359,1930,2377,2081,2387,2213,2393,2208,2394,2081,2392,1929,2382,1789,2364,1732,2351,1690,2335,1666,2316,1649,2294"/>
+<area shape="rect" id="edge56-label" href="https://doi.org/10.1007/978-3-031-68394-7_8" title="CGG24" alt="" coords="1692,2318,1735,2333"/>
+<area shape="poly" id="node49" title="⊥&#45;PRF (a quantum PRF with a recognizable abort)" alt="" coords="1891,1138,1889,1130,1881,1122,1869,1116,1853,1113,1836,1111,1819,1113,1804,1116,1791,1122,1783,1130,1781,1138,1783,1146,1791,1154,1804,1159,1819,1163,1836,1165,1853,1163,1869,1159,1881,1154,1889,1146"/>
+<area shape="poly" id="edge77" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
  Signatures From Pseudorandom States via ⊥&#45;PRFs.
- arXiv, 2024. " alt="" coords="1273,702,1294,749,1287,748,1272,709"/>
-<area shape="rect" id="edge69-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="1288,730,1338,745"/>
-<area shape="poly" id="node42" title="Quantum Pseudorandom Generator with negligible error" alt="" coords="1697,140,1693,133,1683,126,1667,121,1647,118,1624,116,1602,118,1582,121,1565,126,1555,133,1552,140,1555,148,1565,154,1582,160,1602,163,1624,164,1647,163,1667,160,1683,154,1693,148"/>
-<area shape="poly" id="edge58" title="Trivial." alt="" coords="1657,159,1735,206,1728,207,1658,165"/>
-<area shape="poly" id="edge59" href="https://eprint.iacr.org/2025/1863.pdf" title="Bouaziz&#45;&#45;Ermann, Hhan, Muguruza and Vu.
+ arXiv, 2024. " alt="" coords="1837,984,1839,1097,1834,1095,1835,989"/>
+<area shape="rect" id="edge77-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="1836,1041,1886,1056"/>
+<area shape="poly" id="node44" title="Quantum Pseudorandom Generator with negligible error" alt="" coords="2346,170,2342,162,2332,156,2316,150,2296,147,2273,146,2251,147,2231,150,2215,156,2204,162,2201,170,2204,177,2215,184,2231,189,2251,192,2273,194,2296,192,2316,189,2332,184,2342,177"/>
+<area shape="poly" id="edge63" title="Trivial." alt="" coords="2202,179,928,292,926,287,2206,175"/>
+<area shape="poly" id="edge64" href="https://arxiv.org/abs/2510.20131" title="Barhoush.
+ Separating Pseudorandom Generators from Logarithmic Pseudorandom States.
+ arXiv, 2025" alt="" coords="2183,172,1791,179,1520,187,1230,202,939,226,669,259,548,280,440,304,348,331,275,361,240,382,210,405,185,431,164,459,147,490,134,522,119,593,116,670,125,751,142,835,167,920,198,1004,233,1085,307,1234,375,1354,423,1431,418,1432,370,1356,302,1237,228,1087,193,1006,162,921,137,836,120,752,111,670,114,593,129,521,143,487,160,456,181,427,207,401,237,377,272,357,346,326,439,298,547,274,668,254,938,220,1229,197,1520,182,1790,173,2187,169"/>
+<area shape="rect" id="edge64-label" href="https://arxiv.org/abs/2510.20131" title="Bar25" alt="" coords="132,776,165,791"/>
+<area shape="poly" id="edge65" href="https://arxiv.org/abs/2510.05393" title="Bouaziz&#45;&#45;Ermann, Hhan, Muguruza and Vu.
  On Limits on the Provable Consequences of Quantum Pseudorandomness.
- IACR eprint, 2025" alt="" coords="1626,183,1630,436,1623,434,1623,189"/>
-<area shape="rect" id="edge59-label" href="https://eprint.iacr.org/2025/1863.pdf" title="BHMV25" alt="" coords="1625,286,1680,301"/>
-<area shape="poly" id="edge60" title="Trivial." alt="" coords="1555,152,1367,184,1247,207,1122,235,1003,269,896,307,851,328,812,351,782,374,760,398,751,421,753,442,764,463,782,482,835,516,897,544,890,546,832,522,778,487,758,467,746,444,744,420,755,395,777,369,809,345,848,323,894,301,1000,263,1121,229,1246,201,1366,177,1560,149"/>
-<area shape="poly" id="node44" title="Quantum Computable Trapdoor One&#45;Way Function" alt="" coords="1839,140,1836,133,1828,126,1815,121,1798,118,1780,116,1762,118,1746,121,1732,126,1724,133,1721,140,1724,148,1732,154,1746,160,1762,163,1780,164,1798,163,1815,160,1828,154,1836,148"/>
-<area shape="poly" id="edge63" title="Trivial." alt="" coords="1781,161,1783,194,1777,191,1779,168"/>
-<area shape="poly" id="node45" title="Classically Computable One&#45;Way Function" alt="" coords="1879,29,1876,22,1869,15,1858,10,1844,7,1828,5,1812,7,1798,10,1787,15,1780,22,1777,29,1780,37,1787,43,1798,49,1812,52,1828,53,1844,52,1858,49,1869,43,1876,37"/>
-<area shape="poly" id="edge64" title="Trivial." alt="" coords="1844,49,1858,76,1866,111,1864,134,1854,166,1841,187,1826,205,1821,200,1836,183,1848,163,1858,133,1859,111,1852,78,1843,56"/>
-<area shape="poly" id="edge65" href="https://arxiv.org/pdf/2411.02554" title="Kretschmer, Qian and Tal.
+ arXiv, 2025" alt="" coords="2275,207,2274,248,2267,292,2252,336,2227,376,2175,427,2116,470,2051,506,1984,536,1917,559,1852,577,1741,600,1738,595,1851,572,1916,554,1982,531,2049,502,2113,466,2172,423,2223,372,2247,334,2262,291,2269,247,2273,212"/>
+<area shape="rect" id="edge65-label" href="https://arxiv.org/abs/2510.05393" title="BHMV25" alt="" coords="2236,359,2291,374"/>
+<area shape="poly" id="edge66" title="Trivial." alt="" coords="2288,191,2305,232,2315,272,2320,305,2317,337,2302,375,2280,414,2254,452,2194,519,2125,579,2051,631,1977,675,1905,711,1786,761,1782,757,1903,706,1974,670,2049,627,2122,575,2190,516,2250,448,2276,412,2298,373,2312,336,2315,305,2310,273,2300,233,2287,196"/>
+<area shape="poly" id="edge67" href="https://arxiv.org/abs/2510.20131" title="Barhoush.
+ Separating Pseudorandom Generators from Logarithmic Pseudorandom States.
+ arXiv, 2025" alt="" coords="2317,198,2392,258,2432,297,2469,341,2500,389,2521,440,2529,494,2527,521,2520,548,2499,598,2472,643,2439,685,2402,723,2361,757,2317,789,2224,842,2128,883,2036,915,1954,937,1890,951,1888,946,1953,932,2034,910,2126,879,2221,837,2314,784,2358,753,2399,719,2435,681,2468,640,2494,595,2515,546,2521,520,2524,494,2516,442,2495,392,2464,344,2428,301,2388,262,2317,203"/>
+<area shape="rect" id="edge67-label" href="https://arxiv.org/abs/2510.20131" title="Bar25" alt="" coords="2526,516,2559,531"/>
+<area shape="poly" id="node46" title="Quantum Computable Trapdoor One&#45;Way Function" alt="" coords="438,170,435,162,426,156,413,150,397,147,379,146,361,147,344,150,331,156,323,162,320,170,323,177,331,184,344,189,361,192,379,194,397,192,413,189,426,184,435,177"/>
+<area shape="poly" id="edge70" title="Trivial." alt="" coords="427,181,804,278,800,281,429,186"/>
+<area shape="poly" id="node47" title="Classically Computable One&#45;Way Function" alt="" coords="107,29,104,22,97,15,86,10,72,7,56,5,40,7,26,10,15,15,8,22,5,29,8,37,15,43,26,49,40,52,56,53,72,52,86,49,97,43,104,37"/>
+<area shape="poly" id="edge71" title="Trivial." alt="" coords="78,48,173,120,235,159,301,191,366,215,435,234,571,263,696,280,797,290,793,293,696,286,570,268,433,240,365,220,299,196,232,163,170,124,80,53"/>
+<area shape="poly" id="edge72" href="https://arxiv.org/pdf/2411.02554" title="Kretschmer, Qian and Tal.
  Quantum&#45;Computable One&#45;Way Functions without One&#45;Way Functions.
- STOC&#39;25" alt="" coords="1811,70,1793,118,1787,114,1808,75"/>
-<area shape="rect" id="edge65-label" href="https://arxiv.org/pdf/2411.02554" title="KQT25" alt="" coords="1807,77,1849,92"/>
-<area shape="poly" id="edge67" title="Trivial." alt="" coords="1921,480,1942,527,1936,526,1920,487"/>
-<area shape="poly" id="node48" title="Tamper Proof CPA PKE with quantum public keys and classical ciphers" alt="" coords="1048,1120,1043,1112,1026,1106,999,1100,966,1097,929,1096,893,1097,860,1100,833,1106,816,1112,811,1120,816,1127,833,1134,860,1139,893,1142,929,1144,966,1142,999,1139,1026,1134,1043,1127"/>
-<area shape="poly" id="edge70" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
+ STOC&#39;25" alt="" coords="105,50,341,150,337,153,108,55"/>
+<area shape="rect" id="edge72-label" href="https://arxiv.org/pdf/2411.02554" title="KQT25" alt="" coords="227,92,269,107"/>
+<area shape="poly" id="edge75" title="Trivial." alt="" coords="583,892,569,1009,564,1008,582,897"/>
+<area shape="poly" id="edge80" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
  Signatures From Pseudorandom States via ⊥&#45;PRFs.
- arXiv, 2024. " alt="" coords="1312,814,1315,871,1309,941,1300,978,1287,1014,1268,1046,1242,1074,1213,1090,1170,1101,1068,1115,1065,1109,1169,1095,1211,1083,1238,1069,1263,1042,1281,1011,1294,976,1302,940,1309,871,1309,820"/>
-<area shape="rect" id="edge70-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="1312,896,1362,911"/>
-<area shape="poly" id="edge71" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
+ arXiv, 2024. " alt="" coords="1857,1160,1932,1248,1927,1247,1856,1166"/>
+<area shape="rect" id="edge80-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="1904,1203,1954,1218"/>
+<area shape="poly" id="node50" title="Tamper Proof CPA PKE with quantum public keys and classical ciphers" alt="" coords="1930,1368,1925,1360,1908,1353,1881,1348,1848,1345,1811,1344,1774,1345,1740,1348,1714,1353,1697,1360,1691,1368,1697,1375,1714,1382,1740,1387,1774,1390,1811,1392,1848,1390,1881,1387,1908,1382,1925,1375"/>
+<area shape="poly" id="edge78" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
  Signatures From Pseudorandom States via ⊥&#45;PRFs.
- arXiv, 2024. " alt="" coords="1291,813,1240,882,1196,947,1160,1007,1154,1003,1190,943,1234,878,1287,818"/>
-<area shape="rect" id="edge71-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="1237,896,1287,911"/>
-<area shape="poly" id="node50" title="Chosen Plaintext Attack Secure Digital Signature with imperfect completeness" alt="" coords="1491,904,1489,896,1484,890,1476,884,1466,881,1455,880,1444,881,1434,884,1426,890,1421,896,1419,904,1421,911,1426,918,1434,923,1444,926,1455,928,1466,926,1476,923,1484,918,1489,911"/>
-<area shape="poly" id="edge72" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
+ arXiv, 2024. " alt="" coords="1834,1162,1817,1329,1813,1327,1832,1167"/>
+<area shape="rect" id="edge78-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="1829,1203,1879,1218"/>
+<area shape="poly" id="edge79" href="https://arxiv.org/abs/2311.00847" title="Barhoush, Behera, Ozer, Salvail and Sattath.
  Signatures From Pseudorandom States via ⊥&#45;PRFs.
- arXiv, 2024. " alt="" coords="1335,810,1418,872,1411,873,1335,817"/>
-<area shape="rect" id="edge72-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="1390,841,1440,856"/>
-<area shape="poly" id="edge85" title="Trivial." alt="" coords="914,1141,800,1297,795,1293,910,1146"/>
-<area shape="poly" id="edge110" href="https://arxiv.org/abs/2402.08194" title="Coladangelo and Mutreja.
- On black&#45;box separations of quantum digital signatures from pseudorandom states.
- arXiv, 2024. " alt="" coords="1511,907,1580,921,1615,933,1649,949,1664,961,1673,974,1682,986,1696,997,1737,1007,1811,1019,1969,1041,1962,1043,1810,1025,1736,1013,1693,1003,1677,991,1668,978,1659,966,1645,954,1613,939,1578,928,1513,914"/>
-<area shape="rect" id="edge110-label" href="https://arxiv.org/abs/2402.08194" title="CM24" alt="" coords="1694,968,1729,983"/>
-<area shape="poly" id="edge111" title="Trivial." alt="" coords="1440,923,1406,962,1360,1003,1304,1043,1241,1075,1199,1085,1146,1090,1021,1091,895,1090,842,1093,800,1099,710,1127,625,1165,549,1204,490,1237,486,1232,546,1198,622,1159,708,1121,798,1092,841,1086,895,1083,1021,1084,1146,1083,1198,1078,1239,1069,1300,1038,1356,998,1402,957,1435,927"/>
-<area shape="poly" id="edge112" title="Trivial." alt="" coords="1461,925,1481,1021,1499,1151,1504,1217,1503,1278,1495,1327,1488,1347,1477,1362,1318,1390,1316,1384,1473,1357,1482,1344,1489,1326,1497,1277,1497,1218,1493,1152,1475,1022,1459,931"/>
-<area shape="poly" id="edge76" href="https://arxiv.org/pdf/2410.14792" title="Khurana, Tomer.
- Founding Quantum Cryptography on Quantum Advantage.
- STOC&#39;25." alt="" coords="528,1676,521,1640,521,1636,523,1630,527,1638,535,1679"/>
-<area shape="rect" id="edge76-label" href="https://arxiv.org/pdf/2410.14792" title="KT25" alt="" coords="528,1639,560,1654"/>
-<area shape="poly" id="edge83" href="https://arxiv.org/abs/2410.03453" title="Behera, &#160;Malavolta, Morimae, Mour and Yamakawa.
+ arXiv, 2024. " alt="" coords="1823,1162,1792,1213,1747,1273,1691,1337,1627,1394,1592,1415,1555,1432,1552,1427,1589,1411,1624,1389,1688,1333,1743,1270,1788,1210,1819,1166"/>
+<area shape="rect" id="edge79-label" href="https://arxiv.org/abs/2311.00847" title="BBO+24" alt="" coords="1756,1273,1806,1288"/>
+<area shape="poly" id="edge95" title="Trivial." alt="" coords="1779,1393,1734,1432,1527,1606,1486,1644,1456,1677,1424,1707,1379,1740,1313,1775,1310,1770,1376,1736,1421,1703,1452,1673,1483,1641,1524,1602,1730,1428,1783,1390"/>
+<area shape="poly" id="edge92" href="https://arxiv.org/abs/2410.03453" title="Behera, &#160;Malavolta, Morimae, Mour and Yamakawa.
  A New World in the Depths of Microcrypt: Separating OWSGs and Quantum Money from QEFID.
- arXiv, 2024." alt="" coords="1430,1439,1160,1576,1157,1570,1424,1442"/>
-<area shape="rect" id="edge83-label" href="https://arxiv.org/abs/2410.03453" title="BMM+24" alt="" coords="1391,1472,1446,1487"/>
-<area shape="poly" id="edge92" href="https://doi.org/10.1007/978-3-031-30545-0_22" title="Hhan, Morimae, and Yamakawa.
- From the Hardness of Detecting Superpositions to Cryptography: Quantum Public Key Encryption and Commitments.
- EUROCRYPT&#39;23. " alt="" coords="1851,1788,1836,1766,1834,1750,1838,1744,1843,1764,1857,1790"/>
-<area shape="rect" id="edge92-label" href="https://doi.org/10.1007/978-3-031-30545-0_22" title="HMY23" alt="" coords="1839,1750,1885,1765"/>
-<area shape="poly" id="edge107" title="Trivial." alt="" coords="588,1285,594,1322,603,1359,620,1399,641,1437,634,1437,614,1402,597,1361,588,1323,586,1291"/>
-<area shape="poly" id="edge113" title="Trivial." alt="" coords="1164,1430,1099,1497,1066,1526,1039,1546,991,1567,988,1561,1036,1540,1062,1521,1095,1492,1158,1434"/>
+ arXiv, 2024." alt="" coords="1620,1925,1623,2092,1619,2089,1617,1929"/>
+<area shape="rect" id="edge92-label" href="https://arxiv.org/abs/2410.03453" title="BMM+24" alt="" coords="1619,1967,1674,1982"/>
+<area shape="poly" id="edge104" title="Trivial." alt="" coords="2272,1737,2252,1819,2233,1867,2209,1913,2171,1964,2127,2011,2044,2083,2041,2079,2124,2007,2167,1961,2204,1910,2228,1865,2246,1818,2269,1741"/>
+<area shape="poly" id="edge120" title="Trivial." alt="" coords="1031,1736,1064,1824,1104,1935,1098,1935,1059,1826,1030,1741"/>
 </map>
