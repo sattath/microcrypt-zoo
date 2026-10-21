@@ -128,7 +128,7 @@
 
         function highlight(item) {
             svg.querySelectorAll('.hl').forEach(el => el.classList.remove('hl'));
-            svg.classList.toggle('dim', !!item);
+            svg.classList.toggle('dim', !!selected);  // only a clicked selection dims the rest; a hover preview just bolds
             if (!item) return;
             const es = item.from ? [item] : edges.filter(e => e.from === item.name || e.to === item.name);
             item.g.classList.add('hl');
@@ -189,9 +189,12 @@
             // Like a map: scrolling (two-finger swipe) pans; pinch on a trackpad (reported as Ctrl+wheel) or Ctrl+scroll zooms
             box.addEventListener('wheel', ev => {
                 ev.preventDefault();
+                const unit = ev.deltaMode === 1 ? 16 : ev.deltaMode === 2 ? box.clientHeight : 1;  // Firefox may report lines or pages
+                const dx = ev.deltaX * unit, dy = ev.deltaY * unit;
                 const r = svg.getBoundingClientRect();
-                if (ev.ctrlKey || ev.metaKey) pz.zoomTo(ev.clientX - r.left, ev.clientY - r.top, Math.exp(-ev.deltaY / 100));
-                else pz.moveBy(-ev.deltaX, -ev.deltaY);
+                // A mouse wheel click sends one large delta: cap it so each click zooms about 1.28x (small trackpad deltas are unaffected)
+                if (ev.ctrlKey || ev.metaKey) pz.zoomTo(ev.clientX - r.left, ev.clientY - r.top, Math.exp(-Math.max(-25, Math.min(25, dy)) / 100));
+                else pz.moveBy(-dx, -dy);
             }, {passive: false});
             box.addEventListener('gesturestart', ev => ev.preventDefault());  // Safari: don't zoom the page on pinch
             const zoomBy = f => pz.smoothZoom(box.clientWidth / 2, box.clientHeight / 2, f);
