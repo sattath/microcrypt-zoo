@@ -12,7 +12,7 @@ The main source file is microcrypt.gv, which contains a GraphViz (dot) file, des
 ```bash
 ./color_by_scc.sh
 ```
-This generates microcrypt.svg (which the web page displays) and microcrypt.png.
+This generates microcrypt.svg (which the web page displays) and microcrypt.png. Don't run `dot` directly: the script also colors equivalent primitives, and plain `dot` output lacks those colors.
 Tooltips may contain links written as [label](url), which are shown as links in the info bar.
 
 ### What we include
@@ -45,6 +45,9 @@ Note that the nodes which are in the same strongly connected component are color
 - [Barak Nehoran](https://github.com/bnehoran)
 - [Samuel Bouaziz](https://github.com/samuelbouaziz)
 - [Matthew Gray](https://github.com/graytmatter)
+
+## Deployment
+The site is served by GitHub Pages from the `main` branch, so every push to `main` updates [sattath.github.io/microcrypt-zoo/](https://sattath.github.io/microcrypt-zoo/) within a few minutes.
 
 ## Viewing the page locally
 Opening index.html directly from disk does not work (browsers block loading microcrypt.svg from a local file). Instead, run a local web server in the repository folder:
