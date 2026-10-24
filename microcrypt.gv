@@ -13,10 +13,11 @@ digraph microcrypt {
     PRSPD [tooltip="Pseudorandom States with Proofs of Destruction"];
     PRSNPD [tooltip="Pseudorandom States with Nice Proofs of Destruction"];
     "Short Input PRFS" [tooltip="Short Input Pseudorandom Function-like States with selective security. The input size needs to be Theta(log(n)) qubits."];
-    "Long Input PRFS" [tooltip="Long Input Pseudorandom Function-like States. The input size needs to be omega(log(n)) qubits."];
+    "Long Input PRFS" [tooltip="Long Input Pseudorandom Function-like States. The input size needs to be omega(log(n)) qubits. All edges out of this node hold with output length at least the input length (as obtained from a PRU)."];
+    "QA Long Input PRFS" [tooltip="Quantum-Accessible Long Input Pseudorandom Function-like States: input omega(log(n)) qubits, pure outputs of length at least the input length, adaptively secure against quantum (superposition) queries ([AGQY22](https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9) Def. 4.3, [BCJZ26](https://eprint.iacr.org/2026/1206) Def. 18)."];
     PRFSPD [tooltip="Long Input Pseudorandom Function-like States with Proofs of Destruction"];
-    "Short Output PRS" [tooltip="Short Output Pseudorandom States. The output state needs to have c*log(n) qubits for some large enough c."];
-    "Short Output PRFS" [tooltip="Short Output Pseudorandom Function-Like States. The output state needs to have Theta(log(n)) qubits."];
+    "Short Output PRS" [tooltip="Short Output Pseudorandom States. The output state needs to have c*log(n) qubits for some large enough c, for example a scalable PRS [BS20b](https://doi.org/10.1007/978-3-030-56880-1_15) instantiated at logarithmic output length."];
+    "Short Output PRFS" [tooltip="Short Output Pseudorandom Function-Like States. The output state needs to have c*log(n) qubits for some large enough c; any input length; pure outputs; adaptively secure against quantum (superposition) queries, as in [BCJZ26](https://eprint.iacr.org/2026/1206) Def. 18. Obtained by instantiating a scalable PRFS at logarithmic output length."];
     OWSG [tooltip="(Mixed) One-way States Generator"];
     "IV-OWSG" [tooltip="(Mixed) Inefficiently Verifiable One-way States Generator"];
     "Pure OWSG" [tooltip="Pure One-way States Generator"];
@@ -75,11 +76,13 @@ digraph microcrypt {
     ###Trivial implications###
     edge [label="" tooltip="Trivial." URL=""]
     
-    "Non-adaptive PRU" -> "Long Input PRFS"; // TRV
+    "Non-adaptive PRU" -> "Long Input PRFS" [tooltip="Trivial: x -> |x> U_k|x>. This gives PRFS only with input length at most the output length; an adaptive PRU gives adaptive quantum-accessible PRFS, see [AGQY22](https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9) Thm 5.14."]; // TRV
     "Long Input PRFS" -> PRS; // TRV
 
     "Pure OWSG" -> OWSG; // TRV
     "Short Input PRFS" -> PRS; // TRV
+    "Short Output PRFS" -> "Short Output PRS"; // TRV (fix the input; AQY22 p. 5)
+    "QA Long Input PRFS" -> "Long Input PRFS"; // TRV
 
     "SB-COM" -> "SB-QCOM"; // TRV
     
@@ -121,8 +124,7 @@ digraph microcrypt {
 
 
     edge [label="AGQY22" tooltip="Ananth,  Gulati, Qian and Yuen.\n Pseudorandom (Function-Like) Quantum State Generators: New Definitions and Applications.\n TCC'22. " URL="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9"]
-    QOWF -> "Short Output PRFS"; // AGQY22
-    "Short Output PRFS" -> "Short Output PRS"; // AGQY22
+    PRU -> "QA Long Input PRFS"; // AGQY22 Thm 5.14 (adaptive PRU; input at most output length)
     "Short Output PRS" -> "SB-COM"; // AGQY22
     "Short Input PRFS" -> "SB-QCOM"; // AGQY22
     "Short Input PRFS" -> "Quantum Pseudo-encryption"; // AGQY22
@@ -141,6 +143,10 @@ digraph microcrypt {
     QOWF -> "Long Input PRFS"; // AQY22
     PRS -> "Short Input PRFS"; // AQY22
     "Long Input PRFS" -> "MAC with Quantum Tags"; // AQY22
+
+    edge [label="BCJZ26" tooltip="Batra, Chen, Jain and Zhang.\n Scalable, quantum-accessible, and adaptive pseudorandom quantum state and pseudorandom function-like quantum state generators.\n CRYPTO'26. Thm 7: scalable (every output length, including c*log(n)), adaptive, quantum-accessible PRFS with pure outputs. Improves [AGQY22](https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9) Lemma 5.10 (classical queries only) and Thm 5.12 (super-logarithmic output only), and [AQY22](https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8) (selective security, classical queries). Stated for post-quantum OWF; extends to QOWF since the reduction is fully black-box, see [KQT25](https://arxiv.org/abs/2411.02554)." URL="https://eprint.iacr.org/2026/1206"]
+    QOWF -> "Short Output PRFS"; // BCJZ26 Thm 7
+    QOWF -> "QA Long Input PRFS"; // BCJZ26 Thm 7
     
     edge [label="BBO+24" tooltip="Barhoush, Behera, Ozer, Salvail and Sattath.\n Signatures From Pseudorandom States via ⊥-PRFs.\n arXiv, 2024. " URL="https://arxiv.org/abs/2311.00847"]
     "1/poly-QPRG" -> "1/poly-QOWF"; // BBO+24
@@ -180,7 +186,7 @@ digraph microcrypt {
 
     edge [label="BGH+23" tooltip="Barooti, Grilo, Huguenin-Dumittan, Malavolta, Sattath, and Vu.\n Public-Key Encryption with Quantum Keys.\n IACR eprint, 2023. " URL="https://eprint.iacr.org/2023/877"]
     PRFSPD -> "CCA1-EO-qPKE"; // BGH+23
-    "Long Input PRFS" -> "CCA1-qPKE with quantum ciphers"; // BGH+23
+    "QA Long Input PRFS" -> "CCA1-qPKE with quantum ciphers"; // BGH+23 Thm 2 (needs a quantum-accessible PRFS, Def. 4)
 
     edge [label="GJMZ23" tooltip="Gunn, Ju, Ma, Zhandry.\n Commitments to Quantum States.\n STOC'23. " URL="https://dl.acm.org/doi/10.1145/3564246.3585198"]
     PRS -> "1PRS"; // GJMZ23
@@ -287,7 +293,7 @@ digraph microcrypt {
     "SB-COM"->"EV-OWPuzzle"; // CWX26 Thm 1.2
 
     edge [label="Hha26" tooltip="Hhan.\n Derivatives of Quantum Randomness: Separating Pseudorandom Unitaries from Pseudorandom (Function-like) States.\n arXiv, 2026" URL="https://arxiv.org/abs/2609.14626"]
-    "Non-adaptive PRU"->"Long Input PRFS"; // Hha26 Thm 1.1
+    "Non-adaptive PRU"->"QA Long Input PRFS"; // Hha26 Thm 1.1 (adaptive quantum-accessible PRFS exist, PRUs do not)
 
     edge [label="Bar25" tooltip="Barhoush.\n Separating Pseudorandom Generators from Logarithmic Pseudorandom States.\n arXiv, 2025" URL="https://arxiv.org/abs/2510.20131"]
     "negl-QPRG"->PRS; // Bar25 Thm 1.1
