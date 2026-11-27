@@ -3,16 +3,19 @@
 
 
 digraph microcrypt {
-    graph [nodesep=0.4 ranksep=0.8]
+    graph [nodesep=0.4 ranksep=0.8 mclimit=16]
     edge [penwidth=2.5 arrowsize=0.8]
 
     ################## PRIMITIVES ##################
+    // Declare QOWF--Short Input PRFS--SB-QCOM--EFI first to guide the layout.
     QOWF [tooltip="Quantum Computable One-Way Function"];
     PRS [tooltip="Pseudorandom States with superlogarithmic outputs size"];
+    "Short Input PRFS" [tooltip="Short Input Pseudorandom Function-like States with selective security. The input size needs to be Theta(log(n)) qubits."];
+    "SB-QCOM" [tooltip="Computationally Hiding Statistically Binding Quantum Bit Commitments"];
+    EFI [tooltip="Efficiently samplable, statistically Far but computationally Indistinguishable pairs of mixed quantum states"];
     "1PRS" [tooltip="Single-copy PRS, with m>(1+epsilon)n, for some fixed epsilon, for key-length n and output size m."];
     PRSPD [tooltip="Pseudorandom States with Proofs of Destruction"];
     PRSNPD [tooltip="Pseudorandom States with Nice Proofs of Destruction"];
-    "Short Input PRFS" [tooltip="Short Input Pseudorandom Function-like States with selective security. The input size needs to be Theta(log(n)) qubits."];
     "Long Input PRFS" [tooltip="Long Input Pseudorandom Function-like States. The input size needs to be omega(log(n)) qubits. All edges out of this node hold with output length at least the input length (as obtained from a PRU)."];
     "QA Long Input PRFS" [tooltip="Quantum-Accessible Long Input Pseudorandom Function-like States: input omega(log(n)) qubits, pure outputs of length at least the input length, adaptively secure against quantum (superposition) queries ([AGQY22](https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9) Def. 4.3, [BCJZ26](https://eprint.iacr.org/2026/1206) Def. 18)."];
     PRFSPD [tooltip="Long Input Pseudorandom Function-like States with Proofs of Destruction"];
@@ -21,7 +24,6 @@ digraph microcrypt {
     OWSG [tooltip="(Mixed) One-way States Generator"];
     "IV-OWSG" [tooltip="(Mixed) Inefficiently Verifiable One-way States Generator"];
     "Pure OWSG" [tooltip="Pure One-way States Generator"];
-    EFI [tooltip="Efficiently samplable, statistically Far but computationally Indistinguishable pairs of mixed quantum states"];
     QEFID [tooltip="Quantum Efficiently samplable, statistically Far but computationally Indistinguishable Distributions"];
     nuQEFID [tooltip="Non-Uniform Quantum Efficiently samplable, statistically Far but computationally Indistinguishable Distributions"];
     "Expanding 1PRS" [tooltip="Single-copy PRS with m>n, for key-length n and output size m. The non-uniform version is also equivalent to EFI [CCC+25](https://arxiv.org/abs/2510.07859)."];
@@ -49,7 +51,6 @@ digraph microcrypt {
     "Tamper Proof QPKE" [tooltip="Tamper Proof CPA PKE with quantum public keys and classical ciphers"];
     "CCA1-EO-qPKE" [tooltip="Reusable CCA1 Encryption Scheme with Quantum Public-Keys and Classical Ciphers"];
     "CCA1-qPKE with quantum ciphers" [tooltip="Non-reusable CCA1 Encryption Scheme with Quantum Public-Keys and Quantum Ciphers"];
-    "SB-QCOM" [tooltip="Computationally Hiding Statistically Binding Quantum Bit Commitments"];
     "NI-SB-QCOM" [tooltip="Non-Interactive Computationally Hiding Statistically Binding Quantum Bit Commitments"];
     "NI-SH-QCOM" [tooltip="Non-Interactive Statistically Hiding Computationally Binding Quantum Bit Commitments"];
     "OTS with Quantum Public Keys" [tooltip="One-time Signatures with Quantum Public Keys"];
@@ -75,7 +76,7 @@ digraph microcrypt {
 
     ###Trivial implications###
     edge [label="" tooltip="Trivial." URL=""]
-    
+
     "Non-adaptive PRU" -> "Long Input PRFS" [tooltip="Trivial: x -> |x> U_k|x>. This gives PRFS only with input length at most the output length; an adaptive PRU gives adaptive quantum-accessible PRFS, see [AGQY22](https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9) Thm 5.14."]; // TRV
     "Long Input PRFS" -> PRS; // TRV
 
@@ -85,7 +86,7 @@ digraph microcrypt {
     "QA Long Input PRFS" -> "Long Input PRFS"; // TRV
 
     "SB-COM" -> "SB-QCOM"; // TRV
-    
+
     "NI-SB-QCOM" -> "SB-QCOM"; // TRV
     "SIG w. Quantum Public Keys" -> "OTS with Quantum Public Keys"; // TRV
 
@@ -126,11 +127,11 @@ digraph microcrypt {
     edge [label="AGQY22" tooltip="Ananth,  Gulati, Qian and Yuen.\n Pseudorandom (Function-Like) Quantum State Generators: New Definitions and Applications.\n TCC'22. " URL="https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9"]
     PRU -> "QA Long Input PRFS"; // AGQY22 Thm 5.14 (adaptive PRU; input at most output length)
     "Short Output PRS" -> "SB-COM"; // AGQY22
-    "Short Input PRFS" -> "SB-QCOM"; // AGQY22
+    "Short Input PRFS" -> "SB-QCOM" [weight=100]; // AGQY22
     "Short Input PRFS" -> "Quantum Pseudo-encryption"; // AGQY22
     "Quantum Pseudo-encryption" -> "Quantum Garbled Circuits"; // AGQY22
     "Short Output PRFS" -> "Pseudo-encryption"; // AGQY22
-    
+
     edge [label="ALY23" tooltip="Ananth,  Lin and Yuen.\n Pseudorandom Strings from Pseudorandom Quantum States.\n IACR eprint, 2023. " URL="https://eprint.iacr.org/2023/904"]
     "Short Output PRFS" -> "1/poly-QPRF"; // ALY23
     "Short Output PRS" -> "1/poly-QPRG"; // ALY23
@@ -140,14 +141,14 @@ digraph microcrypt {
 
     edge [label="AQY22" tooltip="Ananth, Qian and Yuen.\n Cryptography from Pseudorandom Quantum States.\n Crypto'22. " URL="https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8"]
     QOWF -> "Long Input PRFS"; // AQY22
-    PRS -> "Short Input PRFS"; // AQY22
+    PRS -> "Short Input PRFS" [weight=100]; // AQY22
     "Long Input PRFS" -> "MAC with Quantum Tags"; // AQY22
     "Long Input PRFS" -> QSKE; // AQY22 Lemma 7.3
 
     edge [label="BCJZ26" tooltip="Batra, Chen, Jain and Zhang.\n Scalable, quantum-accessible, and adaptive pseudorandom quantum state and pseudorandom function-like quantum state generators.\n CRYPTO'26. Thm 7: scalable (every output length, including c*log(n)), adaptive, quantum-accessible PRFS with pure outputs. Improves [AGQY22](https://link.springer.com/chapter/10.1007/978-3-031-22318-1_9) Lemma 5.10 (classical queries only) and Thm 5.12 (super-logarithmic output only), and [AQY22](https://link.springer.com/chapter/10.1007/978-3-031-15802-5_8) (selective security, classical queries). Stated for post-quantum OWF; extends to QOWF since the reduction is fully black-box, see [KQT25](https://arxiv.org/abs/2411.02554)." URL="https://eprint.iacr.org/2026/1206"]
     QOWF -> "Short Output PRFS"; // BCJZ26 Thm 7
     QOWF -> "QA Long Input PRFS"; // BCJZ26 Thm 7
-    
+
     edge [label="BBO+24" tooltip="Barhoush, Behera, Ozer, Salvail and Sattath.\n Signatures From Pseudorandom States via ⊥-PRFs.\n arXiv, 2024. " URL="https://arxiv.org/abs/2311.00847"]
     "1/poly-QPRG" -> "1/poly-QOWF"; // BBO+24
     "1/poly-QPRG" -> "⊥-PRG"; // BBO+24
@@ -168,7 +169,7 @@ digraph microcrypt {
     "Pseudo-encryption" -> "Garbled Circuits"; // BBSS23
 
     edge [label="BCQ23" tooltip="Brakerski, Canetti, and Qian.\n On the computational hardness needed for quantum cryptography.\n ITCS'23. " URL="https://doi.org/10.4230/LIPIcs.ITCS.2023.24"]
-     "SB-QCOM" -> EFI; // BCQ23
+     "SB-QCOM" -> EFI [weight=100]; // BCQ23
     EFI -> "SB-QCOM"; // BCQ23
     QMPC -> EFI; // BCQ23
     EFI -> QMPC; // BCQ23
@@ -177,7 +178,7 @@ digraph microcrypt {
     EFI -> "Expanding 1PRS"; // Bat26 Thm 1.1; removes the non-uniformity of CCC+25 (Cavalar, Chen, Coladangelo, Gray, Hu, Ji, Li, arXiv 2510.07859)
     "Expanding 1PRS" -> EFI; // Bat26 Thm 1.1
 
-    
+
     edge [label="BS20" tooltip="Behera and Sattath.\n Almost Public Coins.\n QIP'21. " URL="https://arxiv.org/abs/2002.12438"]
     "Private Quantum Coins" -> "Almost Public Quantum Coins"; // BS20
 
@@ -194,9 +195,9 @@ digraph microcrypt {
     edge [label="HMY23" tooltip="Hhan, Morimae, and Yamakawa.\n From the Hardness of Detecting Superpositions to Cryptography: Quantum Public Key Encryption and Commitments.\n EUROCRYPT'23. " URL="https://doi.org/10.1007/978-3-031-30545-0_22"]
     "NI-SB-QCOM" -> "NI-SH-QCOM"; // HMY23
     "NI-SH-QCOM" -> "NI-SB-QCOM"; // HMY23
-    
+
     edge [label="JLS18" tooltip="Ji, Liu and Song.\n Pseudorandom quantum states.\n CRYPTO18. " URL="https://link.springer.com/chapter/10.1007/978-3-319-96878-0_5"]
-    QOWF -> PRS; // JLS18
+    QOWF -> PRS [weight=100]; // JLS18
     PRS -> "Private Quantum Coins"; // JLS18
 
     edge [label="KT24" tooltip="Khurana and Tomer.\n Commitments from Quantum One-Wayness.\n STOC'24. " URL="https://arxiv.org/abs/2310.11526"]
@@ -230,7 +231,7 @@ digraph microcrypt {
     OTS -> "EV-OWPuzzle"; // CGG24. Theorem 15
     "EV-OWPuzzle" -> OTS; // CGG24. Theorem 15
 
-    edge [label="BJ24" tooltip="Batra and Jain.\n Commitments are equivalent to statistically-verifiable one-way state generators.\n arXiv, 2024. " URL="https://arxiv.org/abs/2404.03220"]    
+    edge [label="BJ24" tooltip="Batra and Jain.\n Commitments are equivalent to statistically-verifiable one-way state generators.\n arXiv, 2024. " URL="https://arxiv.org/abs/2404.03220"]
     "IV-OWSG" -> EFI; // BJ24
     EFI -> "IV-OWSG"; // BJ24
 
@@ -245,13 +246,13 @@ digraph microcrypt {
     edge [label="GMMY24" tooltip="Goldin, Morimae, Mutreja and Yamakawa.\n CountCrypt: Quantum Cryptography between QCMA and PP.\n arXiv, 2024." URL="https://arxiv.org/abs/2410.14792"]
     "SB-COM" -> OWPuzzle; // GMMY24 Thm 1.10 (QCCC commitments imply one-way puzzles)
 
-    
-     
+
+
     edge [label="" tooltip="" URL=""]
-    
- 
-   
-  
+
+
+
+
     //################################################# Separations.######################################
     // A separation "X cannot be black-box built from Y" is written X -> Y, and drawn with dir=back, so the arrow points from Y to X (the page shows "Y ⇏ X").
     // This is a hack: written this way, edges go from top to bottom like the implications, and the strongly connected components are computed correctly.
@@ -260,9 +261,9 @@ digraph microcrypt {
 
     edge [style=dashed color="red" dir="back"]
 
-    edge [label="Kre21" tooltip="Kretschmer.\n Quantum Pseudorandomness and Classical Complexity.\n TQC21. " URL="https://drops.dagstuhl.de/opus/volltexte/2021/13997"]
-    QOWF->PRS;
-    
+    edge [label="Kre21" tooltip="Kretschmer.\n Quantum Pseudorandomness and Classical Complexity.\n TQC21; corrected arXiv v5 (2024). Sec. 2.6 allows inverse queries; Thm 30 and Thm 33 give PRUs and PromiseBQP=PromiseQMA relative to the same oracle." URL="https://arxiv.org/abs/2103.09320v5"]
+    QOWF->"Strong PRU";
+
 
     edge [label="BM24" tooltip="Bouaziz-Ermann and Muguruza.\n Quantum Pseudorandomness Cannot Be Shrunk In a Black-Box Way.\n IACR eprint, 2024. " URL="https://eprint.iacr.org/2024/291"]
      "Short Output PRS"->PRS;
@@ -295,8 +296,9 @@ digraph microcrypt {
     edge [label="Hha26" tooltip="Hhan.\n Derivatives of Quantum Randomness: Separating Pseudorandom Unitaries from Pseudorandom (Function-like) States.\n arXiv, 2026" URL="https://arxiv.org/abs/2609.14626"]
     "Non-adaptive PRU"->"QA Long Input PRFS"; // Hha26 Thm 1.1 (adaptive quantum-accessible PRFS exist, PRUs do not)
 
-    edge [label="Bar25" tooltip="Barhoush.\n Separating Pseudorandom Generators from Logarithmic Pseudorandom States.\n arXiv, 2025" URL="https://arxiv.org/abs/2510.20131"]
-    "negl-QPRG"->PRS; // Bar25 Thm 1
+    edge [label="Bar25" tooltip="Barhoush.\n Separating Pseudorandom Generators from Logarithmic Pseudorandom States.\n arXiv, 2025. Thm 1.1 and Thm 1.2. Fully black-box separation with inverse access; target correctness must follow from source correctness alone (Def. 9)." URL="https://arxiv.org/abs/2510.20131"]
+    "negl-QPRG"->PRS; // Bar25 Thm 1.1
+    "negl-QPRG"->"Short Output PRS"; // Bar25 Thm 1.1
     "negl-QPRG"->"⊥-PRG"; // Bar25 Thm 1.2
 
     edge [label="GMMY24" tooltip="Goldin, Morimae, Mutreja and Yamakawa.\n CountCrypt: Quantum Cryptography between QCMA and PP.\n arXiv, 2024. Quantum lightning exists relative to an oracle where BQP=QCMA, which breaks one-way functions." URL="https://arxiv.org/abs/2410.14792"]
@@ -305,5 +307,5 @@ digraph microcrypt {
     edge [label="KQT25" tooltip="Kretschmer, Qian and Tal.\n Quantum-Computable One-Way Functions without One-Way Functions.\n STOC'25" URL="https://arxiv.org/pdf/2411.02554"]
     "COWF"->"QTOWF";
 
-   
+
 }

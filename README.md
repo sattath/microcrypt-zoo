@@ -24,10 +24,10 @@ edge [label="JLS18" tooltip="Ji, Liu and Song.\n Pseudorandom quantum states.\n 
 QOWF -> PRS;
 ```
 
-A separation uses the same template, but is written in reverse: "X cannot be black-box constructed from Y" is written `X -> Y` (it is drawn with the arrow pointing from Y to X). For example, Kretschmer showed that QOWF cannot be black-box constructed from PRS:
+A separation uses the same template, but is written in reverse: "X cannot be black-box constructed from Y" is written `X -> Y` (it is drawn with the arrow pointing from Y to X). For example, Kretschmer showed that QOWF cannot be black-box constructed from Strong PRU:
 ```dot
-edge [label="Kre21" tooltip="Kretschmer.\n Quantum Pseudorandomness and Classical Complexity.\n TQC21. " URL="https://drops.dagstuhl.de/opus/volltexte/2021/13997"]
-QOWF -> PRS;
+edge [label="Kre21" tooltip="Kretschmer.\n Quantum Pseudorandomness and Classical Complexity.\n TQC21; corrected arXiv v5 (2024). Sec. 2.6 allows inverse queries; Thm 30 and Thm 33 give PRUs and PromiseBQP=PromiseQMA relative to the same oracle." URL="https://arxiv.org/abs/2103.09320v5"]
+QOWF -> "Strong PRU";
 ```
 
 ### Checklist for adding a result
