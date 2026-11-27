@@ -260,8 +260,8 @@ digraph microcrypt {
 
     edge [style=dashed color="red" dir="back"]
 
-    edge [label="Kre21" tooltip="Kretschmer.\n Quantum Pseudorandomness and Classical Complexity.\n TQC21. " URL="https://drops.dagstuhl.de/opus/volltexte/2021/13997"]
-    QOWF->PRS;
+    edge [label="Kre21" tooltip="Kretschmer.\n Quantum Pseudorandomness and Classical Complexity.\n TQC21; corrected arXiv v5 (2024). Sec. 2.6 allows inverse queries; Thm 30 and Thm 33 give PRUs and PromiseBQP=PromiseQMA relative to the same oracle." URL="https://arxiv.org/abs/2103.09320v5"]
+    QOWF->"Strong PRU";
     
 
     edge [label="BM24" tooltip="Bouaziz-Ermann and Muguruza.\n Quantum Pseudorandomness Cannot Be Shrunk In a Black-Box Way.\n IACR eprint, 2024. " URL="https://eprint.iacr.org/2024/291"]
@@ -295,8 +295,9 @@ digraph microcrypt {
     edge [label="Hha26" tooltip="Hhan.\n Derivatives of Quantum Randomness: Separating Pseudorandom Unitaries from Pseudorandom (Function-like) States.\n arXiv, 2026" URL="https://arxiv.org/abs/2609.14626"]
     "Non-adaptive PRU"->"QA Long Input PRFS"; // Hha26 Thm 1.1 (adaptive quantum-accessible PRFS exist, PRUs do not)
 
-    edge [label="Bar25" tooltip="Barhoush.\n Separating Pseudorandom Generators from Logarithmic Pseudorandom States.\n arXiv, 2025" URL="https://arxiv.org/abs/2510.20131"]
-    "negl-QPRG"->PRS; // Bar25 Thm 1
+    edge [label="Bar25" tooltip="Barhoush.\n Separating Pseudorandom Generators from Logarithmic Pseudorandom States.\n arXiv, 2025. Thm 1.1 and Thm 1.2. Fully black-box separation with inverse access; target correctness must follow from source correctness alone (Def. 9)." URL="https://arxiv.org/abs/2510.20131"]
+    "negl-QPRG"->PRS; // Bar25 Thm 1.1
+    "negl-QPRG"->"Short Output PRS"; // Bar25 Thm 1.1
     "negl-QPRG"->"⊥-PRG"; // Bar25 Thm 1.2
 
     edge [label="GMMY24" tooltip="Goldin, Morimae, Mutreja and Yamakawa.\n CountCrypt: Quantum Cryptography between QCMA and PP.\n arXiv, 2024. Quantum lightning exists relative to an oracle where BQP=QCMA, which breaks one-way functions." URL="https://arxiv.org/abs/2410.14792"]
