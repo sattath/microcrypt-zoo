@@ -7,9 +7,13 @@
     <link rel="icon" href="data:,">
     <style>
         img { max-width: 100%; height: auto; }
-        #hero { max-height: 50vh; width: auto; }
+        #hero { display: block; width: 100%; margin: 0 0 1rem; }
+        @media (min-width: 40rem) {
+            #hero { float: right; width: 15rem; margin: 0 0 1rem 1.5rem; }
+            #hero + h2 { margin-top: 0; }
+        }
         /* The graph fills the screen (minus the info bar) and is zoomed and panned inside its box */
-        #graph { position: relative; height: calc(100svh - 9em); border: 1px solid #999; overflow: hidden; touch-action: none; }
+        #graph { clear: both; position: relative; height: calc(100svh - 9em); border: 1px solid #999; overflow: hidden; touch-action: none; }
         #graph svg { width: 100%; height: 100%; display: block; }
         #zoom { position: absolute; top: 8px; right: 8px; display: flex; gap: 4px; }
         #zoom button { font-size: 20px; width: 40px; height: 40px; }
@@ -176,7 +180,9 @@
                 beforeWheel: () => true,                          // wheel is handled below
             });
             const fit = {...pz.getTransform()};   // the starting view shows the whole graph
-            pz.setMinZoom(fit.scale);
+            const graphWidth = wrap.getBBox().width;
+            const initialScale = Math.min(box.clientWidth / graphWidth, 1);  // fit width, capped at native size
+            pz.setMinZoom(Math.min(fit.scale, initialScale));
             pz.setMaxZoom(fit.scale * 20);
             // Keep the graph in view: it can't be dragged past the box edges, and a dimension smaller than the box stays centered
             pz.on('transform', () => {
@@ -208,6 +214,9 @@
                 controls.append(b);
             }
             box.append(controls);
+            // Start at the top; zooming out and Fit still show the entire graph.
+            pz.zoomAbs(0, 0, initialScale);
+            pz.moveTo((box.clientWidth - graphWidth * initialScale) / 2, 0);
         }
     </script>
 </body>
